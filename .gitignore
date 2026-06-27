@@ -1,0 +1,26 @@
+﻿# Logs and Traces
+logs/
+*.log
+
+# Python Caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Environments & Sensitive Data
+.env
+venv/
+.venv/
+env/
+
+# IDEs and Editors
+.vscode/
+.idea/
+.DS_Store
+
+*.pdf
+*.exe
+*.zip
+*.dll

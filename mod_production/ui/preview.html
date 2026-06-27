@@ -1,0 +1,231 @@
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <title>Production Performance Dashboard</title>
+            <style>
+                /* Reset styles */
+                body, table, td, a { 
+                    -webkit-text-size-adjust: 100%; 
+                    -ms-text-size-adjust: 100%; 
+                }
+                table, td { 
+                    mso-table-lspace: 0pt; 
+                    mso-table-rspace: 0pt; 
+                }
+                img { 
+                    -ms-interpolation-mode: bicubic; 
+                    border: 0; 
+                    height: auto; 
+                    line-height: 100%; 
+                    outline: none; 
+                    text-decoration: none; 
+                }
+                
+                /* Base styles */
+                body {
+                    margin: 0 !important;
+                    padding: 0 !important;
+                    width: 100% !important;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    background-color: #f5f5f5;
+                }
+                
+                .email-container {
+                    max-width: 600px;
+                    margin: 0 auto;
+                    background: white;
+                }
+                
+                .content-wrapper {
+                    padding: 20px;
+                }
+                
+                h1 {
+                    color: #2c3e50;
+                    font-size: 24px;
+                    margin: 0 0 20px 0;
+                    padding-bottom: 15px;
+                    border-bottom: 3px solid #3498db;
+                }
+                
+                h2 {
+                    color: #34495e;
+                    font-size: 18px;
+                    margin: 30px 0 15px 0;
+                    padding-left: 10px;
+                    border-left: 4px solid #3498db;
+                }
+                
+                .metrics-section {
+                    background: #f8f9fa;
+                    padding: 15px;
+                    border-radius: 4px;
+                    margin: 15px 0;
+                }
+                
+                .chart-container {
+                    margin: 20px 0;
+                    text-align: center;
+                    background: #fafafa;
+                    padding: 15px;
+                    border-radius: 4px;
+                }
+                
+                .chart-container img {
+                    max-width: 100%;
+                    height: auto;
+                    border: 1px solid #ddd;
+                    border-radius: 4px;
+                }
+                
+                .footer {
+                    margin-top: 30px;
+                    padding-top: 20px;
+                    border-top: 1px solid #eee;
+                    font-size: 12px;
+                    color: #7f8c8d;
+                    text-align: center;
+                }
+                
+                .footer p {
+                    margin: 5px 0;
+                }
+                
+                /* Mobile styles */
+                @media only screen and (max-width: 600px) {
+                    .content-wrapper {
+                        padding: 15px !important;
+                    }
+                    
+                    h1 {
+                        font-size: 20px !important;
+                    }
+                    
+                    h2 {
+                        font-size: 16px !important;
+                        margin: 20px 0 10px 0 !important;
+                    }
+                    
+                    .metrics-table th,
+                    .metrics-table td {
+                        padding: 8px 5px !important;
+                        font-size: 12px !important;
+                    }
+                    
+                    .metrics-table th {
+                        font-size: 11px !important;
+                    }
+                    
+                    .chart-container {
+                        padding: 10px !important;
+                    }
+                    
+                    .footer {
+                        font-size: 11px !important;
+                    }
+                }
+                
+                /* Extra small mobile devices */
+                @media only screen and (max-width: 480px) {
+                    h1 {
+                        font-size: 18px !important;
+                    }
+                    
+                    h2 {
+                        font-size: 15px !important;
+                    }
+                    
+                    .metrics-table th,
+                    .metrics-table td {
+                        padding: 6px 4px !important;
+                        font-size: 11px !important;
+                    }
+                }
+            </style>
+        </head>
+        <body style="margin: 0; padding: 0; width: 100%; background-color: #f5f5f5;">
+            <!-- Wrapper table for Outlook -->
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #f5f5f5;">
+                <tr>
+                    <td align="center" style="padding: 20px 10px;">
+                        <!-- Email container -->
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" class="email-container" style="max-width: 600px; background: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                            <tr>
+                                <td class="content-wrapper" style="padding: 20px;">
+                                    
+                                    <!-- Header -->
+                                    <h1>📊 Production Performance Dashboard</h1>
+                                    
+                                    <!-- Metrics Section -->
+                                    <div class="metrics-section">
+                                        <h2>Performance Summary</h2>
+                                        
+        <table class="metrics-table" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%; border-collapse: collapse; margin: 10px 0;">
+            <thead>
+                <tr style="background: #34495e; color: white;">
+                    <th style="padding: 12px 8px; text-align: left; font-size: 13px; font-weight: 600; border-bottom: 2px solid #2c3e50;">Metric</th>
+                    <th style="padding: 12px 8px; text-align: right; font-size: 13px; font-weight: 600; border-bottom: 2px solid #2c3e50;">Last Week<br><span style="font-size: 10px; font-weight: normal;">(Feb 15-Feb 21)</span></th>
+                    <th style="padding: 12px 8px; text-align: right; font-size: 13px; font-weight: 600; border-bottom: 2px solid #2c3e50;">Year-to-Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="background: #f8f9fa;">
+                    <td style="padding: 10px 8px; border-bottom: 1px solid #dee2e6; font-size: 14px; font-weight: 600;">Total Orders</td>
+                    <td style="padding: 10px 8px; text-align: right; border-bottom: 1px solid #dee2e6; font-size: 14px; font-weight: bold;">104</td>
+                    <td style="padding: 10px 8px; text-align: right; border-bottom: 1px solid #dee2e6; font-size: 14px; font-weight: bold;">977</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px 8px; border-bottom: 1px solid #dee2e6; font-size: 14px; font-weight: 600;">On-Time Deliveries</td>
+                    <td style="padding: 10px 8px; text-align: right; border-bottom: 1px solid #dee2e6; font-size: 14px; font-weight: bold;">96</td>
+                    <td style="padding: 10px 8px; text-align: right; border-bottom: 1px solid #dee2e6; font-size: 14px; font-weight: bold;">703</td>
+                </tr>
+                <tr style="background: #f8f9fa;">
+                    <td style="padding: 10px 8px; border-bottom: 1px solid #dee2e6; font-size: 14px; font-weight: 600;">On-Time Rate</td>
+                    <td style="padding: 10px 8px; text-align: right; border-bottom: 1px solid #dee2e6; font-size: 14px; font-weight: bold; color: #28a745;">
+                        92.3%
+                    </td>
+                    <td style="padding: 10px 8px; text-align: right; border-bottom: 1px solid #dee2e6; font-size: 14px; font-weight: bold; color: #dc3545;">
+                        72.0%
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px 8px; font-size: 14px; font-weight: 600;">Avg. Lead Time (days)</td>
+                    <td style="padding: 10px 8px; text-align: right; font-size: 14px; font-weight: bold;">0.8</td>
+                    <td style="padding: 10px 8px; text-align: right; font-size: 14px; font-weight: bold;">-1.4</td>
+                </tr>
+            </tbody>
+        </table>
+        
+                                    </div>
+                                    
+                                    <!-- Weekly Chart -->
+                                    <h2>📈 Last Week Performance</h2>
+                                    <div class="chart-container">
+                                        <img src="cid:weekly_chart" alt="Weekly Performance Trend" style="max-width: 100%; height: auto;">
+                                    </div>
+                                    
+                                    <!-- YTD Chart -->
+                                    <h2>📊 Year-to-Date Performance</h2>
+                                    <div class="chart-container">
+                                        <img src="cid:ytd_chart" alt="Year-to-Date Summary" style="max-width: 100%; height: auto;">
+                                    </div>
+                                    
+                                    <!-- Footer -->
+                                    <div class="footer">
+                                        <p>📅 Report Generated: 2026-02-23 23:09</p>
+                                        <p>📦 Source: Whitebird Flute Data Warehouse</p>
+                                    </div>
+                                    
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </body>
+        </html>
+        

@@ -1,0 +1,47 @@
+{
+  "database_name": "Model",
+  "tables": [
+    "schedule_listing",
+    "po_manager",
+    "purchase_receipts",
+    "addresses",
+    "customers",
+    "docket",
+    "order_revision_events"
+  ],
+  "post_export_operations": {
+    "enabled": true,
+    "db_path": "prod_db.db",
+    "operations": [
+      "import_order",
+      "import_order_routing",
+      "import_customers",
+      "import_addresses",
+      "update_order",
+      "import_order_details",
+      "import_docket",
+      "import_order_revision_events"
+    ],
+    "notes": {
+      "import_order": "Uses schedule_listing.csv",
+      "import_order_routing": "Uses schedule_listing.csv",
+      "import_customers": "Uses customers.csv",
+      "import_addresses": "Uses addresses.csv",
+      "update_order": "Uses po_manager.csv",
+      "import_order_details": "Uses schedule_listing.csv",
+      "import_docket" : "Uses docket.csv",
+      "import_order_revision_events": "Uses order_revision_events.csv"
+    }
+  },
+  "output_directory": "exports",
+  "refresh_settings": {
+    "enabled": true,
+    "refresh_entire_model": false,
+    "max_wait_seconds": 300,
+    "check_interval_seconds": 5
+  },
+  "export_settings": {
+    "include_timestamp": false,
+    "encoding": "utf-8"
+  }
+}

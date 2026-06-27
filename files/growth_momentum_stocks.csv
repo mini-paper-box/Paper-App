@@ -1,0 +1,4 @@
+Ticker,Price,Market_Cap_B,PE_Ratio,Dividend_Yield,ROE,Debt_to_Equity,Beta,Price_vs_SMA50,Price_vs_SMA200,Change_1M,Change_3M,Volatility,Sector
+AAPL,178.5,2800,29.5,0.45,147.5,1.85,1.28,2.5,15.5,5.2,12.5,25.5,Technology
+MSFT,415.3,3100,35.8,0.75,42.3,0.42,0.95,5.8,18.2,8.5,15.8,22.8,Technology
+GOOGL,142.8,1800,25.3,0.0,28.5,0.08,1.08,-1.2,8.5,2.5,8.5,28.5,Technology

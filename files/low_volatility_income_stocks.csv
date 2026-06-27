@@ -1,0 +1,5 @@
+Ticker,Price,Market_Cap_B,PE_Ratio,Dividend_Yield,ROE,Debt_to_Equity,Beta,Price_vs_SMA50,Price_vs_SMA200,Change_1M,Change_3M,Volatility,Sector
+JNJ,156.8,385,18.9,2.85,28.9,0.45,0.62,1.5,5.2,2.5,6.5,15.8,Healthcare
+CVX,158.9,310,9.8,3.15,16.8,0.18,0.88,3.8,10.8,5.8,12.8,24.5,Energy
+KO,61.2,265,24.5,2.95,41.2,0.75,0.58,1.2,6.5,2.8,7.5,16.5,Consumer Defensive
+PEP,175.3,245,26.8,2.65,45.8,0.68,0.62,2.5,8.5,4.2,10.2,17.2,Consumer Defensive

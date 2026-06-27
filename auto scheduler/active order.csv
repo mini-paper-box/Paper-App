@@ -1,0 +1,44 @@
+Customer Name,Order #,Line #,Docket Id,Order Qty,Due Date,Width,Length,Material,Printing Type,Coverage
+Back2Raw,5032664,6,184254,900,2026-05-28 00:00:00.000,43.01,41.03,B32 OY,Nozomi Digital 1 Side Print,"Dig Ink Med Intensity 20%, Non-Coated Digital 0%"
+Blackburn,5032660,2,185753,1500,2026-05-27 00:00:00.000,31.02,35.02,B32 OY,Nozomi Digital 1 Side Print,Dig Ink Med Intensity 100%
+Blackburn,5032660,3,189228,2000,2026-05-27 00:00:00.000,30.03,34.00,B32 OY,Nozomi Digital 1 Side Print,Dig Ink Med Intensity 100%
+Butcher's Pup,5032694,1,185576,1000,2026-06-02 00:00:00.000,34.14,30.08,E32 Coated White 1S,Nozomi Digital 1 Side Print,"Dig Ink Med Intensity 80%, Coated Digital 0%"
+Butcher's Pup,5032694,2,185577,1000,2026-06-02 00:00:00.000,34.14,30.08,E32 Coated White 1S,Nozomi Digital 1 Side Print,"Dig Ink Med Intensity 80%, Coated Digital 0%"
+CJ,5032806,1,186841,5000,2026-06-09 00:00:00.000,31.02,35.10,B40 OY,Nozomi Digital 1 Side Print,Dig Ink Med Intensity 80%
+Dillons,5032822,2,191371,800,2026-06-11 00:00:00.000,59.00,38.06,B32 Coated White 2S,Nozomi Digital 1 Side Print,"Dig Ink Med Intensity 100%, Coated Digital 0%"
+Duvet,5032695,2,188946,1680,2026-06-05 00:00:00.000,50.13,80.03,B32 Coated White 1S,Nozomi Digital 1 Side Print,Dig Ink Med Intensity 100%
+Duvet,5032695,3,191111,1700,2026-06-05 00:00:00.000,50.13,80.03,B32 Coated White 1S,Nozomi Digital 1 Side Print,Dig Ink Med Intensity 100%
+Flourish,5032703,1,185388,5000,2026-06-02 00:00:00.000,64.11,34.13,EB51 Coated 1S,Nozomi Digital 1 Side Print,Dig Ink Med Intensity 100%
+Healthy,5032688,1,167336,600,2026-05-29 00:00:00.000,36.14,32.04,B32 Coated White 1S,Nozomi Digital 1 Side Print,"Dig Ink Med Intensity 40%, Coated Digital 0%"
+Healthy,5032689,1,167114,1680,2026-05-29 00:00:00.000,36.14,32.04,B32 Coated White 1S,Nozomi Digital 1 Side Print,"Dig Ink Med Intensity 40%, Coated Digital 0%"
+Healthy,5032690,1,165661,900,2026-05-29 00:00:00.000,36.14,32.04,B32 Coated White 1S,Nozomi Digital 1 Side Print,"Dig Ink Med Intensity 40%, Coated Digital 0%"
+Healthy,5032691,1,167115,800,2026-05-29 00:00:00.000,36.14,32.04,B32 Coated White 1S,Nozomi Digital 1 Side Print,"Dig Ink Med Intensity 40%, Coated Digital 0%"
+Healthy,5032692,1,164089,700,2026-05-29 00:00:00.000,30.08,33.00,B32 Coated White 1S,Nozomi Digital 1 Side Print,"Dig Ink Med Intensity 40%, Coated Digital 0%"
+Healthy,5032693,1,164619,1260,2026-05-29 00:00:00.000,32.05,59.00,B32 Coated White 1S,Nozomi Digital 1 Side Print,"Dig Ink Med Intensity 40%, Coated Digital 0%"
+Healthy,5032753,1,167113,1080,2026-06-01 00:00:00.000,36.14,32.04,B32 Coated White 1S,Nozomi Digital 1 Side Print,"Dig Ink Med Intensity 40%, Coated Digital 0%"
+Healthy,5032754,1,167116,800,2026-06-01 00:00:00.000,36.14,32.04,B32 Coated White 1S,Nozomi Digital 1 Side Print,"Dig Ink Med Intensity 40%, Coated Digital 0%"
+Healthy,5032756,1,164087,960,2026-06-01 00:00:00.000,30.08,33.00,B32 Coated White 1S,Nozomi Digital 1 Side Print,"Dig Ink Med Intensity 40%, Coated Digital 0%"
+Healthy,5032757,1,164094,600,2026-06-01 00:00:00.000,30.08,33.00,B32 Coated White 1S,Nozomi Digital 1 Side Print,"Dig Ink Med Intensity 40%, Coated Digital 0%"
+Healthy,5032758,1,164617,1000,2026-06-01 00:00:00.000,32.05,59.00,B32 Coated White 1S,Nozomi Digital 1 Side Print,"Dig Ink Med Intensity 40%, Coated Digital 0%"
+Healthy,5032759,1,164618,1000,2026-06-01 00:00:00.000,32.05,59.00,B32 Coated White 1S,Nozomi Digital 1 Side Print,"Dig Ink Med Intensity 40%, Coated Digital 0%"
+Healthy,5032760,1,167699,600,2026-06-01 00:00:00.000,32.05,59.00,B32 Coated White 1S,Nozomi Digital 1 Side Print,"Dig Ink Med Intensity 40%, Coated Digital 0%"
+Healthy,5032761,1,167344,700,2026-06-01 00:00:00.000,32.05,59.00,B32 Coated White 1S,Nozomi Digital 1 Side Print,"Dig Ink Med Intensity 40%, Coated Digital 0%"
+Koolatron,5032563,1,169796,2500,2026-07-08 00:00:00.000,27.02,57.06,B32 Coated White 1S,Nozomi Digital 1 Side Print,"Dig Ink Low Intensity 60%, Dig Ink Low Intensity 60%, Dig Ink Low Intensity 60%, Coated Digital 0%, Coated Digital 0%, Coated Digital 0%"
+Koolatron,5032566,1,163855,2500,2026-07-08 00:00:00.000,32.00,75.03,B32 Coated White 1S,Nozomi Digital 1 Side Print,"Dig Ink Low Intensity 60%, Dig Ink Low Intensity 60%, Dig Ink Low Intensity 60%, Coated Digital 0%, Coated Digital 0%, Coated Digital 0%"
+M-Health,5032788,1,184640,5000,2026-06-04 00:00:00.000,32.00,35.00,E40 Coated White 2S,Nozomi Digital 2 Sides Print,"Dig Ink Med Intensity 100%, Dig Ink Med Intensity 60%"
+Matron,5032821,1,177176,3000,2026-06-10 00:00:00.000,30.03,34.00,B40 K,Nozomi Digital 1 Side Print,Dig Ink Med Intensity 75%
+Nexal,5032715,1,186960,3600,2026-06-08 00:00:00.000,43.06,35.06,B32 OY,Nozomi Digital 1 Side Print,Dig Ink Med Intensity 25%
+Nexal,5032717,1,188351,1000,2026-06-12 00:00:00.000,27.04,37.10,B32 OY,Nozomi Digital 1 Side Print,Dig Ink Med Intensity 100%
+RapidAid,5032820,1,167412,800,2026-06-11 00:00:00.000,28.11,41.01,C32 OY,Nozomi Digital 1 Side Print,Dig Ink Med Intensity 25%
+RapidAid,5032820,2,167413,800,2026-06-11 00:00:00.000,30.00,42.04,C32 OY,Nozomi Digital 1 Side Print,Dig Ink Med Intensity 25%
+Score,5032732,2,177077,1000,2026-06-01 00:00:00.000,37.10,39.14,E32 Coated White 2S,Nozomi Digital 1 Side Print,"Dig Ink Med Intensity 100%, Coated Digital 0%"
+The Happy Box,5032678,1,174573,700,2026-06-02 00:00:00.000,41.02,40.10,B32 Coated White 2S,Nozomi Digital 2 Sides Print,"Dig Ink Med Intensity 100%, Dig Ink Med Intensity 100%"
+The Happy Box,5032678,3,179222,1500,2026-06-02 00:00:00.000,34.00,37.10,B32 Coated White 2S,Nozomi Digital 2 Sides Print,"Dig Ink Low Intensity 80%, Dig Ink Low Intensity 100%"
+The Happy Box,5032678,4,179223,1000,2026-06-02 00:00:00.000,41.14,40.10,B32 Coated White 2S,Nozomi Digital 2 Sides Print,"Dig Ink Med Intensity 100%, Dig Ink Med Intensity 100%"
+Turn-Key,5032713,1,188578,2000,2026-06-03 00:00:00.000,43.01,82.13,B32 Coated White 1S,Nozomi Digital 1 Side Print,"Dig Ink Med Intensity 100%, Coated Digital 0%"
+Turn-Key,5032658,1,177125,18980,2026-06-08 00:00:00.000,43.01,47.07,B32 Coated White 1S,Nozomi Digital 1 Side Print,"Dig Ink Low Intensity 50%, Coated Digital 0%"
+Turn-Key,5032713,2,191185,1000,2026-06-03 00:00:00.000,43.01,82.13,B32 Coated White 1S,Nozomi Digital 1 Side Print,"Dig Ink Med Intensity 100%, Coated Digital 0%"
+Turn-Key,5032658,2,177125,18980,2026-06-08 00:00:00.000,43.01,47.07,B32 Coated White 1S,Nozomi Digital 1 Side Print,"Dig Ink Low Intensity 50%, Coated Digital 0%"
+Turn-Key,5032713,3,191186,1000,2026-06-03 00:00:00.000,43.01,82.13,B32 Coated White 1S,Nozomi Digital 1 Side Print,"Dig Ink Med Intensity 100%, Coated Digital 0%"
+Wild,5032811,1,189534,1585,2026-07-02 00:00:00.000,30.03,34.00,B40 OY,Nozomi Digital 1 Side Print,Dig Ink Med Intensity 75%
+Wild,5032811,2,189552,1585,2026-07-02 00:00:00.000,30.03,34.00,B40 OY,Nozomi Digital 1 Side Print,Dig Ink Med Intensity 75%

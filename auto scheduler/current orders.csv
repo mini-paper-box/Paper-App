@@ -1,0 +1,30 @@
+Customer Name,Order #,Line #,Docket Id,Order Qty,Due Date,Width,Length,Material,Printing Type,Coverage
+Dillons,5032822,2,191371,800,2026-06-11,59.00,38.06,B32 Coated White 2S,Nozomi Digital 1 Side Print,Dig Ink Med Intensity 100%
+Simpson,5032859,4,191103,590,2026-06-11,74.08,31.00,B32 Coated White 2S,Nozomi Digital 1 Side Print Gloss,Dig Ink Med Intensity 80%
+Turn-Key,5032658,2,177125,18980,2026-06-12,43.01,47.07,B32 Coated White 1S,Nozomi Digital 1 Side Print,Dig Ink Low Intensity 50%
+Turn-Key,5032880,1,188798,525,2026-06-12,46.05,30.10,B32 Coated White 2S,Nozomi Digital 2 Sides Print,"Dig Ink Med Intensity 100%, Dig Ink Med Intensity 70%"
+Turn-Key,5032892,1,188407,993,2026-06-12,60.08,82.12,B32 Coated White 1S,Nozomi Digital 1 Side Print,Dig Ink Med Intensity 80%
+Healthy,5032832,1,167117,500,2026-06-12,30.08,33.00,B32 Coated White 1S,Nozomi Digital 1 Side Print,Dig Ink Med Intensity 40%
+VPC,5032874,1,183401,1600,2026-06-16,64.15,81.02,BC48 Coated White 1S,Nozomi Digital 1 Side Print,Dig Ink Med Intensity 75%
+VPC,5032874,2,189556,650,2026-06-16,64.15,81.02,BC48 Coated White 1S,Nozomi Digital 1 Side Print,Dig Ink Med Intensity 75%
+Innovative,5032919,1,175174,5000,2026-06-17,24.12,52.12,B32 OY,Nozomi Digital 1 Side Print,Dig Ink Med Intensity 100%
+Giatec,5032904,1,190979,1000,2026-06-18,28.05,39.08,B32 OY 2S,Nozomi Digital 1 Side Print,Dig Ink Med Intensity 40%
+Giatec,5032904,2,191446,1000,2026-06-18,33.14,39.09,B32 OY 2S,Nozomi Digital 1 Side Print,Dig Ink Med Intensity 100%
+Oma's,5032905,1,177101,125,2026-06-18,58.00,60.04,B32 OY,Nozomi Digital 1 Side Print,Dig Ink Med Intensity 100%
+Oma's,5032905,2,177110,125,2026-06-18,58.00,60.04,B32 OY,Nozomi Digital 1 Side Print,Dig Ink Med Intensity 100%
+Oma's,5032905,3,177115,125,2026-06-18,58.00,60.04,B32 OY,Nozomi Digital 1 Side Print,Dig Ink Med Intensity 100%
+Oma's,5032905,6,171515,500,2026-06-18,33.12,67.10,C40 Coated White 1S,Nozomi Digital 1 Side Print,Dig Ink Med Intensity 100%
+Oma's,5032905,7,171516,500,2026-06-18,33.12,67.10,C40 Coated White 1S,Nozomi Digital 1 Side Print,Dig Ink Med Intensity 100%
+Oma's,5032905,8,171518,500,2026-06-18,33.12,67.10,C40 Coated White 1S,Nozomi Digital 1 Side Print,Dig Ink Med Intensity 100%
+Oma's,5032905,9,171519,500,2026-06-18,33.12,67.10,C40 Coated White 1S,Nozomi Digital 1 Side Print,Dig Ink Med Intensity 100%
+VPC,5032875,1,183401,1600,2026-06-19,64.15,81.02,BC48 Coated White 1S,Nozomi Digital 1 Side Print,Dig Ink Med Intensity 75%
+VPC,5032875,2,189556,650,2026-06-19,64.15,81.02,BC48 Coated White 1S,Nozomi Digital 1 Side Print,Dig Ink Med Intensity 75%
+VPC,5032876,1,183401,1500,2026-06-23,64.15,81.02,BC48 Coated White 1S,Nozomi Digital 1 Side Print,Dig Ink Med Intensity 75%
+VPC,5032876,2,189556,750,2026-06-23,64.15,81.02,BC48 Coated White 1S,Nozomi Digital 1 Side Print,Dig Ink Med Intensity 75%
+Display,5032921,1,191502,660,2026-06-26,51.00,56.00,EB48 CC (kemi) / Oyster,Nozomi Digital 1 Side Print,Dig Ink Low Intensity 80%
+Display,5032921,3,191504,635,2026-06-26,13.00,13.00,B32 Coated White 2S,Nozomi Digital 2 Sides Print,"Dig Ink Med Intensity 100%, Dig Ink Med Intensity 100%"
+Moore,5032937,1,181644,1100,2026-06-26,58.02,75.03,B32 Coated White 1S,Nozomi Digital 1 Side Print,Dig Ink Med Intensity 100%
+BCR,5032917,2,188738,18000,2026-06-30,32.00,52.10,C44 Coated White 1S,Nozomi Digital 1 Side Print,Dig Ink Med Intensity 100%
+Turn-Key,5032948,1,177527,724,2026-06-30,53.15,29.02,E32 Coated White 2S,Nozomi Digital 1 Side Print,Dig Ink Med Intensity 100%
+Koolatron,5032563,1,169796,2500,2026-07-08,27.02,57.06,B32 Coated White 1S,Nozomi Digital 1 Side Print,Dig Ink Low Intensity 60%
+Koolatron,5032566,1,163855,2500,2026-07-08,32.00,75.03,B32 Coated White 1S,Nozomi Digital 1 Side Print,Dig Ink Low Intensity 60%

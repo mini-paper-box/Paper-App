@@ -1,0 +1,5 @@
+Ticker,Price,Market_Cap_B,PE_Ratio,Dividend_Yield,ROE,Debt_to_Equity,Beta,Price_vs_SMA50,Price_vs_SMA200,Change_1M,Change_3M,Volatility,Sector
+JNJ,156.8,385,18.9,2.85,28.9,0.45,0.62,1.5,5.2,2.5,6.5,15.8,Healthcare
+HD,385.7,400,21.8,2.15,125.8,0.98,1.05,2.5,8.5,4.5,10.5,22.5,Consumer Cyclical
+KO,61.2,265,24.5,2.95,41.2,0.75,0.58,1.2,6.5,2.8,7.5,16.5,Consumer Defensive
+IBM,182.4,170,22.5,3.85,28.5,0.38,0.95,1.8,5.8,3.2,8.5,25.8,Technology
