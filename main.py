@@ -622,6 +622,6 @@ def test_singleton():
 
 if __name__ == "__main__":
     # Uncomment to run tests
-    test_singleton()
+    # test_singleton()
     
     PaperBox()
