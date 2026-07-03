@@ -54,14 +54,14 @@ SHOW_TIER_LEADTIME    = False
 TEST_MODE             = False
 TEST_RECIPIENT        = "sang.n@whitebird.ca"
 TIER_START_OFFSET     = 8
-DEFAULT_LEAD_DAYS     = 4
+DEFAULT_LEAD_DAYS     = 3
 EXCLUDED_PROCESS_IDS: set = set()
 
 PRODUCTION_RECIPIENTS = (
     "sang.n@whitebird.ca;allen.g@whitebird.ca;erin.l@moyydesign.com;"
-    "catherine.s@moyydesign.com;john.t@whitebird.ca;tamminga@whitebird.ca;"
+    "catherine.s@moyydesign.com;john.t@whitebird.ca;"
     "lon.s@moyydesign.com;michelle.d@moyydesign.com;becky.j@moyydesign.com;"
-    "jason.w@moyydesign.com;jason.h@moyydesign.com;"
+    "jason.w@moyydesign.com;"
     "jeff.c@moyydesign.com;ray.j@moyydesign.com;megan.h@moyydesign.com;"
     "ryan.p@moyydesign.com;cameron.c@whitebird.ca;don.s@whitebird.ca;"
     "Kamaldeep.k@whitebird.ca;"
