@@ -114,7 +114,7 @@ def run_my_pipeline():
                 continue
 
             lead_days_count = workdays_between(today, chain_end, company_holidays)
-            ship_date       = add_workdays(chain_end, 1, company_holidays)
+            ship_date       = add_workdays(chain_end, 3, company_holidays)
 
             tier_end       = add_workdays(tier_starts[-1], 1, company_holidays)
             tier_lead_days = workdays_between(today, tier_end, company_holidays)

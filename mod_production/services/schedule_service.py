@@ -114,9 +114,9 @@ def _build_capacity_lookup(process_df: pd.DataFrame) -> dict[int, dict[int, floa
     """
     return {
         r.process_id: {
-            1: r.capacity_1, 2: r.capacity_2, 3: r.capacity_3,
-            4: r.capacity_4, 5: r.capacity_5, 6: r.capacity_6,
-            7: r.capacity_7,
+            1: r.capacity_2, 2: r.capacity_3, 3: r.capacity_4,
+            4: r.capacity_5, 5: r.capacity_6, 6: r.capacity_7,
+            7: r.capacity_1,
         }
         for r in process_df.itertuples()
     }
@@ -140,12 +140,30 @@ class ScheduleService:
         self.db        = SQLManager()
         self.ai_engine = ProductionAI()
 
-        self.by_pass_dates: dict[int, set[date]] = {
-            69:  {date(2026, 5, 29)},
-            166: {date(2026, 6, 17)},
-            189: {date(2026, 6, 15), date(2026, 6, 16), date(2026, 6, 17),
-                  date(2026, 6, 18), date(2026, 6, 19), date(2026, 6, 22)},
+        today = date.today()
+
+        def weekday_range(start: date, end: date) -> set[date]:
+            return {
+                d
+                for i in range((end - start).days + 1)
+                if (d := start + timedelta(days=i)).weekday() < 5  # Mon-Fri
+            }
+
+        self.by_pass_dates = {
+            69: weekday_range(today, today + timedelta(days=1)), # Langston
+            # 69: weekday_range(date(2026, 7, 10), date(2026, 7, 24)), #Langston
+            189: weekday_range(date(2026, 7, 10), date(2026, 7, 23)), #Nozomi
+            166: weekday_range(date(2026, 7, 10), date(2026, 7, 24)), #United
+            # 189: weekday_range(today, today + timedelta(days=7)), #Nozomi
         }
+
+        # self.by_pass_dates: dict[int, set[date]] = {
+        #     69:  {date(2026, 5, 29)},
+        #     166: {date(2026, 7, 10), date(2026, 7, 13), date(2026, 7, 14), date(2026, 7, 15), date(2026, 7, 16),
+        #           date(2026, 7, 17), date(2026, 7, 20), date(2026, 7, 21), date(2026, 7, 22), date(2026, 7, 23), date(2026, 7, 24)},
+        #     189: {date(2026, 6, 15), date(2026, 6, 16), date(2026, 6, 17),
+        #           date(2026, 6, 18), date(2026, 6, 19), date(2026, 6, 22)},
+        # }
 
         self.booked_mins_lookup: dict[tuple, float] = {}
         self.booked_jobs_lookup: dict[tuple, int]   = {}
@@ -327,6 +345,10 @@ class ScheduleService:
 
             while remaining > 0 and wd_idx < len(workdays):
                 day = workdays[wd_idx]
+                if pid == 69:
+                    print(day)
+                    print(day.isoweekday())
+                    print(capacity_lookup.get(pid,{}))
 
                 # ── Determine raw capacity ───────────────────────────────────
                 if day in bypass_dates:

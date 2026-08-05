@@ -54,7 +54,7 @@ SHOW_TIER_LEADTIME    = False
 TEST_MODE             = False
 TEST_RECIPIENT        = "sang.n@whitebird.ca"
 TIER_START_OFFSET     = 8
-DEFAULT_LEAD_DAYS     = 3
+DEFAULT_LEAD_DAYS     = 4
 EXCLUDED_PROCESS_IDS: set = set()
 
 PRODUCTION_RECIPIENTS = (
@@ -70,7 +70,7 @@ PRODUCTION_RECIPIENTS = (
 
 JOBS = {
     "Eterna":                    ("188989", 6000),
-    "Langston":                  ("172368", 9000),
+    "Langston":                  ("172368", 3000),
     "United":                    ("167174", 7500),
     "Eterna_Bobst":              ("178910", 20000),
     "United_Bobst":              ("170605", 4000),
@@ -498,7 +498,7 @@ if __name__ == "__main__":
                 continue
 
             lead_days_count = workdays_between(today, chain_end, company_holidays)
-            ship_date       = add_workdays(chain_end, 1, company_holidays)
+            ship_date       = add_workdays(chain_end, 3, company_holidays)
 
             # Tier end = last tier start + 1 workday
             tier_end       = add_workdays(tier_starts[-1], 1, company_holidays)

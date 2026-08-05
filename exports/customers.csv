@@ -1513,6 +1513,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 10111,,burke's restoration,,burke's,,0,15
 11131,,Nutra Blend Foods,,Nutra,,0,15
 11255,,Laptop Screen International Inc.,,Laptop,,0,15
+11298,,Fiedler Meat Products,,Fiedler,,0,15
 11651,,Wolf Island Brewery,,Wolf,,0,15
 11959,,D&J Sausage,,D&J,,0,15
 12267,,Dure Foods,,Dure,,0,15
@@ -1851,10 +1852,12 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19431,,Trillium Floral,,Trillium,,0,15
 19460,,Gemstone Grassfed Beef,,Gemstone,,0,15
 19508,,Raw Fed & Furry,,Raw,,0,15
+19553,,Renaissance Pizza,,Renaissance,,0,15
+19580,,Identity Pet Nutrition,,Identity,,0,15
+19586,,Vanzanten Greenhouse,,Vanzanten,,0,15
 10009,,OHM Industrial Designer,,OHM,,0,2
 10012,,Ardent Zehr Farm,,Ardent,,0,2
 10031,,The Hamilton Brewery,,The,,0,2
-10032,,Alcot Plastics Ltd.,,Alcot,,0,2
 10055,,CGL Manufacturing CGL001,,CGL,,0,2
 10059,,Vintage Doors,,Vintage,,0,2
 10065,,OHM Industrial Designer,,OHM,,0,2
@@ -1874,7 +1877,6 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 11248,,Parasource,,Parasource,,0,2
 11263,,Nutrablend Foods,,BioSteel,,0,2
 11292,,Clearpak Incorporated,,Clearpak,,0,2
-11298,,Fiedler Meat Products,,Fiedler,,0,2
 11316,,Pro Monster Hockey Power Shot,,Pro,,0,2
 11332,,Departed Dollys,,Departed,,0,2
 11334,,Mold Co,,Mold,,0,2
@@ -1966,7 +1968,6 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 12557,,Brickworks Communicaitons,,Brickworks,,0,2
 12563,,Precision Resource,,Precision,,0,2
 12571,,Laud,,Laud,,0,2
-12591,,Pensafe Inc,,Pensafe,,0,2
 12594,,TekPak Solutions,,TekPak,,0,2
 12600,,DIY Workshops,,DIY,,0,2
 12634,,Cellulose,,Cellulose,,0,2
@@ -2156,7 +2157,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19030,,Albright Packaging,,Albright,,2,1
 19057,,Honeywell,,Honeywell,,2,46
 19071,,Apex Display Group,,Apex,,2,10
-19124,,Crown Packaging Corp,,Crown,,2,1
+19124,,Crown Packaging Corp,,Crown,,2,34
 19127,,Package crafters,,Package,,2,1
 19150,,Creative Displays & Packaging,,Creative,,2,1
 19181,,BCI Wooster,,BCI,,2,45
@@ -2166,8 +2167,10 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19456,,Packaging Solutions,,Packaging,,2,49
 19471,,Cumberland Container,,Cumberland,,2,1
 19489,,Mejuri USD,,Mejuri,,2,47
+19564,,Goodman Farms,,Goodman,,2,46
 10004,,SMART SWEET,,SMART,,0,9
 10026,,Staalduinen Floral,,S,,0,10
+10032,,Alcot Plastics Ltd.,,Alcot,,0,56
 10045,,8Lack,,8Lack,,0,9
 10047,,Xccessories Plus XCC001,,Xccessories,,0,9
 10052,,Maddocks Engineered Mach MAD003,,Maddocks,,0,46
@@ -2216,6 +2219,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 12525,,Porpoise,,Porpoise,,0,9
 12533,,Megan Sapinski,,Megan,,0,9
 12539,,Kane Vet Supplies,,Kane,,0,46
+12591,,Pensafe Inc,,Pensafe,,0,53
 12754,,Access Retail Group,,Access,,0,34
 12818,,Fixez,,Fixez,,0,9
 12822,,FeastMash,,FeastMash,,0,9
@@ -2330,6 +2334,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 18243,,Orchard Labs,,Orchard,,0,9
 18251,,DMS Foods,,DMS,,0,34
 18337,,Ravine Vineyard,,Ravine,,0,0
+18425,,Mini Giants,,Mini,,0,34
 18499,,FASTSIGNS® of North Toronto,,FASTSIGNS®,,0,0
 18503,,Bluetechnologies,,Blue,,0,0
 18542,,Zonnic,,Zonnic,,0,40
@@ -2400,7 +2405,6 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19147,,Cambridge Label,,Cambridge,,0,47
 19148,,Florentina Foods Ltd.,,Florentina,,0,47
 19157,,Clifford Brewing,,Clifford,,0,47
-19160,,Cowbell Brewing Co.,,Cowbell,,0,47
 19163,,King David Frozen Pizza,,King,,0,47
 19178,,Boshkung Brewing,,Boshkung,,0,47
 19179,,Ace Beverages,,Ace,,0,47
@@ -2430,7 +2434,6 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19244,,Sleeping Giants - CLOSING DOORS,,Sleeping,,0,47
 19246,,Major Meat LTD,,Major,,0,54
 19249,,The Healtea,,The,,0,0
-19252,,complete packaging,,complete,,0,0
 19253,,Tooth and Nail Brewing,,Tooth,,0,46
 19255,,Pillitteri Winery,,Pillitteri,,0,47
 19257,,All Things Cedar,,All,,0,0
@@ -2441,7 +2444,6 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19273,,Henry Schein,,Henry,,0,53
 19274,,Chill Street,,Chill,,0,47
 19278,,Booch,,Booch,,0,0
-19280,,Booch Organic Kombucha,,Booch,,0,56
 19295,,Gates Canada,,Gates,,0,53
 19296,,Oddbunch,,Oddbunch,,0,47
 19297,,Meyers Fruit Farm,,Meyers,,0,53
@@ -2459,7 +2461,6 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19342,,Moda at Home Enterprises Ltd,,Moda,,0,42
 19344,,Richelieu - RFQ,,Richele,,0,46
 19345,,Industria Innovations Inc ,,Industria,,0,40
-19346,,Panelim Inc.,,Panelim,,0,35
 19350,,Eco Shades,,Eco,,0,0
 19351,,Eco Shades,,Eco,,0,47
 19352,,Simplicity Air,,SIMPLICITY,,0,53
@@ -2534,7 +2535,6 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19516,,PuroClean Restoration,,PuroClean,,0,46
 19520,,Electrans Technologies,,Electrans,,0,52
 19522,,Everest Wholesale,,Everest,,0,53
-19523,,Precision Concepts,,Precision,,0,52
 19528,,Nosh Balls,,NOSH,,0,47
 19531,,Tulsar Controls,,Zoeller,,0,53
 19534,,Ayr Farming Mutual Insurance,,Ayr,,0,47
@@ -2543,7 +2543,26 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19538,,The Knotty Lumber,,The,,0,46
 19540,,Forex eShip Winnipeg,,Forex,,0,52
 19545,,BloodBrothers Brew,,BloodBrothers,,0,47
-19546,,UniUni,,UniUni,,0,0
+19549,,Winao Canada Inc,,Winao,,0,46
+19554,,Wavemaker Brewing,,Wavemaker,,0,47
+19557,,Stallion,,Stallion,,0,46
+19558,,Pulp Moulded Products,,Pulp,,0,10
+19559,,Jacobs & Thompson,,Jacobs,,0,55
+19560,,Ched Pallet,,Ched,,0,52
+19561,,Ontario Native Plants,,Ontario,,0,56
+19562,,Drink Alma,,Drink,,0,47
+19563,,Muddy York Brewing,,Muddy,,0,47
+19565,,Freshouse Foods Ltd,,Freshouse,,0,55
+19566,,Ferrante Framing,,Ferrante,,0,47
+19567,,Central Pharmacy Services,,Central,,0,0
+19569,,Public Health Ontario,,Public,,0,35
+19571,,The Laundromat,,The,,0,47
+19573,,Witomy,,Witomy,,0,47
+19574,,Jamie's Cracked Corn,,Jamie's,,0,55
+19575,,Organika,,Organika,,0,47
+19577,,Sulco Industries,,Sulco,,0,52
+19578,,Glendale Bakery,,Glendale,,0,53
+19581,,The Freeman Co.,,The,,0,55
 11400,,George quote account,,George,,0,1
 11508,,Catelli,,Catelli,,0,1
 12192,,Cascades Ecommerce,,Cascades,,0,1
@@ -2609,7 +2628,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19101,,Canpak Trade Print & Services Inc,,Canpak,,0,1
 19112,,Mid America Display,,Mid,,0,1
 19326,,Pro Shipper,,Pro,,0,1
-19463,,Mid-North Containers Limited,,Mid-North,,0,1
+19579,,Interpac cold corrugator,,Interpac,,0,1
 12228,,J&J MFG,,J&J,,0,25
 12245,,Jobark Industrial Supplies,,Jobark,,0,25
 12361,,Maas Safety Inc.,,Maas,,0,25
@@ -2691,7 +2710,6 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 17748,,Marketing Matters,,Marketing,,0,25
 17766,,Corporate Visuals,,Corporate,,0,25
 17778,,Design Packaging Services,,Design,,0,25
-18425,,Mini Giants,,Mini,,0,25
 18644,,Fordis,,Fordis,,0,25
 11394,,Nikolao Fine Foods,,Nikolao,,0,41
 11637,,Walkers Chocolates,,Walkers,,0,41
@@ -3054,7 +3072,6 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 18655,,JDV Metal Designs,,,,0,34
 18682,,GOOD TO BE GOOD,,,,0,34
 18695,,Creative Guild,,,,0,34
-18705,,Ecompack,,,,0,34
 18711,,FRASER DIRECT DISTRIBUTION,,,,0,34
 18726,,Pollard Windows & Doors,,,,0,34
 18830,,Spruce Home Decor Inc.,,,,0,34
@@ -3088,15 +3105,16 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19384,,World in a Box,,,,0,34
 19389,,Puro Artigianale,,,,0,34
 19420,,Minuteman Press Kitchener,,,,0,34
-19445,,COMPLETE DESIGN & PACKAGING,,,,0,34
 19446,,KURZ DESIGN,,,,0,34
 19448,,Mainline Meds,,,,0,34
-19504,,FOAMCORE ARCHITECTURAL ELEMENT,,,,0,34
 19517,,PolarTransfers,,,,0,34
 19521,,North Design Build,,,,0,34
 19524,,Shade FX,,,,0,34
 19532,,Gelato,,,,2,34
 19541,,Leveled Up Consulting,,,,0,34
+19551,,White House Graphics Inc.,,,,0,34
+19588,,TwinPro Graphics Inc.,,,,0,34
+19589,,Rocklyn Springs Farm,,,,0,34
 17862,,Ansel Press,,,,2,25
 18063,,Ansell Press Innovative Printing,,,,2,45
 18319,,Precise Digital Printing,,,,2,39
@@ -3222,10 +3240,11 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19428,,Refined Fool Brewing Company,,,,0,47
 19436,,Sentinel Research and Development Inc,,,,0,46
 19443,,Benson Lobster,,,,0,35
+19445,,Complete Design & Packaging,,,,0,10
 19454,,Feed Halton,,,,0,52
 19461,,West Wind Trading Co,,,,0,47
 19518,,ReadyPine,,,,0,53
-19544,,    THE WINDMILL COUNTRY MARKET,,,,0,47
+19550,,Winoa Canada & USA,,,,0,46
 11222,,The Masters Collection,,,(905)928-0284,0,22
 11510,,B & I International,,,(905)802-8075,0,22
 16476,, Silverthorne Refractories inc,,,(905)774-1269,0,0
@@ -3633,7 +3652,6 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 16428,,TFI Aerospace Corporation,,TFI,(519)940-9003,0,2
 16437,,Iafrate Machine Works Ltd,,Iafrate,(905)227-6141,0,2
 16451,,Rock Crusher Bike Racks,,Rock,(403)992-3755,0,2
-16464,,Dutch Delta Farms ltd,,Dutch,(519)381-6736,0,2
 16467,,Prism Powder Coatings Ltd,,Prism,(905)660-5361,0,2
 16482,,Petro Discounter,,Petro,(416)438-6457,0,2
 16485,,Ceecam,,Ceecam,(613)862-4908,0,2
@@ -3666,7 +3684,6 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 18023,,ER Global,,ER,(705)222-3104,0,2
 18068,,Maximus and Co.,,Maximus,(905)462-8054,0,2
 18103,,Grote Industries Co. (Canada),,Grote,(905)209-9744,0,2
-18179,,I & K Greenhouses,,I,(519)875-3118,0,2
 18185,,Home & Leisure Group Ltd.,,Home,(519)757-1000,0,2
 18218,,VDK Group,,VDK,(519)424-2233,0,2
 18219,,FIVE STAR INDUSTRIES,,Five,(780)875-2573,0,2
@@ -3760,6 +3777,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 16439,,Village Brewery,,Village,(604)500-8543,0,15
 16441,,COMMUNAUTIQUE,,COMMUNAUTIQUE,(514)948-6644,0,0
 16445,,Trophy Foods Inc.,,Trophy,(905)670-8050,0,52
+16464,,Dutch Delta Farms ltd,,Dutch,(519)381-6736,0,15
 16470,,Unsolved Science,,Unsolved,(647)784-2717,0,27
 16474,,Elmes Packaging,,Elmes,(905)565-1272,0,10
 16494,,Test Account,,Test 1,(123)456-7891,0,23
@@ -3775,6 +3793,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 17912,,Gremlin Roadway,,Gremlin,(204)818-5718,0,13
 17982,,Modern Moulding,,Modern,(519)969-8085,0,0
 18024,,Nuera Air,,Nuera,(450)622-9000,0,40
+18179,,I & K Greenhouses,,I,(519)875-3118,0,15
 18244,,EuroTrade Imports,,EuroTrade,(905)624-2064,0,38
 18247,,Ranni,,Protabha,(   )   -,0,13
 18316,,Tecvalco Ltd.,,Tecvalco,(866)317-0131,0,0
@@ -3809,12 +3828,17 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19358,,Formnet Inc.,,Formnet,(416)675-5444,0,55
 19364,,CLEAResults Caanada Inc,,CLEAResults,(437)887-1437,0,35
 19374,,Tri-Ad,,Tri-Ad,(905)624-8214,0,46
-19375,,Awake Chocolate,,Awake,(416)801-4934,0,45
-19387,,Shale Ridge Estate Winery&Cidery,,Shale,(519)280-9752,0,0
+19387,,Shale Ridge Estate Winery&Cidery,,Shale,(519)280-9752,0,47
 19433,,Voit,,Voit,(555)333-6070,0,45
 19495,,Resource Integrated Ltd.,,Resource,(905)771-3773,0,45
 19496,,Mom's Best Gourmet Foods,,Mom's,(905)696-8889,0,45
 19501,,Areion International Ltd,,Areion,(437)339-8397,0,52
+19552,,Gateway City Brewery,,Gateway,(705)478-0809,0,47
+19555,,Queen Street Bakery,,Queen,(855)664-5886,0,45
+19576,,NaturSource INC,,NaturSource,(519)337-6663,0,40
+19583,,Move Ease Services,,Move,(365)833-1644,0,47
+19584,,EDC Export Development Canada,,EDC,(416)573-5426,0,34
+19590,,#Unlimited - Mental Edge,,#Unlimited,(128)930-8700,0,47
 13872,,Planet Displays & Packaging Inc,,Planet,(216)251-9641,2,22
 13895,,Ashtonne Packaging,,Ashtonne,(419)289-7181,2,22
 14099,,Packaging Material Services,,Packaging,(330)745-9722,2,22
@@ -5347,8 +5371,8 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 11499,NAT001,National Corrugate,,National,(716)754-3051,2,46
 12704,RIP001,"Rip Van Wafels, Inc",,Rip,(401)316-9337,2,2
 13648,BIB003,Bibbidi Bobbidi Boxes,,Bibbidi,(770)894-9845,2,15
-13924,JET005,Jet Container,,Jet,(614)444-2133,2,45
-14017,DES024,Designers Folding Box,,Designers,(716)853-5141,2,45
+13924,JET005,Jet Container,,Jet,(614)444-2133,2,34
+14017,DES024,Designers Folding Box,,Designers,(716)853-5141,2,34
 14055,JSP001,J&S Packaging,,J&S,(330)995-9515,2,25
 14113,EAS025,EasyPaper Packaging Inc,,Easy,(512)660-3977,2,10
 14175,SKY013,Skybox packaging,,Skybox,(419)525-6013,2,25
@@ -5360,13 +5384,13 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 16404,PAC009,Packform LLC USA,,Packform,(661)568-9114,2,35
 17853,MAG022,Magic Paperbox,,Magic,(716)912-8761,2,45
 17975,FIV007,Five Star Corrugated & Display,,Five Star,(718)875-0022,2,10
-17984,HAW004,Hawver Display,,Hawver,(585)544-2290,2,45
+17984,HAW004,Hawver Display,,Hawver,(585)544-2290,2,34
 17999,TAS007,Tasus Corporation,,Tasus,(317)696-2273,2,34
 18200,MEY009,Meyers Printing Company,,Meyers,(763)531-5722,2,25
-18459,PAC018,Packaging Validators LLC,,Validators,(317)740-0123,2,45
+18459,PAC018,Packaging Validators LLC,,Validators,(317)740-0123,2,34
 18537,EDW001,Edwin Bell Containers,,Edwin Bell,(412)221-1830,2,45
 18545,COM054,Compass Packaging.,,Compass,(440)548-2333,2,45
-18638,INS011,inStore Displays & Packaging,,Instore,(711)491-4660,2,45
+18638,INS011,inStore Displays & Packaging,,Instore,(711)491-4660,2,34
 18648,VIT006,Vital Dental Lab,,Vital Dental,(716)874-0252,2,2
 18689,PAC019,Packwire,,Packwire,(514)805-8930,2,49
 18729,PHI012,Philpac Corporation,,Philpac,(716)875-8005,2,45
@@ -5378,11 +5402,13 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19014,WHI007,Whitestone Branding,,Whitestone,(212)732-3869,2,1
 19029,DOL007,Dolphin Creative,,Dolphin,(847)679-7700,2,34
 19218,MAR141,Marketing Tech,,Marketing Tech,(800)591-5685,2,45
+19252,CDP002,Complete Design & Packaging,,Complete Design,(704)793-4400,2,10
 19525,KOR007,KORRUGATE IT,,KORRUGATE,(716)608-3500,2,45
+19547,ELP002,Edison Lithograph & Printing Corp,,Edison,(201)902-9191,2,10
+19585,COR015,Corrugated Packaging,,Corrugated,(978)342-6072,2,1
 10001,WHITEB,Moyy|Whitebird,,Moyy|WB,(111)222-3333,0,0
 10033,ESS004,The Essential Image,,Essential,(519)880-1488,0,45
 10050,PRO067,Professional Technical Packaging,,Professional,(519)446-9975,0,25
-10090,MUL006,Drytac,,DRYTAC,(905)791-0502,0,25
 10118,AZT001,Aztec Electrical Inc,,Aztec,(905)272-1592,0,25
 11129,FER014,Ferr-Tech Industries Inc. FER014,,Ferr-Tech,(519)837-2968,0,25
 11159,BGI155,Bgi Graphics Inc * Adi Dassler,,BGI,(519)442-7000,0,10
@@ -5407,6 +5433,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 11678,POR007,Portside Warehousing Inc,,Portside,(289)429-5090,0,38
 11738, PAR208,Parker Meats,,Parker,(519)590-0136,0,10
 11818,ZAR002,Zarky's Fine Foods,,Zarky's,(905)574-1500,0,47
+11819,STR026,Wolverine World Wide Canada,,Wolverine,(905)285-9574,0,52
 11831,INT015,International Road Dynamics Inc.,,International,(306)653-6896,0,35
 11842,ANC006,PromoPlace,,Promo,(905)304-0951,0,25
 11924,ESF002,E.S. Fox Ltd,,E.S. Fox,(905)354-3700,0,53
@@ -5442,6 +5469,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 12932,JEL002,Jelinek Cork Group,,Jelink,(905)827-4666,0,52
 12947,ART005,Artek Door Ltd,,Artek,(905)466-4800,0,52
 12958,GO4001,GO4-D Inc.,,GO4-D,(289)870-4643,0,27
+12975,BIO010,Bio Sculpture Canada Inc,,Bio-Sculpture,(905)528-6245,0,57
 13036,LIT008,Lithocolor Services Ltd,,Lithocolor,(905)794-0052,0,25
 13085,ROK001,Rokan Laminating Company,,Rokan,(905)564-7525,0,25
 13162,TRA026,Travelway,,Travelway,(514)331-3130,0,40
@@ -5480,7 +5508,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 14533,LIQ011,Liquid Rubber Canada Inc,,Liquid,(905)521-2888,0,38
 14546,TEC005,Teckmark Label Systems,,Teckmark,(905)681-7070,0,25
 14616,VER012,Versatile Spray Painting Ltd,,Versatile,(905)857-4915,0,35
-14619,SHA021,Shaver Industries Inc,,Shaver,(519)894-4800,0,38
+14619,SHA021,Shaver Industries Inc,,Shaver,(519)894-4800,0,56
 14694,WGI001,WGI MANUFACTURING (iA Dealer Services ),,iA,(416)412-2970,0,25
 14739,CAB001,C&B Display,,C&B,(905)823-7770,0,25
 14825,HHS001,Hamilton Health Sciences,,Hamilton,(905)521-2100,0,27
@@ -5501,7 +5529,6 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 15946,SAL007,Sales Dynamic,,Sales,(416)441-1555,0,25
 15997,MYT001,Mytropolis Inc,,Mytropolis,(647)539-0191,0,25
 16038,KAR007,Karmichael,,Karemichel,(416)919-1805,0,25
-16053,PBI001,PBI Printing By Innovation,,PBI,(905)563-1537,0,45
 16054,CRE031,Creative Sense Design Solutions,,Creative,(905)332-8651,0,25
 16064,MAK007,The Make Station Corp,,Make Station,(416)735-6361,0,25
 16068,BRA006,Bramur Plastics,,Bramur,(905)631-3191,0,45
@@ -5523,6 +5550,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 16361,TOU007,Tourism Nova Scotia,,Tourism,(902)790-3714,0,27
 16362,DDP001,Digital Direct Printing,,Digital,(250)388-7082,0,25
 16377,GAR016,Gardiner Museum,,Gardiner,(416)408-5058,0,27
+16402,DIS001,Discount Business Forms,,Discount,(905)799-3961,0,57
 16475,RBG001,R&B Graphics,,R&B,(416)580-8993,0,25
 16602,RAY014,Rayment & Collins,,Rayment,(905)940-4030,0,45
 16614,AME004,Amerjy Tool & Mould,,Amerjy,(905)662-6464,0,38
@@ -5535,14 +5563,13 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 17839,SKY015,Skyline Exhibits Alberta,,Skyline,(403)681-6548,0,25
 17892,BUR002,Burdock Brewery,,Burdock,(647)999-5514,0,47
 17992,REB010,Rebox Corp Inc,,Rebox,(416)889-2579,0,40
-18006,TAS008,Taste Of Nature Foods Inc,,Taste of Nature,(905)415-8218,0,45
 18007,CAR058,Carbon Technologies,,,(416)837-2664,0,38
 18037,MYF002,My Fungi,,My Fungi,(403)660-6048,0,13
 18075,BP3001,bp3D Creatives,,BP3D,(416)803-6335,0,25
 18132,KON002,Konzelmann Estate Winery,,Konzelmann,(905)935-2866,0,47
 18150,BRA103,3 Brasseurs Inc,,3Brasseurs,(514)813-8449,0,40
 18196,JAM003,James HeiKoop,,James,(519)717-3672,0,0
-18198,MUL016,Multi Services Inc,,,(819)843-2385,0,40
+18198,MUL016,Multi Services Inc,,Multi Services,(819)843-2385,0,40
 18205,LYN006,Lynch Fluid Controls,,Lynch,(905)363-2400,0,38
 18217,LIT005,Liteform International Inc,,Liteform,(905)564-2090,0,35
 18225,PPG002,The Printing & Promotion Group Inc,,PPG ADVERTISING,(416)410-1122,0,25
@@ -5587,16 +5614,19 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19222,ELE042,Elevation Brands,,Elevation,(416)209-1757,0,0
 19234,SOS001,So&So Sorrel and Soda,,So&So,(613)399-1001,0,47
 19261,MAI026,Mail Order Mystery,,Mail Order,(647)483-5060,0,52
+19280,BOO015,Booch Inc,,Booch,(226)998-0785,0,56
 19281,GOL024,Goldys Food Corp,,Goldys,(416)302-0957,0,47
 19285,FLO027,Flour Confections Inc,,Flour,(888)443-2253,0,54
 19290,DEM009,Demetres,,Demetres,(416)544-3411,0,47
 19303,SEC011,SECONDSHOP INC.,,Secondshop,(289)816-4263,0,52
 19330,HEN016,Henderson Brewing,,Henderson,(416)417-7890,0,47
 19334,FOR042,Forex eShip,,Forex,(403)991-9525,0,52
+19346,PAN015,Panelim Inc.,,Panelim,(905)832-7999,0,57
 19359,HAW003,Hawco Products,,Hawco,(519)759-2243,0,53
 19363,BLO014,Blowing Smoke Hot Sauce,,Blowing,(519)503-7110,0,47
 19367,SAN030,Made Pho You,,Sang,(905)962-3121,0,0
 19371,BLA029,Blackburn Beer,,Blackburn,(905)358-0801,0,47
+19375,BEC007,Awake Chocolate,,Awake,(416)801-4934,0,47
 19385,HOT010,Hotline Apparel,,Hotline,(519)754-1799,0,53
 19394,014945,HIT BOX SPORTS CARDS,,HIT,(204)960-6127,0,47
 19397,HAM087,Hammer & Anvil Boardwalks Inc,,Hammer,(519)444-4621,0,56
@@ -5606,14 +5636,20 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19425,FUN008,FUN-L Inc,,Ashton,(705)665-6814,0,57
 19438,VEI001,Vieni Estate,,Vieni,(905)563-6521,0,47
 19439,THE292,The Great Canadian Sauce Company,,The Great Canadian,(519)497-5202,0,47
+19463,MID014,Mid-North Containers Limited,,Mid-North,(705)647-7055,0,1
 19464,NYA001,Nyarai Cellars,,Nyarai,(905)719-5440,0,47
 19465,MOH015,Original Mohawk Traders,,Orginal,(289)689-8884,0,57
 19478,015216,Butterfly Ethical Gifting,,Butterfly,(416)919-5401,0,0
 19480,PRO128,Protini Beverage,,Protini,(437)229-7717,0,47
 19491,GEORGE,EFI,,EFI,(603)285-9755,0,1
+19504,FOA003,FOAMCORE ARCHITECTURAL ELEMENT,,Foamcore,(905)358-3626,0,57
 19515,NBP001,North Bay Plastics,,North Bay Plastics,(705)752-3332,0,35
+19523,015995,Precision Concepts,,Precision,(365)465-3225,0,52
 19527,HOR008,Horizon Beers,,Horizon,(403)609-0622,0,47
 19530,PER015,PERFORMANCE FINISHING SOL,,Performance,(905)629-7007,0,52
+19546,UNI028,Uni Express,,Uni Express,(604)229-2007,0,52
+19548,RET009,Atlantic Packaging Retail PKG & Display,,Atlantic Retail,(416)298-8101,0,10
+19568,LIZ003,Purple Lizard,,Purple,(289)219-3429,0,47
 10034,PAT003,Patera Group Inc.,,Patera,(416)241-8700,0,22
 10124,NEX001,Nexas Networks,,Nexas,(905)581-3717,0,22
 11139,THR136,3Points Aviation,,3Points,(905)602-6145,0,22
@@ -5696,6 +5732,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 10042,HER029,Hero Dehydrated Dog Treats Inc,,Hero,(613)639-4873,0,15
 10117,COS007,Cosmo Music Co Ltd,,Cosmo,(905)770-5222,0,15
 11133,BOW004,Bowzer Box,,Bowzer,(613)222-0610,0,15
+11167,PHK001,P.H. Kuivenhoven Greenhouse,,P.H.,(519)879-6617,0,15
 11262,RAW002,Rawco Pet Company Inc.,,Rawco,(905)327-2972,0,15
 11284,NUV001,Nuvo Iron,,Nuvo,(905)857-1010,0,15
 11416,FAR004,Farm Fresh Poultry Ltd,,Farm,(519)338-3200,0,15
@@ -5756,6 +5793,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 15437,BEA009,BEAVER VALLEY WINERY LTD,,BEAVER,(416)464-9213,0,15
 15475,FER015,Fergies Fine Foods,,Fergies,(518)787-7700,0,15
 15507,PLA030,Playbookco,,Playbookco,(416)702-1259,0,15
+15519,PIO002,PIONEER FLOWER FARMS LIMITED,,Pioneer,(905)641-2221,0,15
 15572,OHB001,Oh Birdy,,OhBirdy,(647)548-6846,0,15
 15604,TEA009,TEA FREAK FINE TEAS,,TEA,(416)831-9772,0,15
 15635,COM018,Compass Distillers,,Compass,(902)495-7727,0,15
@@ -5831,6 +5869,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 11544,VAD001,Vaderstad Industries Inc.,,Vaderstad,(844)778-3260,0,46
 11545,PDV001,PDV Services Inc,,PDV,(905)690-4513,0,46
 11578,NOV004,Nova Filtration Tech.,,Nova,(905)304-8157,0,46
+11596,MOT001,Motis Fire Rescue,,Motis,(844)696-6847,0,46
 11648,LOH001,Lohmann Breeders Canada Ltd.,,Lohmann,(519)758-5909,0,46
 11690,ADV017,Advanced Ceramics,,Advanced,(905)607-4101,0,46
 11708,pre027,Premier Fluid Systems Inc.,,Premier,(905)637-2611,0,46
@@ -5842,6 +5881,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 11867,WES043,Westbrook Floral,,Westbrook,(905)945-9611,0,46
 11874,LAF011,Lafert North America,,Lafert,(800)661-6413,0,46
 11884,NAL001,Nalco Canada Company,,Nalco,(905)633-1031,0,46
+11898,ONE009,Oneroot Inc.,,Oneroot,(647)630-0723,0,46
 11979,PRO006,Promotional Elements,,Promotional,(519)894-1508,0,46
 12011,TRI015,Trison Tarps,,Trison,(519)720-9464,0,46
 12032,WIL023,Willowbrook Nurseries Inc.,,Willowbrook,(905)892-5350,0,46
@@ -5878,6 +5918,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 14041,CAN087,Canadian Plastic Cards,,Canadian,(905)827-5243,0,46
 14246,DEL020,DELTA ELEVATORS,,DELTA,(519)745-5789,0,46
 15167,AST001,Astound,,Astound,(905)465-0474,0,46
+15185,NOR036,Norgen Bioteck Corp.,,Norgen,(905)227-8848,0,46
 15542,MAP008,Maple Lodge Hatcheries Ltd,,Maple,(905)885-6337,0,46
 15615,PLA024,Plastruct,,Plastruct,(905)563-4000,0,46
 15832,TEM004,TempArmour Refrigeration,,Temp,(289)259-6389,0,46
@@ -5890,6 +5931,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 16496,MDM001,MDM Business Solutions,,MDM,(905)829-8904,0,46
 16506,MAR033,Marlig Industries Inc,,Marlig,(905)374-2560,0,46
 16547,ASS006,Associated Wire Products Inc. AWP,,Associated,(289)337-9500,0,46
+16655,FMF001,FMF Metal Fabrication,,FMF,(519)748-9142,0,46
 16665,SWE018,Swenco Limited,,Swenco,(519)884-7400,0,46
 17743,GRE025,Goldstone HVACR,,Goldstone,(519)448-1448,0,46
 17918,BBF001,Balac Bait Farm,,Balac,(905)741-3324,0,46
@@ -5927,12 +5969,12 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19455,DGM001,Made2Match - DGM Enterprises,,DGM,(905)847-2424,0,46
 19457,015135,BRAVONI DISTRIBUTION INC.,,BRAVONI,(647)273-9500,0,46
 19466,WIN050,Winprint Inc,,Winprint,(416)297-9010,0,46
+19587,WES017,WE SHARE SUPPLY INC,,,(   )   -,0,46
 10006,BOO002,Book Depot,,BookDepot,(905)680-7230,0,2
 10018,LAW002,Lawry Shooting Sports Inc,,Lawry,(905)765-3343,0,2
 10049,UST002,US Tool Grinding Inc UST002,,US,(905)825-1515,0,2
 11149,BUZ001,Buzz Seating Ltd,,Buzz,(877)263-5737,0,2
 11165,MUR001,Muro North America,,Muro,(905)451-7667,0,2
-11167,PHK001,P.H. Kuivenhoven Greenhouse,,P.H.,(519)879-6617,0,2
 11215,MOS003,Moss Led Inc,,Moss,(416)463-6677,0,2
 11286,KIT003,Kitras Art Glass Inc.,,Kitras,(519)843-2480,0,2
 11319,BAY003,Bay-Lynx,,Bay-Lynx,(905)304-3900,0,2
@@ -5948,7 +5990,6 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 11575,NEM002,Nemcor,,Nemcor,(519)740-0595,0,2
 11585,RED005,Redline Packaging,,Redline,(905)643-6897,0,2
 11589,HOW009,Howies Hockey,,Howies,(905)633-9165,0,2
-11596,MOT001,Motis Fire Rescue,,Motis,(844)696-6847,0,2
 11620,CAN202,Can Bearings Manufacturing Ltd,,Can Bearings,(416)858-6779,0,2
 11627,GRA050,Graphic Whizard,,Graphic,(905)633-7663,0,2
 11630,DRA004,Draka Elevator,,Draka,(905)537-5192,0,2
@@ -5957,7 +5998,6 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 11657,WIN016,Winona's Harvest Limited,,Winona's,(905)560-1044,0,2
 11786,BRO028,BroPak,,BroPak,(289)218-8668,0,2
 11881,WEL003,Welsh Precision Products,,Welsh,(905)662-1475,0,2
-11898,ONE009,Oneroot Inc.,,Oneroot,(647)630-0723,0,2
 11904,ZEB003,Zebra Pen Canada Corp,,Zebra,(905)829-8186,0,2
 11971,SUP008,Supply-All Mfg,,Supply-All,(905)662-9666,0,2
 11980,DIE006,Dieter's Metal Fabricating Ltd,,Dieters,(519)884-8555,0,2
@@ -6038,7 +6078,6 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 14949,SIM025,Simpson Family Farms Inc.,,Simpson,(547)802-4875,0,2
 15050,LAI001,Laird Plastics,,Laird,(905)595-4800,0,2
 15125,SIM024,SIMCOE FARMERS MARKET,,SIMCOE,(519)429-2092,0,2
-15185,NOR036,Norgen Bioteck Corp.,,Norgen,(905)227-8848,0,2
 15212,HOG001,JE Hodgins Lumber,,Rona,(519)357-3650,0,2
 15221,AVA003,Avalon Metal Fabrication,,Avalon,(905)678-6171,0,2
 15324,MAS022,MasterMask,,MasterMask,(416)906-4671,0,2
@@ -6050,7 +6089,6 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 15444,HAN025,HANNAH REPUBLIC INC,,HANNAH,(647)550-6125,0,2
 15491,ROC011,Rocco Mazzaferro Services Inc,,Rocco,(905)807-1166,0,2
 15498,REA002,RealForm,,RealForm,(416)367-3626,0,2
-15519,PIO002,PIONEER FLOWER FARMS LIMITED,,Pioneer,(905)641-2221,0,2
 15578,CAL002,Caliber Target Systems,,Caliber,(519)670-8000,0,2
 15633,MAV002,Mavlet Precision Ltd.,,Mavlet,(905)761-6650,0,2
 15643,ORD001,Or Deluxe,,Or,(437)214-3821,0,2
@@ -6073,7 +6111,6 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 16501,NUT019,Nutwell logistics,,Nutwell,(905)328-4299,0,2
 16588,UCF001,Upper Canada Forest Products,,Upper,(905)814-8000,0,2
 16649,URA001,Uratech,,Uratech,(905)334-9464,0,2
-16655,FMF001,FMF Metal Fabrication,,FMF,(519)748-9142,0,2
 17720,ROP058,Roopa Knitting,,Roopa,(905)857-3377,0,2
 17738,GEO012,Geometro,,Geometro,(905)304-7112,0,2
 17849,NOR015,Northfield Builders Inc,,Northfield,(709)896-3112,0,2
@@ -6094,194 +6131,6 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 18759,TOO003,Toolway,,Toolway,(905)326-5450,0,2
 18761,ALL011,Alliance Labeling,,Alliance,(905)337-2501,0,2
 18773,CAN051,Canway,,Canway,(905)578-2929,0,2
-10040,ECO003,Ecologix Heating Technologies,,Ecologix,(855)658-4330,0,34
-10070,TUB004,Tube Pro Inc,,Tube,(519)489-2564,0,34
-10080,TEA007,709526529 Team Bluegroove,,Team Bluegroove,(289)668-5224,0,34
-10083,GRI013,Grime Eater Products Inc,,Grime,(905)820-2255,0,34
-10092,UTR001,URTECH Manufacturing,,URTECH,(905)667-2310,0,34
-10110,PRI052,Printmate Graphics (pmg) Ltd,,Printmate,(519)753-1081,0,34
-10116,GRA007,Graphic Dimensions Inc.,,Graphic,(905)569-1919,0,34
-11137,PRI017,Prima Wrap,,Prima,(905)704-0087,0,34
-11143,GUN002,Gunther Mele GUN002,,Gunther,(519)756-4330,0,34
-11155,INT001,Interbuild Distribution (can),,Interbuild,(647)457-6011,0,34
-11195,SWI006,Swiss Print International,,Swiss,(416)249-1961,0,34
-11219,NAV007,Navcast Inc,,Navcast,(905)826-8383,0,34
-11231,SHI002,Rocketline,,Rocketline,(905)669-9627,0,34
-11245,WAS005,Wasabi Media,,Wasabi,(905)941-6022,0,34
-11279,INS013,Brand Society,,Brand,(416)642-2003,0,34
-11327,RED019,RedeCan Pharm,,Redecan,(905)892-6788,0,34
-11348,VAL023,Valcom Manufacturing Group Inc,,Valcom,(519)824-3220,0,34
-11354,WES036,West Star Printing Limited,,WestStar,(416)201-0881,0,34
-11359,GEO127,Geotab Inc,,Geotab,(877)436-8221,0,34
-11383,SEC006,Secured Shipping and Delivery,,Secured,(519)852-6683,0,34
-11395,DBG001,Dbg Canada Limited,,DBG,(905)670-1555,0,34
-11420,ACT001,Action Paper & Packaging,,Action,(416)291-0303,0,34
-11426,CAN165,Canadian Candle,,Canadian,(519)754-2100,0,34
-11429,MSC002,MSC Canada,,MSC,(905)947-0468,0,34
-11443,EZE001,Source 4 Nations,,Source,(905)582-2297,0,34
-11447,PAC005,Packaging Too,,Packaging,(519)746-3099,0,34
-11450,GLO038,Global Muffler Inc,,Global,(416)266-0100,0,34
-11468,STE006,Stepcon Industries,,Stepcon,(905)897-6000,0,34
-11518,NRB001,ATCO Structures,,NRB,(905)945-9622,0,34
-11540,HAM049,Hamilton-Wentworth Catholic District School Board,,Hamilton-Wentworth,(905)525-2930,0,34
-11558,TON007,Toni's Packaging,,Toni's,(905)738-6334,0,34
-11571,MOR005,Morrison Moving,,Morrison,(905)525-8332,0,34
-11581,MIC028,Michael Walker Advertising,,Michael,(905)662-8336,0,34
-11606,TRA019,Transaxle Parts Inc,,Transaxle,(905)643-0700,0,34
-11618,MIN027,Mintech Canada Inc,,Mintech,(905)664-0814,0,34
-11635,MER004,Meridian Spas Inc,,Meridian,(519)856-868,0,34
-11654,CLA026,Classic Displays,,Classic,(905)282-8888,0,34
-11693,CAR020,Cargojet Airways,,Cargojet,(905)679-0038,0,34
-11696,CAN020,Can-Am Cryo Services Corp.,,Can-Am,(905)524-3342,0,34
-11734,FAS025,Fastline Muffler,,Fastline,(416)335-5591,0,34
-11735,BAT008,Battlefield Press,,Battlefield,(905)333-4114,0,34
-11746,RON014,Ronsco Inc.,,Ronsco,(514)866-1033,0,34
-11757,OMN004,Omni Furniture Ltd,,Omni,(403)660-7155,0,34
-11798,NNZ001,NNZ Inc.,,NNZ,(519)863-5782,0,34
-11802,BEN010,Beneco,,Beneco,(905)677-2888,0,34
-11803,DLI001,D-Link Networks,,D-Link,(905)285-4072,0,34
-11820,MON001,Monte Design Group Inc.,,Monte,(416)674-6755,0,34
-11855,BRA036,Brantford Hydraulics Ltd,,Brantford,(905)975-9242,0,34
-11875,SPA009,Sparkling Distribution,,Sparkling,(905)850-0094,0,34
-11900,Han009,Hansentek,,Hansentek,(905)607-5780,0,34
-11905,FBA001,F BASS INC,,F Bass,(905)522-1582,0,34
-11922,LEA003,Lear Chemical,,Lear,(905)564-0018,0,34
-11974,THE247,The Brandow Group,,The Brandow,(905)320-6651,0,34
-11994,RED022,Redflash Marketing,,Redflash,(204)761-2072,0,34
-12026,WRE002,Wreckmaster,,WreckMaster,(716)298-0287,0,34
-12040,CUR009,Curtainsider Inc,,Curtainsider,(519)753-8686,0,34
-12052,LAI002,Laicor Fixtures Inc.,,Laicor,(705)748-9846,0,34
-12062,SAF009,Safety Media,,Safety,(416)675-6675,0,34
-12084,TOR043,Toronto Shipping Supplies,,Toronto,(905)881-0064,0,34
-12085,GOO008,Goodminds.com,,Goodminds.com,(519)761-0366,0,34
-12119,GLO037,KEVITO LTD,,Kevito,(647)346-2888,0,34
-12129,AER001,Aerloc Industries Inc.,,Aerloc,(905)628-6061,0,34
-12139,CLE010,Smart Shield,,SMART,(519)623-9900,0,34
-12184,BUM001,Bum Contract Furniture,,Bum,(855)337-2995,0,34
-12211,SUP016,Supreme Packaging Industry,,Supreme,(416)740-7931,0,34
-12235,SLO001,Slotlabel,,Slotlabel,(905)820-0849,0,34
-12244,AJS002,Ajs Woodworking,,AJS,(647)200-3667,0,34
-12331,SIL011,SilverCreek Packaging,,SilverCreek,(416)997-9306,0,34
-12364,STU050,Studio 50 Living Inc.,,Studio50,(226)208-1428,0,34
-12370,CRE016,Cremation Supplies of North America,,Cremation,(905)689-9061,0,34
-12375,SPL003,Split-Fire,,Split-Fire,(519)468-3647,0,34
-12389,CUS010,Custom Box Builder,,Custom,(647)802-7716,0,34
-12491,BAT006,Proforma-Battlefield Advertising,,Proforma-Battlefield,(905)662-1199,0,34
-12556,EXC002,Exclusive Services,,Exclusive,(905)546-5785,0,34
-12573,TRI014,Trimaster Manufacturing Inc,,Trimaster,(519)823-2661,0,34
-12675,GAL009,Galcom International,,Galcom,(905)574-4626,0,34
-12695,VIS194,Visiontec 2008 Inc.,,Visiontec,(905)795-1909,0,34
-12720,CAN213,Cara & Co Supply Craft,,Cara,(905)537-2462,0,34
-12792,FOO004,Foodie Pages Inc.,,Foodie,(613)240-2935,0,34
-12851,INS021,The Instant Print Shoppe,,Instant,(519)352-6813,0,34
-12899,CAL003,Caliber Communications Inc.,,Caliber,(519)209-5034,0,34
-12937,DAR002,Dark Tools INC.,,Dark,(647)725-3275,0,34
-12955,ANN005,Anns Fabric Shop Ltd,,Anns,(905)389-2616,0,34
-13011,AND001,Andora Graphics Inc.,,Andora,(416)408-2700,0,34
-13016,EVE012,Everyday Publications Inc.,,Everyday,(905)834-5552,0,34
-13220,CAN105,Canadian Timber,,Canadian,(905)526-7131,0,34
-13232,SBS001,SB Simpson,,SB Simp,(905)335-6575,0,34
-13271,TSI001,TS IMAGING,,TS,(416)642-9660,0,34
-13366,SCO011,Score Promotions,,Score,(416)661-7779,0,34
-13468,INN015,Innovatex Solutions Inc.,,Innovatex,(905)672-6490,0,34
-13631,ATE003,Atec Signs,,Atec,(905)451-9720,0,34
-13787,SAF011,Saf Drives Inc,,Saf,(519)662-6489,0,34
-13802,ADC002,Ad Creative,,Ad Creat,(416)741-2424,0,34
-13973,KDS001,K D Signs,,KD,(905)631-9988,0,34
-14052,LEV003,Levven,,Levven,(780)391-3000,0,34
-14073,RED027,Red Pine Outdoor,,Red Pine,(613)723-2136,0,34
-14129,ZEN001,ZEN Branding,,ZEN,(514)969-4852,0,34
-14131,UGR002,UGroupMedia INC,,UGroupMedia,(514)295-2337,0,34
-14148,SKY014,Skyview Enterprises Inc.,,Skyview,(519)866-5959,0,34
-14218,GEN034,Generational Design Works,,Generational,(905)724-0641,0,34
-14224,PRI062,Prinex Media,,Prinex,(905)673-8787,0,34
-14274,VIE001,Vieira Concrete Supplies,,VIEIRA,(905)517-6461,0,34
-14305,BRA041,Brand Blvd,,Brand Blvd,(905)682-0001,0,34
-14332,EXT005,Extrufix Canada Inc.,,Extrufix,(647)402-8191,0,34
-14341,TIG004,TI Group,,TI Group,(416)696-2853,0,34
-14390,SYS005,System80 Inc.,,System80,(416)666-5411,0,34
-14411,ALE004,Alexandria Moulding,,Alexandria,(613)525-2784,0,34
-14637,GIF002,Gift Better Co.,,Gift,(613)325-5321,0,34
-14660,LAM001,Lama Cutting Inc,,Lama,(905)470-0111,0,34
-14709,INS004,Instabox Alberta Inc,,Instabox,(403)250-9217,0,34
-14794,BRA100,Branded Bites,,Branded,(416)276-6785,0,34
-14804,GIA003,Giatec Scientific Inc.,,Giatec,(613)280-1544,0,34
-14894,MAC020,McDonald Packaging,,McDonald,(902)579-4141,0,34
-14936,WIL036,Wilfrid Laurier University,,Wilfrid,(519)884-0710,0,34
-14984,PLU005,Plumme Box,,Plumme,(514)619-6303,0,34
-15297,PRI021,Print Factory Ink,,Print Factory,(905)546-0410,0,34
-15299,ELL014,Ellis Studios,,Ellis,(905)717-0115,0,34
-15414,IVE001,Ivex Protective Packaging,,Ivex,(905)795-8887,0,34
-15494,COT006,Cotton Candy,,Cotton,(905)858-2600,0,34
-15559,CLO007,Clockwork Pro,,Clockwork,(416)947-9685,0,34
-15573,KAI005,Kaiser Design,,Kaiser,(289)686-5406,0,34
-15655,HAP006,The Happy Box,,The Happy Box,(416)937-7345,0,34
-15680,POI003,Point 1 Displays,,Point1,(514)344-1435,0,34
-15782,TAS005,T&S Granite,,T&S,(905)923-0551,0,34
-15920,SOB002,Sobeys Capital Inc,,Sobeys,(403)463-4865,0,34
-16057,SOC002,Society of Rural Physicians of Canada,,Society,(819)431-7572,0,34
-16111,STA053,Staedtler Canada,,Staedtler,(905)501-9008,0,34
-16116,SKY015,Skyline Alberta,,Skyline,(403)263-1909,0,34
-16135,SHA038,Shade FX,,Shade,(855)509-5509,0,34
-16144,PRI075,Print Three,,Print 3,(416)865-0188,0,34
-16191,TOU006,Tourism Kingston,,Tourism,(613)484-1863,0,34
-16203,FAI002,Fairware Promotional Products,,Fairware,(604)732-3247,0,34
-16247,BAM003,Bamko,,Bamko,(310)470-5859,0,34
-16305,VIN005,Vintage Hardwood Flooring,,Vintage,(416)659-9464,0,34
-16343,LAU011,The Laundry Design works,,The Laundry,(905)531-7765,0,34
-16375,NOR022,Northern Specialty Supplies,,Northern,(519)688-0334,0,34
-16378,GEO014,Georgette Packaging,,Georgette,(800)854-7770,0,34
-16510,AXM001,Absolute XM Events & Management Inc.,,Absolute,(416)551-7335,0,34
-16512,HAY004,Hayward Pools,,Hayward,(905)829-2880,0,34
-16541,SCH020,Schawk Canada Inc.,,SCHAWK,(905)219-1600,0,34
-16623,CRO027,CP Packaging Corp,,CP,(888)319-0088,0,34
-16624,LOO003,The Look Company,,Look Co,(905)431-8000,0,34
-17692,STR007,Strategic Objectives,,Strategic,(416)953-8460,0,34
-17705,LAK014,Lakefront Graphix Technology,,Lakefront,(416)255-7014,0,34
-17782,MET008,MetOcean Telematics,,MetOcean,(902)800-9624,0,34
-17814,GOO006,Goodcang Logistics Canada Corp,,Goodcang,(905)792-8490,0,34
-17842,SUP027,Supremex,,Supremex,(416)688-3799,0,34
-17898,GEM007,GEMZ Sports Treasures,,GEMZ,(416)697-3544,0,34
-17903,ATE003,Atec Signs,,,(905)451-9720,0,34
-17942,REL013,Relay Graphics,,Relay Graphics,(416)284-5586,0,34
-17948,STA054,Staples Canada,,Staples,(905)737-1147,0,34
-18091,VAS002,Vast Media,,VAST MEDIA,(519)900-6110,0,34
-18118,JAC018,Jackson Events Inc.,,Jackson,(905)727-9797,0,34
-18181,GIL005,Gilmore Doculink,,Gilmore D,(613)591-1560,0,34
-18301,POW020,Powder Trap,,Powder Trap,(250)726-6045,0,34
-18341,COM053,Component hardware,,Component,(289)800-9887,0,34
-18343,GLO045,Globe Commercial Products,,Globe Commercial,(877)789-0249,0,34
-18367,CUB005,Cubbon Advertising,,Cubbon,(306)565-0603,0,34
-18410,BLU020,Blue-Zone Technologies,,Blue,(905)671-1224,0,34
-18415,RUB006,Ruby Crate,,Ruby,(905)330-7993,0,34
-18460,COB004,Cober Solutions,,Cober,(519)745-7136,0,34
-18494,AND001,Andora Graphics,,Andora,(416)408-2700,0,34
-18527,GRA039,Graham design,,Graham,(905)813-3132,0,34
-18623,KRE001,Kreative Marketing,,Kreative,(416)371-8528,0,34
-18643,CAL024,Calendar Club,,Calendar,(519)442-3153,0,34
-18683,JLT001,Logic Group,,Logic Group,(604)372-1850,0,34
-18710,012222,Nicholson & Cates Limited,,Nicolson,(905)335-3366,0,34
-18718,CAC001,Cachet Blinds,,Cachet,(416)371-1408,0,34
-18725,DAD004,Daddy Day Club,,Daddy Day,(647)333-0949,0,34
-18831,STA058,Stance Healthcare inc.,,Stance,(877)395-2623,0,34
-18834,PLR001,PL Roof Windows Ltd,,PL ROOF,(416)503-0188,0,34
-18863,CUP003,Cup-O Coffee Inc,,Cup-O,(514)621-7399,0,34
-18877,SOV001,Sovereign Insurance,,Sovereign,(437)771-2387,0,34
-18890,MOB003,Mobilife RV Centre,,Mobilelife RV,(519)653-5788,0,34
-18907,HER035,Heritage Home Fashions Inc,,Heritage Home,(514)341-1311,0,34
-18931,ADV008,Advantage Packaging,,Advantage,(905)548-0999,0,34
-18972,SYN005,Synchro Engineering Limited,,Synchro,(905)295-2525,0,34
-19111,FUL007,FULLERWORKS INC,,Fullerworks,(519)276-8030,0,34
-19121,013484,UNIQUE PHARMA INDUSTRIES INC.,,Unique Pharma,(289)245-0126,0,34
-19177,BUI004,Build-A-Bank Bitcoin Co.,,Build-A-Bank,(519)760-5498,0,34
-19212,URT001,URtech Manufacturing Inc.,,URTECH,(905)667-2310,0,34
-19241,RUB009,Ruby Knight,,Ruby Knight,(519)760-5722,0,34
-19262,SPE042,SpeedPro,,Speedpro,(289)656-0336,0,34
-19277,DUR013,DuroByte Inc.,,DuroByte,(519)991-8893,0,34
-19343,WES063 ,Smurfit Westrock,,Smurfit Westrock,(416)259-8421,0,34
-19383,MEL013,MELE JEWELRY BOX CORPORATION,,MELE,(519)805-4347,0,34
-19485,SIR003,Spence Print Solutions,,Spence Print,(519)756-0755,0,34
-19502,THE189,The Wholesome Pet Company Ltd,,Wholesome Pet,(437)778-8786,0,34
 10098,  NOM001,Nomad Cases,,Nomad,(905)382-0140,0,9
 10107,FUT001,Future Stars,,Future,(800)461-6575,0,9
 10113,FRA002,Framecraft Limited,,Frame,(905)682-7044,0,9
@@ -6453,7 +6302,6 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 16352,CAT016,Cat & Nat,,Cat,(709)727-8229,0,9
 16360,PRO032,ProtoDev Canada,,ProtoDev,(819)743-6488,0,9
 16397,HUB004,Hubman & Chubgirl,,Hubman,(647)354-3359,0,9
-16402,DIS001,Discount Business Forms,,Discount,(905)799-3961,0,9
 16427,TRA042,Travelista Box,,Travelista,(905)321-6216,0,9
 16466,SAN020,Santa's Choice,,Santa's,(647)454-3071,0,9
 16493,TEC022,TECMATE POWERSPORTS OF NA,,TECMATE,(905)337-2095,0,9
@@ -6474,6 +6322,198 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 18384,ART012,Art on Stone,,Art,(705)790-4790,0,9
 18385,BAF002,Baffin,,Baffin,(365)833-2551,0,9
 18472,CEL013,Celebration Church,,CELEBRAT,(226)802-3113,0,9
+10040,ECO003,Ecologix Heating Technologies,,Ecologix,(855)658-4330,0,34
+10070,TUB004,Tube Pro Inc,,Tube,(519)489-2564,0,34
+10080,TEA007,709526529 Team Bluegroove,,Team Bluegroove,(289)668-5224,0,34
+10083,GRI013,Grime Eater Products Inc,,Grime,(905)820-2255,0,34
+10090,MUL006,Drytac,,DRYTAC,(905)791-0502,0,34
+10092,UTR001,URTECH Manufacturing,,URTECH,(905)667-2310,0,34
+10110,PRI052,Printmate Graphics (pmg) Ltd,,Printmate,(519)753-1081,0,34
+10116,GRA007,Graphic Dimensions Inc.,,Graphic,(905)569-1919,0,34
+11137,PRI017,Prima Wrap,,Prima,(905)704-0087,0,34
+11143,GUN002,Gunther Mele GUN002,,Gunther,(519)756-4330,0,34
+11155,INT001,Interbuild Distribution (can),,Interbuild,(647)457-6011,0,34
+11195,SWI006,Swiss Print International,,Swiss,(416)249-1961,0,34
+11219,NAV007,Navcast Inc,,Navcast,(905)826-8383,0,34
+11231,SHI002,Rocketline,,Rocketline,(905)669-9627,0,34
+11245,WAS005,Wasabi Media,,Wasabi,(905)941-6022,0,34
+11279,INS013,Brand Society,,Brand,(416)642-2003,0,34
+11327,RED019,RedeCan Pharm,,Redecan,(905)892-6788,0,34
+11348,VAL023,Valcom Manufacturing Group Inc,,Valcom,(519)824-3220,0,34
+11354,WES036,West Star Printing Limited,,WestStar,(416)201-0881,0,34
+11359,GEO127,Geotab Inc,,Geotab,(877)436-8221,0,34
+11383,SEC006,Secured Shipping and Delivery,,Secured,(519)852-6683,0,34
+11395,DBG001,Dbg Canada Limited,,DBG,(905)670-1555,0,34
+11420,ACT001,Action Paper & Packaging,,Action,(416)291-0303,0,34
+11426,CAN165,Canadian Candle,,Canadian,(519)754-2100,0,34
+11429,MSC002,MSC Canada,,MSC,(905)947-0468,0,34
+11443,EZE001,Source 4 Nations,,Source,(905)582-2297,0,34
+11447,PAC005,Packaging Too,,Packaging,(519)746-3099,0,34
+11450,GLO038,Global Muffler Inc,,Global,(416)266-0100,0,34
+11468,STE006,Stepcon Industries,,Stepcon,(905)897-6000,0,34
+11518,NRB001,ATCO Structures,,NRB,(905)945-9622,0,34
+11540,HAM049,Hamilton-Wentworth Catholic District School Board,,Hamilton-Wentworth,(905)525-2930,0,34
+11558,TON007,Toni's Packaging,,Toni's,(905)738-6334,0,34
+11571,MOR005,Morrison Moving,,Morrison,(905)525-8332,0,34
+11581,MIC028,Michael Walker Advertising,,Michael,(905)662-8336,0,34
+11606,TRA019,Transaxle Parts Inc,,Transaxle,(905)643-0700,0,34
+11618,MIN027,Mintech Canada Inc,,Mintech,(905)664-0814,0,34
+11635,MER004,Meridian Spas Inc,,Meridian,(519)856-868,0,34
+11654,CLA026,Classic Displays,,Classic,(905)282-8888,0,34
+11693,CAR020,Cargojet Airways,,Cargojet,(905)679-0038,0,34
+11696,CAN020,Can-Am Cryo Services Corp.,,Can-Am,(905)524-3342,0,34
+11734,FAS025,Fastline Muffler,,Fastline,(416)335-5591,0,34
+11735,BAT008,Battlefield Press,,Battlefield,(905)333-4114,0,34
+11746,RON014,Ronsco Inc.,,Ronsco,(514)866-1033,0,34
+11757,OMN004,Omni Furniture Ltd,,Omni,(403)660-7155,0,34
+11798,NNZ001,NNZ Inc.,,NNZ,(519)863-5782,0,34
+11802,BEN010,Beneco,,Beneco,(905)677-2888,0,34
+11803,DLI001,D-Link Networks,,D-Link,(905)285-4072,0,34
+11820,MON001,Monte Design Group Inc.,,Monte,(416)674-6755,0,34
+11855,BRA036,Brantford Hydraulics Ltd,,Brantford,(905)975-9242,0,34
+11875,SPA009,Sparkling Distribution,,Sparkling,(905)850-0094,0,34
+11900,Han009,Hansentek,,Hansentek,(905)607-5780,0,34
+11905,FBA001,F BASS INC,,F Bass,(905)522-1582,0,34
+11922,LEA003,Lear Chemical,,Lear,(905)564-0018,0,34
+11974,THE247,The Brandow Group,,The Brandow,(905)320-6651,0,34
+11994,RED022,Redflash Marketing,,Redflash,(204)761-2072,0,34
+12026,WRE002,Wreckmaster,,WreckMaster,(716)298-0287,0,34
+12040,CUR009,Curtainsider Inc,,Curtainsider,(519)753-8686,0,34
+12052,LAI002,Laicor Fixtures Inc.,,Laicor,(705)748-9846,0,34
+12062,SAF009,Safety Media,,Safety,(416)675-6675,0,34
+12084,TOR043,Toronto Shipping Supplies,,Toronto,(905)881-0064,0,34
+12085,GOO008,Goodminds.com,,Goodminds.com,(519)761-0366,0,34
+12119,GLO037,KEVITO LTD,,Kevito,(647)346-2888,0,34
+12129,AER001,Aerloc Industries Inc.,,Aerloc,(905)628-6061,0,34
+12139,CLE010,Smart Shield,,SMART,(519)623-9900,0,34
+12184,BUM001,Bum Contract Furniture,,Bum,(855)337-2995,0,34
+12211,SUP016,Supreme Packaging Industry,,Supreme,(416)740-7931,0,34
+12235,SLO001,Slotlabel,,Slotlabel,(905)820-0849,0,34
+12244,AJS002,Ajs Woodworking,,AJS,(647)200-3667,0,34
+12331,SIL011,SilverCreek Packaging,,SilverCreek,(416)997-9306,0,34
+12364,STU050,Studio 50 Living Inc.,,Studio50,(226)208-1428,0,34
+12370,CRE016,Cremation Supplies of North America,,Cremation,(905)689-9061,0,34
+12375,SPL003,Split-Fire,,Split-Fire,(519)468-3647,0,34
+12389,CUS010,Custom Box Builder,,Custom,(647)802-7716,0,34
+12491,BAT006,Proforma-Battlefield Advertising,,Proforma-Battlefield,(905)662-1199,0,34
+12556,EXC002,Exclusive Services,,Exclusive,(905)546-5785,0,34
+12573,TRI014,Trimaster Manufacturing Inc,,Trimaster,(519)823-2661,0,34
+12675,GAL009,Galcom International,,Galcom,(905)574-4626,0,34
+12695,VIS194,Visiontec 2008 Inc.,,Visiontec,(905)795-1909,0,34
+12720,CAN213,Cara & Co Supply Craft,,Cara,(905)537-2462,0,34
+12792,FOO004,Foodie Pages Inc.,,Foodie,(613)240-2935,0,34
+12851,INS021,The Instant Print Shoppe,,Instant,(519)352-6813,0,34
+12899,CAL003,Caliber Communications Inc.,,Caliber,(519)209-5034,0,34
+12937,DAR002,Dark Tools INC.,,Dark,(647)725-3275,0,34
+12955,ANN005,Anns Fabric Shop Ltd,,Anns,(905)389-2616,0,34
+13011,AND001,Andora Graphics Inc.,,Andora,(416)408-2700,0,34
+13016,EVE012,Everyday Publications Inc.,,Everyday,(905)834-5552,0,34
+13220,CAN105,Canadian Timber,,Canadian,(905)526-7131,0,34
+13232,SBS001,SB Simpson,,SB Simp,(905)335-6575,0,34
+13271,TSI001,TS IMAGING,,TS,(416)642-9660,0,34
+13366,SCO011,Score Promotions,,Score,(416)661-7779,0,34
+13468,INN015,Innovatex Solutions Inc.,,Innovatex,(905)672-6490,0,34
+13631,ATE003,Atec Signs,,Atec,(905)451-9720,0,34
+13787,SAF011,Saf Drives Inc,,Saf,(519)662-6489,0,34
+13802,ADC002,Ad Creative,,Ad Creat,(416)741-2424,0,34
+13973,KDS001,K D Signs,,KD,(905)631-9988,0,34
+14052,LEV003,Levven,,Levven,(780)391-3000,0,34
+14073,RED027,Red Pine Outdoor,,Red Pine,(613)723-2136,0,34
+14129,ZEN001,ZEN Branding,,ZEN,(514)969-4852,0,34
+14131,UGR002,UGroupMedia INC,,UGroupMedia,(514)295-2337,0,34
+14148,SKY014,Skyview Enterprises Inc.,,Skyview,(519)866-5959,0,34
+14218,GEN034,Generational Design Works,,Generational,(905)724-0641,0,34
+14224,PRI062,Prinex Media,,Prinex,(905)673-8787,0,34
+14274,VIE001,Vieira Concrete Supplies,,VIEIRA,(905)517-6461,0,34
+14305,BRA041,Brand Blvd,,Brand Blvd,(905)682-0001,0,34
+14332,EXT005,Extrufix Canada Inc.,,Extrufix,(647)402-8191,0,34
+14341,TIG004,TI Group,,TI Group,(416)696-2853,0,34
+14390,SYS005,System80 Inc.,,System80,(416)666-5411,0,34
+14411,ALE004,Alexandria Moulding,,Alexandria,(613)525-2784,0,34
+14637,GIF002,Gift Better Co.,,Gift,(613)325-5321,0,34
+14660,LAM001,Lama Cutting Inc,,Lama,(905)470-0111,0,34
+14709,INS004,Instabox Alberta Inc,,Instabox,(403)250-9217,0,34
+14794,BRA100,Branded Bites,,Branded,(416)276-6785,0,34
+14804,GIA003,Giatec Scientific Inc.,,Giatec,(613)280-1544,0,34
+14894,MAC020,McDonald Packaging,,McDonald,(902)579-4141,0,34
+14936,WIL036,Wilfrid Laurier University,,Wilfrid,(519)884-0710,0,34
+14984,PLU005,Plumme Box,,Plumme,(514)619-6303,0,34
+15297,PRI021,Print Factory Ink,,Print Factory,(905)546-0410,0,34
+15299,ELL014,Ellis Studios,,Ellis,(905)717-0115,0,34
+15414,IVE001,Ivex Protective Packaging,,Ivex,(905)795-8887,0,34
+15494,COT006,Cotton Candy,,Cotton,(905)858-2600,0,34
+15559,CLO007,Clockwork Pro,,Clockwork,(416)947-9685,0,34
+15573,KAI005,Kaiser Design,,Kaiser,(289)686-5406,0,34
+15655,HAP006,The Happy Box,,The Happy Box,(416)937-7345,0,34
+15680,POI003,Point 1 Displays,,Point1,(514)344-1435,0,34
+15782,TAS005,T&S Granite,,T&S,(905)923-0551,0,34
+15920,SOB002,Sobeys Capital Inc,,Sobeys,(403)463-4865,0,34
+16053,PBI001,PBI Printing By Innovation,,PBI,(905)563-1537,0,34
+16057,SOC002,Society of Rural Physicians of Canada,,Society,(819)431-7572,0,34
+16111,STA053,Staedtler Canada,,Staedtler,(905)501-9008,0,34
+16116,SKY015,Skyline Alberta,,Skyline,(403)263-1909,0,34
+16135,SHA038,Shade FX,,Shade,(855)509-5509,0,34
+16144,PRI075,Print Three,,Print 3,(416)865-0188,0,34
+16191,TOU006,Tourism Kingston,,Tourism,(613)484-1863,0,34
+16203,FAI002,Fairware Promotional Products,,Fairware,(604)732-3247,0,34
+16247,BAM003,Bamko,,Bamko,(310)470-5859,0,34
+16305,VIN005,Vintage Hardwood Flooring,,Vintage,(416)659-9464,0,34
+16343,LAU011,The Laundry Design works,,The Laundry,(905)531-7765,0,34
+16375,NOR022,Northern Specialty Supplies,,Northern,(519)688-0334,0,34
+16378,GEO014,Georgette Packaging,,Georgette,(800)854-7770,0,34
+16510,AXM001,Absolute XM Events & Management Inc.,,Absolute,(416)551-7335,0,34
+16512,HAY004,Hayward Pools,,Hayward,(905)829-2880,0,34
+16541,SCH020,Schawk Canada Inc.,,SCHAWK,(905)219-1600,0,34
+16623,CRO027,CP Packaging Corp,,CP,(888)319-0088,0,34
+16624,LOO003,The Look Company,,Look Co,(905)431-8000,0,34
+17692,STR007,Strategic Objectives,,Strategic,(416)953-8460,0,34
+17705,LAK014,Lakefront Graphix Technology,,Lakefront,(416)255-7014,0,34
+17782,MET008,MetOcean Telematics,,MetOcean,(902)800-9624,0,34
+17814,GOO006,Goodcang Logistics Canada Corp,,Goodcang,(905)792-8490,0,34
+17842,SUP027,Supremex,,Supremex,(416)688-3799,0,34
+17898,GEM007,GEMZ Sports Treasures,,GEMZ,(416)697-3544,0,34
+17903,ATE003,Atec Signs,,,(905)451-9720,0,34
+17942,REL013,Relay Graphics,,Relay Graphics,(416)284-5586,0,34
+17948,STA054,Staples Canada,,Staples,(905)737-1147,0,34
+18091,VAS002,Vast Media,,VAST MEDIA,(519)900-6110,0,34
+18118,JAC018,Jackson Events Inc.,,Jackson,(905)727-9797,0,34
+18181,GIL005,Gilmore Doculink,,Gilmore D,(613)591-1560,0,34
+18301,POW020,Powder Trap,,Powder Trap,(250)726-6045,0,34
+18341,COM053,Component hardware,,Component,(289)800-9887,0,34
+18343,GLO045,Globe Commercial Products,,Globe Commercial,(877)789-0249,0,34
+18367,CUB005,Cubbon Advertising,,Cubbon,(306)565-0603,0,34
+18410,BLU020,Blue-Zone Technologies,,Blue,(905)671-1224,0,34
+18415,RUB006,Ruby Crate,,Ruby,(905)330-7993,0,34
+18460,COB004,Cober Solutions,,Cober,(519)745-7136,0,34
+18494,AND001,Andora Graphics,,Andora,(416)408-2700,0,34
+18527,GRA039,Graham design,,Graham,(905)813-3132,0,34
+18623,KRE001,Kreative Marketing,,Kreative,(416)371-8528,0,34
+18643,CAL024,Calendar Club,,Calendar,(519)442-3153,0,34
+18683,JLT001,Logic Group,,Logic Group,(604)372-1850,0,34
+18710,012222,Nicholson & Cates Limited,,Nicolson,(905)335-3366,0,34
+18718,CAC001,Cachet Blinds,,Cachet,(416)371-1408,0,34
+18725,DAD004,Daddy Day Club,,Daddy Day,(647)333-0949,0,34
+18831,STA058,Stance Healthcare inc.,,Stance,(877)395-2623,0,34
+18834,PLR001,PL Roof Windows Ltd,,PL ROOF,(416)503-0188,0,34
+18863,CUP003,Cup-O Coffee Inc,,Cup-O,(514)621-7399,0,34
+18877,SOV001,Sovereign Insurance,,Sovereign,(437)771-2387,0,34
+18890,MOB003,Mobilife RV Centre,,Mobilelife RV,(519)653-5788,0,34
+18907,HER035,Heritage Home Fashions Inc,,Heritage Home,(514)341-1311,0,34
+18931,ADV008,Advantage Packaging,,Advantage,(905)548-0999,0,34
+18972,SYN005,Synchro Engineering Limited,,Synchro,(905)295-2525,0,34
+19111,FUL007,FULLERWORKS INC,,Fullerworks,(519)276-8030,0,34
+19121,013484,UNIQUE PHARMA INDUSTRIES INC.,,Unique Pharma,(289)245-0126,0,34
+19177,BUI004,Build-A-Bank Bitcoin Co.,,Build-A-Bank,(519)760-5498,0,34
+19212,URT001,URtech Manufacturing Inc.,,URTECH,(905)667-2310,0,34
+19241,RUB009,Ruby Knight,,Ruby Knight,(519)760-5722,0,34
+19262,SPE042,SpeedPro,,Speedpro,(289)656-0336,0,34
+19277,DUR013,DuroByte Inc.,,DuroByte,(519)991-8893,0,34
+19343,WES063 ,Smurfit Westrock,,Smurfit Westrock,(416)259-8421,0,34
+19383,MEL013,MELE JEWELRY BOX CORPORATION,,MELE,(519)805-4347,0,34
+19485,SIR003,Spence Print Solutions,,Spence Print,(519)756-0755,0,34
+19502,THE189,The Wholesome Pet Company Ltd,,Wholesome Pet,(437)778-8786,0,34
+19556,DIR009,DIRECT GLOBAL SOLUTIONS,,Direct,(416)535-1234,0,34
+19570,CRE040,Creative Path Digital,,Creative Path,(905)709-9609,0,34
 10028,SHO021,Shockingly Healthy Inc.,,Shockingly,(647)835-5287,0,41
 10044,LUG001,Lug Canada,,Lug,(905)479-7001,0,41
 11158,KUS003,Kushies Baby KUS003,,Kushies,(905)643-9118,0,41
@@ -6514,7 +6554,6 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 11790,ONE011,One:One Manufacturing,,One:One,(905)962-1831,0,41
 11796,KIN028,King's Vegetarian Food Mfg Ltd,,Kings,(905)501-8366,0,41
 11816,REE003,Real Sweets Bakery,,Real,(289)389-1454,0,41
-11819,STR026,Wolverine World Wide Canada,,Wolverine,(905)285-9574,0,41
 11854,MAT010,Matt & Steve's,,Matt,(905)828-9397,0,41
 11858,KAI003,Kaia Naturals,,Kaia,(416)417-0924,0,41
 11889,SAI001,Saigon Soul Food,,Saigon,(905)529-8181,0,41
@@ -6540,7 +6579,6 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 12816,BOX004,Box Hockey,,Box,(805)501-6478,0,41
 12901,LAN025,Land and Sea Hair Company,,Land,(647)213-0556,0,41
 12933,SAL004,Salem's Lott Scary Hot Sauces,,Salem's,(416)564-9802,0,41
-12975,BIO010,Bio Sculpture Canada Inc,,Bio-Sculpture,(905)528-6245,0,41
 12981,GRE015,Green Moon Apothecary,,Green,(647)298-2497,0,41
 12995,STA016,Starks Barber Co.,,Starks,(416)836-0953,0,41
 13040,TRA025,Tracy's Wine Jellies,,Tracy's,(905)468-8818,0,41
@@ -6639,6 +6677,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 17920,REL012,Relume Cosmetics,,Relume,(403)991-1358,0,41
 17940,COO010,Cooks Who Feed,,Cooks Who,(416)835-1801,0,41
 17970,DOM008,Doma Doors Manufacturing,,Doma,(605)564-2558,0,41
+18006,TAS008,Taste Of Nature Foods Inc,,Taste of Nature,(905)415-8218,0,41
 18120,DEA010,Dean Davidson Designs,,Dean Davidson,(647)793-4818,0,41
 18122,WSA001,WS Audiology Canada,,Widex,(905)315-8303,0,41
 18135,ACC024,Acclaim Health and Community,,Acclaim,(905)827-8800,0,41
@@ -6795,13 +6834,11 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 11264,MOR010,Morval Div Of Woodbridge Foam,,Morval,,0,2
 11374,  MIL031,Millard Towers LTD,,Millard,,0,2
 11384,CRA001,Crane Supply,,Crane,,0,2
-11431,JOH026,John Brooks Company Limited,,John,,0,2
 11446,HAM079,Hamilton X Packaging & Pallet,,Hamilton,,0,2
 11498,MAN002,Mantech,,Mantech,,0,2
 11533,WIL028,Willis,,Willis,,0,2
 11577,NAT016,Nature's Mix,,Nature's Mix,,0,2
 11605,HAB004,Habibi Trading Group,,Habibi,,0,2
-11623,ROO003,Roopa Knitting Mills Ltd.,,Roopa,,0,2
 11754,MIC011,Michel Simard Limited,,Michel,,0,2
 11767,MOD001,Modhani Inc.,,Modhani,,0,2
 11801,DAV012,David W Wilson Mfg Ltd,,David,,0,2
@@ -6875,6 +6912,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 11409,NOR009,Northpoint Industries,,NorthPoint,,0,46
 11421,SHE015,Shelf Talkers Manufact Inc,,Shelf,,0,38
 11430,RHO002,RHO Industries,,RHO,,0,46
+11431,JOH026,John Brooks Company Limited,,John,,0,46
 11435,MOM001,Mom's Best Gourmet Foods,,Mom's,,0,41
 11436,LUC002,3g Lighting (lucebella) Inc.,,3G Lighting,,0,34
 11445,COR009,Cornerstone Winery,,Cornerstone,,0,15
@@ -6889,6 +6927,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 11601,PRI027,Priva North America,,Priva,,0,46
 11604,GRA035,MPP Marketing Group Inc,,MPP,,0,25
 11617,BRE007,Breadko National Bakery,,Breadko,,0,41
+11623,ROO003,Roopa Knitting Mills Ltd.,,Roopa,,0,15
 11625,EXC004,Exclusive Enterprises,,Exclusive,,0,5
 11634,NAT005,National Gourmet Foods Inc,,National,,0,41
 11659,RIC007,Richemont Canada Inc.,,Richemont,,0,41
@@ -7049,7 +7088,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19102,DEB014,Deboer Grooming supplies,,Deboer,,0,15
 19119,FIX001,Fixed Gear Brewing Co.,,Fixed,,0,47
 19142,BLO012,Block Three Brewing Company,,Block,,0,47
-19155,EVO004,Evolve Agency Group,,Evolve,,0,45
+19155,EVO004,Evolve Agency Group,,Evolve,,0,47
 19164,HYD009,Hydropool,,,,0,41
 19204,BIL005,3337 4TH LINE Ontario Inc / BILLCO,,4th,,0,41
 19288,SIE005,Siemans Energy Canada Ltd,,Siemans,,0,0
@@ -7067,6 +7106,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19477,LIN044,LINAMAR C/O SPINIC,,Linamar,,0,56
 19507,015564,Chuck Foods Inc,,Chuck,,0,57
 19526,PRO095,Profast,,Profast,,0,46
+19544,WIN015, THE WINDMILL COUNTRY MARKET,,Windmill,,0,47
 10002,KRO002,Kromet International Inc,Tier 2 (T-2),Kromet,,0,47
 11225,TRI007,Tricky Vapor,C/o 1923239 Ontario Corp,TRICKY,,0,41
 11240,APD001,Apd Printing,Presto Print,APD,,0,34
@@ -7145,7 +7185,6 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 18995,,Sustainable Creamery,Tier 3 (T-3),Sustainable,,0,41
 19033,ATL016,Atlas Container Corp,Tier 3 (T-3),Atlas,,2,49
 19076,,Branded By Accent,Canadian Funds,Branded,,0,1
-19088,MOM004,Momentum Packaging inc.,Tier 3 (T-3),Momentum,,0,10
 19109,,Dana Precision,Metal Fabricating Inc,,,0,34
 19134,,OMECP,"Ontario Ministry of the Environment, Conservation",OMECP,,0,34
 19201,BEN019,Benny Drinks,Benny Holdings Inc,Benny,,0,41
@@ -7153,12 +7192,12 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19268,,Erin Legere,-Test/Sample,Erin's,,0,0
 19324,WOL365,Wolseley Calgary MDC,Tier 2 (T-2),Wolseley,,0,35
 19348,,L&E  International Ltd.,CND FUNDS,L&E,,0,34
-19361,014790,Flourish Pancakes,Queen Street Bakery,Flourish,,0,45
 19410,,Furlani Food Corp.,Tier 3 (T-3),Furlani,,0,0
 19429,,TricorBraun Canada,Vessel Packaging,TricorBraun,,0,47
 19459,EQU007,SIDE LAUNCH BREWING,Equals Brew Company,SIDE,,0,41
 19510,,K9 Choice Foods, ** Iron Will **,K9,,0,15
 19529,SHE002,SHED BREWING COMPANY LTD,Shawn&Ed,Shawn&Ed,,0,47
+19572,,TPH Trade Inc,Meat Imports & Wholesale,TPH,,0,15
 10003,BRA110,Brant Instore,1000369798 ONTARIO INC,Brant,(519)759-4361,0,34
 10010,NIA009,Niagara Pharmaceuticals Inc.,Tier 3 (T-3),Niagara,(905)690-6277,0,46
 10015,NEX002,Nexal Aluminum,Tier 2 (T-2),Nexal,(905)629-8282,0,46
@@ -7291,7 +7330,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 14185,,University of Alberta,Office of the Registrar,University,(780)492-4982,0,27
 14208,MOO002,Moore Packaging Corp,Tier 3 (T-3),Moore,(705)737-1023,0,34
 14237,JUS025,Jus Press,c/o Summer Illusions Tanning,Jus Press,(905)606-2290,0,41
-14275,JAM012,Jamestown Container Companies,Tier 2 (T-2),Jamestown,(716)651-3700,2,45
+14275,JAM012,Jamestown Container Companies,Tier 2 (T-2),Jamestown,(716)651-3700,2,34
 14290,STE045,Stephen Gould Corporation,Tier 2 (T-2),Stephen Gould,(317)769-8282,2,10
 14304,INN018,Innovative Integrated Solutions,Tier 1 (T-1),Innovative,(716)877-1000,2,47
 14308,HUG009,Hughes-decorr design and display,Tier 3 (T-3),Hughes-decorr,(416)665-8200,0,45
@@ -7299,7 +7338,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 14413,SHE015,STM Display,(Shelf Talkers),STM,(905)814-5577,0,52
 14502,IMP025,9135-3904 QUEBEC INC,IMPORTS DRAGON,Imports,(514)667-0623,0,2
 14565,PAC014,Digital Room LLC,Previously Packlane Inc.,Digital Room,(415)318-7538,2,10
-14613,SUN052,SunRise Greenhouses,Once by Sweet organics,Sun,(902)694-7185,0,2
+14613,SUN052,SunRise Greenhouses,Once by Sweet organics,Sun,(902)694-7185,0,15
 14647,TAV002,Tavistock EMU Products,Emuzing Display,EMUzing,(519)655-3631,0,15
 14653,VIV003,Vive Social PR,VIVE SOCIAL MARKETING INC,Vive,(647)465-4605,0,2
 14727,ATL016,Atlas Containers Corporation,Tier 3 (T-3),Atlas,(410)247-5656,0,25
@@ -7345,7 +7384,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 16083,ONT052,2655502 ONTARIO INC,Boomer Brand Management,Boomer,(613)318-8688,0,39
 16137,ELA001,Elan Wine Group,Adventure In Wine  / Vini Venture,ELAN WINE,(416)461-2597,0,15
 16152,JOM003,IMTAZ Inc,formerly - JOMI USA,Imtaz,(705)999-1566,0,2
-16165,SEV001,7th Element Supplements,JTR Holistic,JTR,(205)217-6522,0,41
+16165,SEV001,7th Element Supplements,JTR Holistic,JTR,(250)217-6522,0,41
 16223,YOG002,S'Wellness Box (new name),Yogaventure Tours,Yogaventure,(437)247-2517,0,9
 16234,QUA021,bcIMC Realty Corporation C/O Quadreal Property Gro,"Quadreal Property Group, Bayview Village Shopping",bcIMC,(416)572-3676,0,9
 16241,MIN013,The Minty Market Inc.,(Mintier),The,(905)447-1620,0,41
@@ -7410,6 +7449,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 18675,HCC002,Growscape,THE HC Companies,HC,(905)335-7171,0,46
 18681,NOR076,Northern United Brewing Co,North Peak Brewing,North Peak,(734)792-9102,0,15
 18692,TRE028,Treetop Marketing & Promotion Inc.,Tier 2 (T-2),Treetop,(416)427-7594,0,34
+18705,ECO021,Ecompack,2591579 Ontario Inc,Ecompack,(905)364-8726,0,34
 18717,SPI009,Spicers Canada,Tier 3 (T-3),Spicers,(905)265-5000,0,10
 18732,,Wemust.ca,H4S ENTERPRISES INC.,,(416)675-7077,0,34
 18733,VAR005,SL Partnershank You,Varun Bhardwaj,SL Partnershank,(905)617-1773,0,34
@@ -7423,8 +7463,8 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 18881,,Velatron Technologies, (formerly S.G. Smallwood Inc),Velatron,(519)894-2280,0,2
 18919,,UYC,Daniel Villavicencio,,(647)831-4673,0,34
 18926,,RE/MAX Escarpment,"Golfi Realty Inc., Brokerage",,(905)575-7700,0,34
-18930,BUC007,BCI Rochester - Buckeye Corrugated,Tier 3 (T-3),BCI,(585)924-1600,2,45
-18938,BUC006,BCI Syracuse - Buckeye Corrugated,Tier 3 (T-3),BCI,(315)437-1181,2,45
+18930,BUC007,BCI Rochester - Buckeye Corrugated,Tier 3 (T-3),BCI,(585)924-1600,2,34
+18938,BUC006,BCI Syracuse - Buckeye Corrugated,Tier 3 (T-3),BCI,(315)437-1181,2,34
 18943,AFS001,AFS Aerial Photography,2100 Crumlin Sideroad,AFS AERIAL,(647)465-2504,0,34
 18944,ONE035,Custom Mat,(1201134 BC LTD),Custom Mat,(647)613-8215,0,34
 18946,,"KKP London,",Division of Kwik Kopy Printing,,(519)439-0246,0,34
@@ -7437,7 +7477,8 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19046, WIN049,Windsor Fulfillment,Sood Family Management,Windsor,(519)252-5414,0,10
 19058,,Securicore,(HiveRadar Inc.),,(416)637-0326,0,34
 19074,FAS001,Fastenal Canada,Tier 3 (T-3),Fastenal,(519)888-0448,0,34
-19083,DIA017,Diamond Packaging,Tier 2 (T-2),Diamond,(585)334-8038,2,45
+19083,DIA017,Diamond Packaging,Tier 2 (T-2),Diamond,(585)334-8038,2,34
+19088,MOM004,Momentum Packaging inc.,Tier 3 (T-3),Momentum,(888)601-3590,0,10
 19103,MUS011,Muskoka Brewery,Lakes of Muskoka Cottage Brewing,Muskoka,(705)646-1266,0,47
 19108,MUS010,Muskoka Brand Gourmet Foods,Tier 3 (T-3),Muskoka,(705)783-1336,0,47
 19113,,Global Industrial,'Calgary',,(905)780-4168,0,34
@@ -7445,13 +7486,16 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19129,WHI039,Whitestone Branding,CAN funds,Whitestone,(212)732-3869,0,34
 19137,NUV003,Nuvate,UPSEAT CANADA,Nuvate,(647)482-7328,0,46
 19151,SCH015,Scheps-RipVan,Tier 1 (T-1),Scheps-RipVan,(519)468-3759,0,46
+19160,COW002,Cowbell Brewing Co.,Blyth Brewing & Distilling Inc,Cowbell,(519)955-0974,0,47
 19216,CON126,Congo Raw,(Congo Pet Supplies),Congo,(905)751-9625,0,15
 19259,,Rhino Global Solutions,525 NJ-73 STE 104,,(856)817-6281,2,34
 19269,IND012,Indigo,Home Office,Indigo,(416)570-3259,0,41
 19286,MIC038,MICROVILLE TOYS INC Menno Man,Menno Man,Microville Toys,(780)285-9715,0,46
-19300,COC019,"COCO & GIO, LLC",DBA TOTAL CLUSTER FUDGE,Total Cluster,(319)310-1245,2,45
+19300,COC019,"COCO & GIO, LLC",DBA TOTAL CLUSTER FUDGE,Total Cluster,(319)310-1245,2,47
 19313,HST002,HST Synthetics,Tier 3 (T-3),HST,(905)670-3432,0,52
+19361,014790,Flourish Pancakes,Queen Street Bakery,Flourish,(437)236-2075,0,47
 19365,,C&S Global Management,Superior Pharma Solutions,,(732)546-6996,2,34
 19382,SHO051,Shoppers Drugmart - Ancaster,SHOPPERS DRUG MART #1044,Shoppers,(905)648-4493,0,47
 19398,JAS012,Bearhill,Jasper Brewing,Bearhill,(226)456-3788,0,47
 19435,CJP001,CJ Punch,1000900686 Ontario,CJ,(905)931-4047,0,46
+19582,,Ete Garden,FOX WHYTE LANDSCAPE,Ete,(647)347-7789,0,52
