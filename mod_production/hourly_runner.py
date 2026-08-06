@@ -113,9 +113,14 @@ def run_my_pipeline():
                 logger.warning(f"  SKIP {job_key} — no end date")
                 continue
 
+<<<<<<< HEAD
             ship_date       = add_workdays(chain_end, 1, company_holidays)
             lead_days_count = workdays_between(today, ship_date, company_holidays)
             # lead_days_count = workdays_between(today, chain_end, company_holidays)
+=======
+            lead_days_count = workdays_between(today, chain_end, company_holidays)
+            ship_date       = add_workdays(chain_end, 3, company_holidays)
+>>>>>>> 22a75628a7147f92b491a0440e492f815e3f40ba
 
             tier_end       = add_workdays(tier_starts[-1], 1, company_holidays)
             tier_lead_days = workdays_between(today, tier_end, company_holidays)
@@ -159,7 +164,7 @@ if __name__ == "__main__":
 
     # Uncomment to fire once immediately on startup for testing
     # logger.info("Running pipeline once immediately...")
-    run_my_pipeline()
+    # run_my_pipeline()
     # logger.info("Done. Starting scheduler...")
 
     scheduler = BackgroundScheduler()

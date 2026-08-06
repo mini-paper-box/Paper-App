@@ -59,9 +59,9 @@ EXCLUDED_PROCESS_IDS: set = set()
 
 PRODUCTION_RECIPIENTS = (
     "sang.n@whitebird.ca;allen.g@whitebird.ca;erin.l@moyydesign.com;"
-    "catherine.s@moyydesign.com;john.t@whitebird.ca;tamminga@whitebird.ca;"
+    "catherine.s@moyydesign.com;john.t@whitebird.ca;"
     "lon.s@moyydesign.com;michelle.d@moyydesign.com;becky.j@moyydesign.com;"
-    "jason.w@moyydesign.com;jason.h@moyydesign.com;"
+    "jason.w@moyydesign.com;"
     "jeff.c@moyydesign.com;ray.j@moyydesign.com;megan.h@moyydesign.com;"
     "ryan.p@moyydesign.com;cameron.c@whitebird.ca;don.s@whitebird.ca;"
     "Kamaldeep.k@whitebird.ca;"
@@ -70,7 +70,7 @@ PRODUCTION_RECIPIENTS = (
 
 JOBS = {
     "Eterna":                    ("188989", 6000),
-    "Langston":                  ("172368", 9000),
+    "Langston":                  ("172368", 3000),
     "United":                    ("167174", 7500),
     "Eterna_Bobst":              ("178910", 20000),
     "United_Bobst":              ("170605", 4000),
@@ -498,9 +498,14 @@ if __name__ == "__main__":
                 print("SKIP (no end date)")
                 continue
 
+<<<<<<< HEAD
             ship_date       = add_workdays(chain_end, 1, company_holidays)
             lead_days_count = workdays_between(today, ship_date, company_holidays)
             # lead_days_count = workdays_between(today, chain_end, company_holidays)
+=======
+            lead_days_count = workdays_between(today, chain_end, company_holidays)
+            ship_date       = add_workdays(chain_end, 3, company_holidays)
+>>>>>>> 22a75628a7147f92b491a0440e492f815e3f40ba
 
             # Tier end = last tier start + 1 workday
             tier_end       = add_workdays(tier_starts[-1], 1, company_holidays)
