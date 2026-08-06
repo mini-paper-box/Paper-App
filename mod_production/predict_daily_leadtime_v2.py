@@ -51,10 +51,10 @@ THEMES = {
 }
 
 SHOW_TIER_LEADTIME    = False
-TEST_MODE             = False
+TEST_MODE             = True
 TEST_RECIPIENT        = "sang.n@whitebird.ca"
 TIER_START_OFFSET     = 8
-DEFAULT_LEAD_DAYS     = 4
+DEFAULT_LEAD_DAYS     = 5
 EXCLUDED_PROCESS_IDS: set = set()
 
 PRODUCTION_RECIPIENTS = (
@@ -85,6 +85,7 @@ JOBS = {
     "Nozomi_United_Boxer":       ("188351", 3000),
     "Nozomi_Elitron_Strip":      ("186831", 300),
     "Nozomi_Elitron_Strip_Glue": ("191031", 1000),
+    "Farmout_Farmout_Eterna_Farmout": ("191500", 3000),
 }
 
 
@@ -497,8 +498,9 @@ if __name__ == "__main__":
                 print("SKIP (no end date)")
                 continue
 
-            lead_days_count = workdays_between(today, chain_end, company_holidays)
             ship_date       = add_workdays(chain_end, 1, company_holidays)
+            lead_days_count = workdays_between(today, ship_date, company_holidays)
+            # lead_days_count = workdays_between(today, chain_end, company_holidays)
 
             # Tier end = last tier start + 1 workday
             tier_end       = add_workdays(tier_starts[-1], 1, company_holidays)

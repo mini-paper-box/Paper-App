@@ -49,7 +49,7 @@ def _configure_schedule_log(log_dir: str = "logs", max_bytes: int = 10 * 1024 * 
 # Constants
 # ---------------------------------------------------------------------------
 
-FARMOUT_PROCESS_IDS  = frozenset({236, 257})
+FARMOUT_PROCESS_IDS  = frozenset({236, 257,168})
 FARMOUT_BUFFER_DAYS  = 5
 PLANNING_HORIZON     = 90          # workdays for build_schedule
 BATCH_HORIZON        = 120         # workdays for build_schedule_from_df
