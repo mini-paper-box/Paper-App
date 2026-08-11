@@ -358,6 +358,7 @@ class SchedulerMailer:
                     <ul style="margin:4px 0 0 0; padding-left:18px;">
                       <li>3 processes and <strong>25,000+ sqft</strong></li>
                       <li>1 process and <strong>50,000+ sqft</strong></li>
+                      <li>MOCKUP orders will be printed on <strong>Tuesday and Thursday</strong> and ready to ship the following day.</li>
                     </ul>
                   </td>
                 </tr>
