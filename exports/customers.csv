@@ -1854,7 +1854,10 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19553,,Renaissance Pizza,,Renaissance,,0,15
 19580,,Identity Pet Nutrition,,Identity,,0,15
 19586,,Vanzanten Greenhouse,,Vanzanten,,0,15
+<<<<<<< HEAD
 19594,,Scenic Floral,,Scenic,,0,15
+=======
+>>>>>>> 3d7f0d50c55d01c676d7c4bff56f84cbc3a91754
 10009,,OHM Industrial Designer,,OHM,,0,2
 10012,,Ardent Zehr Farm,,Ardent,,0,2
 10031,,The Hamilton Brewery,,The,,0,2
@@ -2404,6 +2407,10 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19146,,Something in the Water,,Something,,0,46
 19147,,Cambridge Label,,Cambridge,,0,47
 19148,,Florentina Foods Ltd.,,Florentina,,0,47
+<<<<<<< HEAD
+=======
+19157,,Clifford Brewing,,Clifford,,0,47
+>>>>>>> 3d7f0d50c55d01c676d7c4bff56f84cbc3a91754
 19163,,King David Frozen Pizza,,King,,0,47
 19178,,Boshkung Brewing,,Boshkung,,0,47
 19179,,Ace Beverages,,Ace,,0,47
@@ -2559,11 +2566,17 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19573,,Witomy,,Witomy,,0,47
 19574,,Jamie's Cracked Corn,,Jamie's,,0,55
 19575,,Organika,,Organika,,0,47
+<<<<<<< HEAD
 19577,,Sulco Industries,,Sulco,,0,53
 19578,,Glendale Bakery,,Glendale,,0,53
 19581,,The Freeman Co.,,The,,0,55
 19591,,Wildly Delicious,,Wildly,,0,0
 19592,,Quality Produce,,Quality,,0,47
+=======
+19577,,Sulco Industries,,Sulco,,0,52
+19578,,Glendale Bakery,,Glendale,,0,53
+19581,,The Freeman Co.,,The,,0,55
+>>>>>>> 3d7f0d50c55d01c676d7c4bff56f84cbc3a91754
 11400,,George quote account,,George,,0,1
 11508,,Catelli,,Catelli,,0,1
 12192,,Cascades Ecommerce,,Cascades,,0,1
@@ -3113,6 +3126,10 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19524,,Shade FX,,,,0,34
 19532,,Gelato,,,,2,34
 19541,,Leveled Up Consulting,,,,0,34
+<<<<<<< HEAD
+=======
+19551,,White House Graphics Inc.,,,,0,34
+>>>>>>> 3d7f0d50c55d01c676d7c4bff56f84cbc3a91754
 19588,,TwinPro Graphics Inc.,,,,0,34
 19589,,Rocklyn Springs Farm,,,,0,34
 17862,,Ansel Press,,,,2,25
@@ -3244,7 +3261,10 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19461,,West Wind Trading Co,,,,0,47
 19518,,ReadyPine,,,,0,53
 19550,,Winoa Canada & USA,,,,0,46
+<<<<<<< HEAD
 19593,,Goodlot Farm & Farmstead Brew,,,,0,46
+=======
+>>>>>>> 3d7f0d50c55d01c676d7c4bff56f84cbc3a91754
 11222,,The Masters Collection,,,(905)928-0284,0,22
 11510,,B & I International,,,(905)802-8075,0,22
 16476,, Silverthorne Refractories inc,,,(905)774-1269,0,0
@@ -6515,7 +6535,10 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19383,MEL013,MELE JEWELRY BOX CORPORATION,,MELE,(519)805-4347,0,34
 19485,SIR003,Spence Print Solutions,,Spence Print,(519)756-0755,0,34
 19502,THE189,The Wholesome Pet Company Ltd,,Wholesome Pet,(437)778-8786,0,34
+<<<<<<< HEAD
 19551,WHI044,White House Graphics Inc.,,White House,(905)605-6770,0,34
+=======
+>>>>>>> 3d7f0d50c55d01c676d7c4bff56f84cbc3a91754
 19556,DIR009,DIRECT GLOBAL SOLUTIONS,,Direct,(416)535-1234,0,34
 19570,CRE040,Creative Path Digital,,Creative Path,(905)709-9609,0,34
 10028,SHO021,Shockingly Healthy Inc.,,Shockingly,(647)835-5287,0,41

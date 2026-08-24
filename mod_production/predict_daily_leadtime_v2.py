@@ -54,10 +54,11 @@ SHOW_TIER_LEADTIME    = False
 TEST_MODE             = False
 TEST_RECIPIENT        = "sang.n@whitebird.ca"
 TIER_START_OFFSET     = 8
-DEFAULT_LEAD_DAYS     = 4
+DEFAULT_LEAD_DAYS     = 5
 EXCLUDED_PROCESS_IDS: set = set()
 
 PRODUCTION_RECIPIENTS = (
+<<<<<<< HEAD
     "sang.n@whitebird.ca;sang.n@whitebird.ca"
     # "sang.n@whitebird.ca;allen.g@whitebird.ca;erin.l@moyydesign.com;"
     # "catherine.s@moyydesign.com;john.t@whitebird.ca;"
@@ -67,11 +68,21 @@ PRODUCTION_RECIPIENTS = (
     # "ryan.p@moyydesign.com;cameron.c@whitebird.ca;don.s@whitebird.ca;"
     # "Kamaldeep.k@whitebird.ca;"
     # "madison.s@whitebird.ca;luke.t@moyydesign.com;craig.a@whitebird.ca"
+=======
+    "sang.n@whitebird.ca;allen.g@whitebird.ca;erin.l@moyydesign.com;"
+    "catherine.s@moyydesign.com;john.t@whitebird.ca;"
+    "lon.s@moyydesign.com;michelle.d@moyydesign.com;becky.j@moyydesign.com;"
+    "jason.w@moyydesign.com;"
+    "jeff.c@moyydesign.com;ray.j@moyydesign.com;megan.h@moyydesign.com;"
+    "ryan.p@moyydesign.com;cameron.c@whitebird.ca;don.s@whitebird.ca;"
+    "Kamaldeep.k@whitebird.ca;"
+    "madison.s@whitebird.ca;luke.t@moyydesign.com;craig.a@whitebird.ca"
+>>>>>>> 3d7f0d50c55d01c676d7c4bff56f84cbc3a91754
 )
 
 JOBS = {
     "Eterna":                    ("188989", 6000),
-    "Langston":                  ("172368", 9000),
+    "Langston":                  ("172368", 3000),
     "United":                    ("167174", 7500),
     "Eterna_Bobst":              ("178910", 20000),
     "United_Bobst":              ("170605", 4000),
@@ -86,6 +97,7 @@ JOBS = {
     "Nozomi_United_Boxer":       ("188351", 3000),
     "Nozomi_Elitron_Strip":      ("186831", 300),
     "Nozomi_Elitron_Strip_Glue": ("191031", 1000),
+    "Farmout_Farmout_Eterna_Farmout": ("191500", 3000),
 }
 
 
@@ -358,6 +370,7 @@ class SchedulerMailer:
                     <ul style="margin:4px 0 0 0; padding-left:18px;">
                       <li>3 processes and <strong>25,000+ sqft</strong></li>
                       <li>1 process and <strong>50,000+ sqft</strong></li>
+                      <li>MOCKUP orders will be printed on <strong>Tuesday and Thursday</strong> and ready to ship the following day.</li>
                     </ul>
                   </td>
                 </tr>
@@ -498,8 +511,9 @@ if __name__ == "__main__":
                 print("SKIP (no end date)")
                 continue
 
-            lead_days_count = workdays_between(today, chain_end, company_holidays)
             ship_date       = add_workdays(chain_end, 1, company_holidays)
+            lead_days_count = workdays_between(today, ship_date, company_holidays)
+            # lead_days_count = workdays_between(today, chain_end, company_holidays)
 
             # Tier end = last tier start + 1 workday
             tier_end       = add_workdays(tier_starts[-1], 1, company_holidays)

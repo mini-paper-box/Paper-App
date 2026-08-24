@@ -1,4 +1,5 @@
 order_revision_id,order_id,order_line_nbr,requested_dte,user_id,revision_date,delivery_status_txt,revision_num,revision_dsc,status_id,full_name,customer_name,shipped_date,emailed
+<<<<<<< HEAD
 222839,5034275,1,2026-08-07,172,2026-08-13 07:50:12,,11,,3,Erin L.,Taste of Nature,2026-08-13,0
 222840,5034275,1,2026-08-07,172,2026-08-13 07:50:26,,12,,3,Erin L.,Taste of Nature,2026-08-13,0
 222859,5035517,1,2026-08-12,172,2026-08-13 10:34:00,,6,,3,Erin L.,White House,2026-08-13,0
@@ -12,3 +13,12 @@ order_revision_id,order_id,order_line_nbr,requested_dte,user_id,revision_date,de
 222942,5035509,2,2026-08-21,277,2026-08-13 16:04:00,,5,,3,Sang N.,BCR,2026-08-26,0
 222942,5035509,3,2026-08-21,277,2026-08-13 16:04:00,,5,,3,Sang N.,BCR,2026-08-26,0
 222942,5035509,4,2026-08-21,277,2026-08-13 16:04:00,,5,,3,Sang N.,BCR,2026-08-26,0
+=======
+222016,5034242,1,2026-07-31,172,2026-08-04 15:47:15,,9,,3,Erin L.,Grisson,2026-08-04,0
+222027,5034345,1,2026-08-05,172,2026-08-05 06:46:36,,5,,3,Erin L.,Wellington,2026-08-12,0
+222028,5032190,2,2026-08-05,172,2026-08-05 06:47:39,,8,,3,Erin L.,Mitchell's,2026-08-07,0
+221957,5034215,1,2026-07-31,285,2026-08-04 10:56:34,,7,Status Change,3,Catherine S.,Jamestown,2026-08-04,0
+221963,5034146,1,2026-07-17,285,2026-08-04 11:18:19,,10,Status Change,3,Catherine S.,VPC,2026-08-04,0
+222022,5032190,2,2026-08-05,285,2026-08-04 17:04:24,,7,,3,Catherine S.,Mitchell's,2026-08-07,0
+222039,5034132,1,2026-07-16,285,2026-08-05 09:52:25,Press approval at 9AM,6,Status Change,3,Catherine S.,Shipmaster,2026-08-04,0
+>>>>>>> 3d7f0d50c55d01c676d7c4bff56f84cbc3a91754
