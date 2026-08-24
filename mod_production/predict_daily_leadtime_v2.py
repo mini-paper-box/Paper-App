@@ -58,14 +58,15 @@ DEFAULT_LEAD_DAYS     = 4
 EXCLUDED_PROCESS_IDS: set = set()
 
 PRODUCTION_RECIPIENTS = (
-    "sang.n@whitebird.ca;allen.g@whitebird.ca;erin.l@moyydesign.com;"
-    "catherine.s@moyydesign.com;john.t@whitebird.ca;tamminga@whitebird.ca;"
-    "lon.s@moyydesign.com;michelle.d@moyydesign.com;becky.j@moyydesign.com;"
-    "jason.w@moyydesign.com;jason.h@moyydesign.com;"
-    "jeff.c@moyydesign.com;ray.j@moyydesign.com;megan.h@moyydesign.com;"
-    "ryan.p@moyydesign.com;cameron.c@whitebird.ca;don.s@whitebird.ca;"
-    "Kamaldeep.k@whitebird.ca;"
-    "madison.s@whitebird.ca;luke.t@moyydesign.com;craig.a@whitebird.ca"
+    "sang.n@whitebird.ca;sang.n@whitebird.ca"
+    # "sang.n@whitebird.ca;allen.g@whitebird.ca;erin.l@moyydesign.com;"
+    # "catherine.s@moyydesign.com;john.t@whitebird.ca;"
+    # "lon.s@moyydesign.com;michelle.d@moyydesign.com;becky.j@moyydesign.com;"
+    # "jason.w@moyydesign.com;"
+    # "jeff.c@moyydesign.com;ray.j@moyydesign.com;megan.h@moyydesign.com;"
+    # "ryan.p@moyydesign.com;cameron.c@whitebird.ca;don.s@whitebird.ca;"
+    # "Kamaldeep.k@whitebird.ca;"
+    # "madison.s@whitebird.ca;luke.t@moyydesign.com;craig.a@whitebird.ca"
 )
 
 JOBS = {
@@ -382,7 +383,7 @@ class SchedulerMailer:
                              text-align:center; font-size:12px;
                              text-transform:uppercase; letter-spacing:0.5px;
                              color:{t['ship_colour']};">
-                    Ship Date
+                    EST Ship Date
                   </th>
                   {tier_th}
                   {tier_ship_th}

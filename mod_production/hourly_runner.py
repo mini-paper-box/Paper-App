@@ -44,6 +44,11 @@ try:
         DEFAULT_LEAD_DAYS,
         EXCLUDED_PROCESS_IDS,
     )
+    from mod_production.shipment_report import (
+        ShipmentMailer,
+        SHIPMENT_TEST_MODE,
+        SHIPMENT_TEST_RECIPIENT,
+        SHIPMENT_PRODUCTION_RECIPIENTS)
     logger.info("Import successful")
 except Exception as e:
     logger.error(f"Import failed: {e}")
@@ -152,13 +157,112 @@ def run_my_pipeline():
         logger.error(f"Pipeline error: {e}")
         logger.error(traceback.format_exc())
 
+# ── Shipment Report Pipeline ────────────────────────────────────────────────
+def run_shipment_report():
+    """
+    Send the daily shipment report.
+
+    EDIT NOTE:
+    This job is scheduled separately from the Timeline Agreement job.
+    Current schedule: Monday-Friday at 4:30 PM.
+    """
+
+    start = datetime.now()
+
+    logger.info("=" * 70)
+    logger.info("Shipment Report triggered")
+    logger.info("=" * 70)
+
+    try:
+
+        shipment_mailer = ShipmentMailer()
+
+        logger.info("Fetching shipment report...")
+
+        df = shipment_mailer.fetch_report()
+
+        if df is None or df.empty:
+
+            logger.warning(
+                "Shipment Report — no shipments found, email not sent."
+            )
+
+            return
+
+        logger.info(
+            f"Shipment Report — found {len(df):,} shipment order lines."
+        )
+
+        # ─────────────────────────────────────────────────────────────────
+        # Recipient
+        #
+        # EDIT NOTE:
+        # TEST_MODE comes from your shipment_mailer.py.
+        #
+        # True  = TEST_RECIPIENT
+        # False = PRODUCTION_RECIPIENTS
+        # ─────────────────────────────────────────────────────────────────
+
+        recipient = (
+            SHIPMENT_TEST_RECIPIENT
+            if SHIPMENT_TEST_MODE
+            else SHIPMENT_PRODUCTION_RECIPIENTS
+        )
+
+        subject = subject_with_timestamp(
+            "Daily Shipment Report"
+        )
+
+        logger.info(
+            f"Shipment Report sending to "
+            f"{'TEST' if SHIPMENT_TEST_MODE else 'PRODUCTION'}"
+        )
+
+        logger.info(
+            f"Recipient: {recipient}"
+        )
+
+        logger.info(
+            f"Subject: {subject}"
+        )
+
+        # ─────────────────────────────────────────────────────────────────
+        # Send email
+        # ─────────────────────────────────────────────────────────────────
+
+        shipment_mailer.send_email(
+            to=recipient,
+            subject=subject,
+            df=df,
+        )
+
+        duration = (
+            datetime.now() - start
+        ).total_seconds()
+
+        logger.info(
+            f"Shipment Report finished successfully "
+            f"({duration:.1f}s)"
+        )
+
+        logger.info("=" * 70)
+
+    except Exception as e:
+
+        logger.error(
+            f"Shipment Report error: {e}"
+        )
+
+        logger.error(
+            traceback.format_exc()
+        )
 
 # ── Entry point ────────────────────────────────────────────────────────────
 if __name__ == "__main__":
 
     # Uncomment to fire once immediately on startup for testing
     # logger.info("Running pipeline once immediately...")
-    run_my_pipeline()
+    run_shipment_report()
     # logger.info("Done. Starting scheduler...")
 
     scheduler = BackgroundScheduler()
@@ -174,7 +278,25 @@ if __name__ == "__main__":
         coalesce=True,
         misfire_grace_time=300,
     )
+
+    # ── Shipment Report — 4:30 PM Mon-Fri ───────────────────────────────────────
+    scheduler.add_job(
+        run_shipment_report,
+        CronTrigger(
+            hour=16,
+            minute=30,
+            day_of_week="mon-fri"
+        ),
+        id="shipment_report_trigger",
+        max_instances=1,
+        coalesce=True,
+        misfire_grace_time=300,
+    )
+
     scheduler.start()
+    logger.info(
+        "Shipment Report scheduled — Monday-Friday at 4:30 PM"
+    )
     logger.info("Scheduler running — hourly Mon-Fri 6 AM to 3 PM")
 
     try:

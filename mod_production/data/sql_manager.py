@@ -744,3 +744,142 @@ class SQLManager:
         except Exception as e:
             print(f"Routing Query Error: {e}")
             return pd.DataFrame(columns=['seq_order', 'process_id', 'process_name', 'run_sqft'])
+
+    def fetch_shipment_report(self):
+        query = """
+            WITH LatestRouting AS ( 
+                SELECT 
+                    *, 
+                    ROW_NUMBER() OVER ( 
+                        PARTITION BY order_id, order_line_nbr 
+                        ORDER BY schedule_dte DESC 
+                    ) AS rn 
+                FROM order_routing 
+            ), 
+            
+            CTE_finish_qty AS ( 
+                SELECT 
+                    order_id, 
+                    order_line_nbr, 
+                    COUNT(finish_qty) AS num_units, 
+                    SUM(finish_qty) AS total_qty 
+                FROM finished_goods 
+                GROUP BY 
+                    order_id, 
+                    order_line_nbr 
+            ) 
+            
+            SELECT 
+                c.short_name,
+
+                CONCAT(od.order_id, '-', od.order_line_nbr) AS [order number], 
+
+                od.docket_id, 
+                CASE
+                    WHEN od.hot = 1
+                        THEN 'HOT'
+                    ELSE  
+                        'REGULAR'
+                END AS 'priority',
+                CEILING( 
+                    CAST(od.order_qty AS DECIMAL(18, 2)) 
+                    / NULLIF(d.unitizing_unit_qty, 0) 
+                ) AS [est num_skid], 
+
+                COALESCE(fq.num_units, 0) AS [actual_unit_available], 
+
+                COALESCE(fq.total_qty, 0) AS [actual_qty_available], 
+
+                CEILING(
+                    COALESCE(fq.total_qty, 0)
+                    * (((d.sqfpm / 1000.0) * md.weight) / 1000.0)
+                ) AS [total weight], 
+
+                od.order_qty,
+                od.delivery_status_txt AS [delivery note],
+                CASE
+                    -- Production is scheduled today AND shipment is today
+                    WHEN CAST(orouting.schedule_dte AS DATE) = CAST(GETDATE() AS DATE)
+                    AND CAST(od.scheduled_dte AS DATE) = CAST(GETDATE() AS DATE)
+                        THEN 'IN PRODUCTION'
+
+                    -- Enough finished goods available for entire order
+                    WHEN COALESCE(fq.total_qty, 0) >= od.order_qty
+                        THEN 'READY'
+
+                    -- Some finished goods available
+                    WHEN COALESCE(fq.total_qty, 0) > 0
+                        THEN 'PARTIAL'
+
+                    -- Nothing available
+                    ELSE 'NOT READY'
+                END AS [shipment readiness],
+
+                oh.ship_city, 
+
+                CAST(orouting.schedule_dte AS DATE) AS [schedule date], 
+
+                CAST(od.scheduled_dte AS DATE) AS [ship date],
+
+                -- Shipment grouping for the report
+                CASE
+                    WHEN CAST(od.scheduled_dte AS DATE) = CAST(GETDATE() AS DATE)
+                        THEN 'TODAY'
+
+                    WHEN CAST(od.scheduled_dte AS DATE) = DATEADD(DAY, 1, CAST(GETDATE() AS DATE))
+                        THEN 'TOMORROW'
+
+                    WHEN CAST(od.scheduled_dte AS DATE) = DATEADD(DAY, 2, CAST(GETDATE() AS DATE))
+                        THEN '+2 DAYS'
+
+                    WHEN CAST(od.scheduled_dte AS DATE) = DATEADD(DAY, 3, CAST(GETDATE() AS DATE))
+                        THEN '+3 DAYS'
+
+                    ELSE 'LATER'
+                END AS [shipment group]
+
+            FROM order_details od 
+            
+            LEFT JOIN order_header oh 
+                ON od.order_id = oh.order_id 
+            
+            LEFT JOIN CTE_finish_qty fq  
+                ON od.order_id = fq.order_id 
+                AND od.order_line_nbr = fq.order_line_nbr 
+            
+            LEFT JOIN LatestRouting orouting 
+                ON od.order_id = orouting.order_id 
+                AND od.order_line_nbr = orouting.order_line_nbr 
+                AND orouting.rn = 1 
+            
+            LEFT JOIN customer c 
+                ON oh.customer_id = c.customer_id 
+            
+            LEFT JOIN docket d 
+                ON od.docket_id = d.docket_id 
+
+            LEFT JOIN material_dsc md   
+                ON d.material_id = md.material_id 
+
+            LEFT JOIN order_type ot 
+                ON od.order_type_id = ot.order_type_id 
+            
+            WHERE 
+                od.scheduled_dte >= CAST(GETDATE() AS DATE) 
+                AND od.scheduled_dte < DATEADD(DAY, 4, CAST(GETDATE() AS DATE))
+                AND od.order_type_id = 0
+                AND oh.status_id in (3,4)
+
+            ORDER BY
+                od.scheduled_dte,
+                oh.ship_city,
+                c.short_name,
+                od.order_id,
+                od.order_line_nbr;
+            """
+        try:
+            df = self.safe_fetch(query)
+            return df
+        except Exception as e:
+            print(f"Query Error: {e}")
+        

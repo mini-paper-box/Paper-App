@@ -731,6 +731,52 @@ class ScheduleService:
         )
         return all_steps
 
+    # ------------------------------------------------------------------ #
+    #  Shipment Report                                                    #
+    # ------------------------------------------------------------------ #
+
+    def fetch_shipment_report(self) -> pd.DataFrame:
+        """
+        Fetch detailed daily shipment report.
+
+        Returns one row per order line with:
+        - Customer
+        - Order number
+        - Docket
+        - Estimated skids
+        - Actual units available
+        - Actual quantity available
+        - Total weight
+        - Order quantity
+        - Shipment readiness
+        - Ship city
+        - Ship date
+        - Production schedule date
+
+        The SQL filtering and ordering are handled by SQLManager.
+        """
+        try:
+            df = self.db.fetch_shipment_report()
+
+            if df is None:
+                logger.warning("Shipment report returned None.")
+                return pd.DataFrame()
+
+            if df.empty:
+                logger.info("Shipment report returned no records.")
+                return df
+
+            logger.info(
+                "Shipment report loaded successfully: %d order lines",
+                len(df),
+            )
+
+            return df
+
+        except Exception:
+            logger.exception("Failed to fetch shipment report.")
+            return pd.DataFrame()
+        
 
 # ─────────────────────────────────────────────────────────────────────────────
 # USAGE EXAMPLE
