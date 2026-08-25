@@ -263,11 +263,7 @@ if __name__ == "__main__":
 
     # Uncomment to fire once immediately on startup for testing
     # logger.info("Running pipeline once immediately...")
-<<<<<<< HEAD
     run_shipment_report()
-=======
-    # run_my_pipeline()
->>>>>>> 3d7f0d50c55d01c676d7c4bff56f84cbc3a91754
     # logger.info("Done. Starting scheduler...")
 
     scheduler = BackgroundScheduler()

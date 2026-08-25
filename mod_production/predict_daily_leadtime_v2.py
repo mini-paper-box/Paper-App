@@ -58,17 +58,6 @@ DEFAULT_LEAD_DAYS     = 5
 EXCLUDED_PROCESS_IDS: set = set()
 
 PRODUCTION_RECIPIENTS = (
-<<<<<<< HEAD
-    "sang.n@whitebird.ca;sang.n@whitebird.ca"
-    # "sang.n@whitebird.ca;allen.g@whitebird.ca;erin.l@moyydesign.com;"
-    # "catherine.s@moyydesign.com;john.t@whitebird.ca;"
-    # "lon.s@moyydesign.com;michelle.d@moyydesign.com;becky.j@moyydesign.com;"
-    # "jason.w@moyydesign.com;"
-    # "jeff.c@moyydesign.com;ray.j@moyydesign.com;megan.h@moyydesign.com;"
-    # "ryan.p@moyydesign.com;cameron.c@whitebird.ca;don.s@whitebird.ca;"
-    # "Kamaldeep.k@whitebird.ca;"
-    # "madison.s@whitebird.ca;luke.t@moyydesign.com;craig.a@whitebird.ca"
-=======
     "sang.n@whitebird.ca;allen.g@whitebird.ca;erin.l@moyydesign.com;"
     "catherine.s@moyydesign.com;john.t@whitebird.ca;"
     "lon.s@moyydesign.com;michelle.d@moyydesign.com;becky.j@moyydesign.com;"
@@ -77,7 +66,6 @@ PRODUCTION_RECIPIENTS = (
     "ryan.p@moyydesign.com;cameron.c@whitebird.ca;don.s@whitebird.ca;"
     "Kamaldeep.k@whitebird.ca;"
     "madison.s@whitebird.ca;luke.t@moyydesign.com;craig.a@whitebird.ca"
->>>>>>> 3d7f0d50c55d01c676d7c4bff56f84cbc3a91754
 )
 
 JOBS = {
@@ -371,6 +359,7 @@ class SchedulerMailer:
                       <li>3 processes and <strong>25,000+ sqft</strong></li>
                       <li>1 process and <strong>50,000+ sqft</strong></li>
                       <li>MOCKUP orders will be printed on <strong>Tuesday and Thursday</strong> and ready to ship the following day.</li>
+                      <li>For orders on <strong>E & EB</strong> require an <strong>additional 3 days</strong> of lead-time.</li>
                     </ul>
                   </td>
                 </tr>

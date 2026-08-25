@@ -796,13 +796,9 @@ class SQLManager:
                 ) AS [total weight], 
 
                 od.order_qty,
-                od.delivery_status_txt AS [delivery note],
+                od.delivery_status_txt AS [delivery instr],
+                od.due_dte_dsc AS [delivery note],
                 CASE
-                    -- Production is scheduled today AND shipment is today
-                    WHEN CAST(orouting.schedule_dte AS DATE) = CAST(GETDATE() AS DATE)
-                    AND CAST(od.scheduled_dte AS DATE) = CAST(GETDATE() AS DATE)
-                        THEN 'IN PRODUCTION'
-
                     -- Enough finished goods available for entire order
                     WHEN COALESCE(fq.total_qty, 0) >= od.order_qty
                         THEN 'READY'
@@ -811,8 +807,19 @@ class SQLManager:
                     WHEN COALESCE(fq.total_qty, 0) > 0
                         THEN 'PARTIAL'
 
-                    -- Nothing available
-                    ELSE 'NOT READY'
+                    -- Production is scheduled today and shipment is today,
+                    -- with unitizing quantity greater than 0
+                    WHEN CAST(orouting.schedule_dte AS DATE) = CAST(GETDATE() AS DATE)
+                    AND CAST(od.scheduled_dte AS DATE) = CAST(GETDATE() AS DATE)
+                    AND COALESCE(d.unitizing_unit_qty, 0) > 0
+                        THEN 'IN PRODUCTION'
+
+                    -- No unitizing quantity
+                    WHEN COALESCE(d.unitizing_unit_qty, 0) = 0
+                        THEN 'FARMOUT - TBD'
+
+                    -- Nothing available and not farmout
+                    ELSE 'SCHEDULED'
                 END AS [shipment readiness],
 
                 oh.ship_city, 
@@ -868,7 +875,9 @@ class SQLManager:
                 od.scheduled_dte >= CAST(GETDATE() AS DATE) 
                 AND od.scheduled_dte < DATEADD(DAY, 4, CAST(GETDATE() AS DATE))
                 AND od.order_type_id = 0
-                AND oh.status_id in (3,4)
+                AND oh.status_id IN (3, 4)
+                AND c.customer_id NOT IN (19585, 19463)
+                AND od.hot = 0
 
             ORDER BY
                 od.scheduled_dte,

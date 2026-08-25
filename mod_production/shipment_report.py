@@ -74,7 +74,7 @@ THEMES = {
 # True  = email goes ONLY to TEST_RECIPIENT
 # False = email goes to PRODUCTION_RECIPIENTS
 # ---------------------------------------------------------------------------
-SHIPMENT_TEST_MODE = True
+SHIPMENT_TEST_MODE = False
 
 
 # ---------------------------------------------------------------------------
@@ -89,13 +89,14 @@ SHIPMENT_TEST_RECIPIENT = "sang.n@whitebird.ca"
 # Separate multiple addresses with semicolons.
 # ---------------------------------------------------------------------------
 SHIPMENT_PRODUCTION_RECIPIENTS = (
+    # "sang.n@whitebird.ca;"
     "sang.n@whitebird.ca;"
-    "sang.n@whitebird.ca;"
-    # "shipping@whitebird.ca"
-    # "craig.a@whitebird.ca"
-    # "allen.g@whitebird.ca;"
-    # "erin.l@moyydesign.com;"
-    # "catherine.s@moyydesign.com"
+    "shipping@whitebird.ca;"
+    "craig.a@whitebird.ca;"
+    "william@whitebird.ca;"
+    "allen.g@whitebird.ca;"
+    "erin.l@moyydesign.com;"
+    "catherine.s@moyydesign.com;"
 )
 
 
