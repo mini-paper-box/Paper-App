@@ -1,8 +1,4 @@
 order_revision_id,order_id,order_line_nbr,requested_dte,user_id,revision_date,delivery_status_txt,revision_num,revision_dsc,status_id,full_name,customer_name,shipped_date,emailed
-222016,5034242,1,2026-07-31,172,2026-08-04 15:47:15,,9,,3,Erin L.,Grisson,2026-08-04,0
-222027,5034345,1,2026-08-05,172,2026-08-05 06:46:36,,5,,3,Erin L.,Wellington,2026-08-12,0
-222028,5032190,2,2026-08-05,172,2026-08-05 06:47:39,,8,,3,Erin L.,Mitchell's,2026-08-07,0
-221957,5034215,1,2026-07-31,285,2026-08-04 10:56:34,,7,Status Change,3,Catherine S.,Jamestown,2026-08-04,0
-221963,5034146,1,2026-07-17,285,2026-08-04 11:18:19,,10,Status Change,3,Catherine S.,VPC,2026-08-04,0
-222022,5032190,2,2026-08-05,285,2026-08-04 17:04:24,,7,,3,Catherine S.,Mitchell's,2026-08-07,0
-222039,5034132,1,2026-07-16,285,2026-08-05 09:52:25,Press approval at 9AM,6,Status Change,3,Catherine S.,Shipmaster,2026-08-04,0
+223529,5035555,1,2026-08-19,277,2026-08-24 10:49:32,,9,,3,Sang N.,Niagara,2026-08-25,0
+223540,5035538,1,2026-08-21,277,2026-08-24 11:05:32,,4,,3,Sang N.,BCR,2026-08-24,0
+223549,5035544,1,2026-08-20,277,2026-08-24 11:08:08,,5,,3,Sang N.,Healthy,2026-08-24,0

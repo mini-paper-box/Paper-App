@@ -18,9 +18,9 @@ class SQLManager:
         # )
 
         self.conn_str = (
-            'DRIVER={SQL Server};'
-            f'SERVER={db['server']};'
-            f'DATABASE={db['database']};'
+            f'DRIVER={db["driver"]};'
+            f'SERVER={db["server"]};'
+            f'DATABASE={db["database"]};'
             'Trusted_Connection=yes;'
         )
 
@@ -30,6 +30,29 @@ class SQLManager:
         #create local db
         self._initialize_local_db()
 
+    def test_connection(self):
+        """Test the SQL Server connection."""
+        try:
+            conn = pyodbc.connect(self.conn_str, timeout=5)
+
+            cursor = conn.cursor()
+            cursor.execute("SELECT 1")
+            result = cursor.fetchone()
+
+            cursor.close()
+            conn.close()
+
+            if result and result[0] == 1:
+                print("✅ SQL Server connection successful.")
+                return True
+
+            print("❌ SQL Server connection test failed.")
+            return False
+
+        except pyodbc.Error as e:
+            print(f"❌ SQL Server connection failed: {e}")
+            return False
+        
     def _get_connection(self):
         """Internal helper to create a fresh connection."""
         try:
@@ -434,6 +457,7 @@ class SQLManager:
             AND s.order_line_nbr = t.order_line_nbr 
             AND s.process_id = t.process_id
             WHERE s.schedule_dte >= CAST(GETDATE() AS DATE)
+            AND s.schedule_dte < DATEADD(YEAR, 1, GETDATE())
             AND ISNULL(t.process_qty, 0) <= s.order_min
             ORDER BY s.schedule_dte ASC;
         """
@@ -465,7 +489,7 @@ class SQLManager:
             print(f"Capacity Cache SQL Error: {e}")
             return pd.DataFrame(columns=[
                 'process_id', 'schedule_date', 'docket_id', 'style_id', 'full_path', 'sqfpm', 'job_qty'
-            ]), [], []
+            ]), pd.DataFrame(), pd.DataFrame()
     
     def fetch_docket_history(self, docket_id):
         """Fetches performance history for a specific docket across all its processes."""
@@ -744,3 +768,11 @@ class SQLManager:
         except Exception as e:
             print(f"Routing Query Error: {e}")
             return pd.DataFrame(columns=['seq_order', 'process_id', 'process_name', 'run_sqft'])
+
+if __name__ == "__main__":
+    sql = SQLManager()
+
+    if sql.test_connection():
+        print("Connected!")
+    else:
+        print("Not connected!")

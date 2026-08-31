@@ -2137,7 +2137,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 19377,41394,Altius Spices & Seasonings,,,,ON,,Canada
 1000012372,41430,ALX Technical,,,,ON,,Canada
 1000019383,41445,MELE JEWELRY BOX CORPORATION,,,,ON,,Canada
-1000012389,41552,PICK UP,,,,ON,,Canada
 12389,41562,PICK UP,,,,ON,,Canada
 19388,41670,Barbs Cleaning,,,,ON,,Canada
 1000018124,41713,Bartsch Produce,,,,ON,,Canada
@@ -2235,7 +2234,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000013865,43687,Promag Display Corr Canada Inc.,,,,ON,,Canada
 19553,43707,Renaissance Pizza,,,,ON,,Canada
 1000015185,43748,PICK UP,,,,ON,,Canada
-19558,43796,Pulp Moulded Products,,,,ON,,Canada
 19559,43798,Jacobs & Thompson,,,,ON,,Canada
 1000019559,43799,Jacobs & Thompson,,,,ON,,Canada
 19560,43800,Ched Pallet,,,,ON,,Canada
@@ -2244,7 +2242,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000010032,43809,Alcot Plastics Ltd.,,,,ON,,Canada
 1000019564,43825,Goodman Farms,,,,ON,,Canada
 1000019560,43855,Ched Pallet,,,,ON,,Canada
-19569,43993,Public Health Ontario,,,,ON,,Canada
 1000010001,44006,For Customer - Weborder,,,,ON,,Canada
 1000010001,44007,GEORGE P,,,,ON,,Canada
 10001,44012,For Customer - Weborder,,,,ON,,Canada
@@ -2261,6 +2258,14 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 19583,45166,Move Ease Services,,,,ON,,Canada
 1000019583,45168,Move Ease Services,,,,ON,,Canada
 19586,45180,Vanzanten Greenhouse,,,,ON,,Canada
+19591,45366,Wildly Delicious,,,,ON,,Canada
+1000019591,45367,Wildly Delicious,,,,ON,,Canada
+1000019577,45393,Sulco Industries,,,,ON,,Canada
+19594,45399,Scenic Floral,,,,ON,,Canada
+19596,45405,ThryveOn Naturals,,,,ON,,Canada
+19597,45412,Avenue Industrial,,,,ON,,Canada
+1000019569,45416,Public Health Ontario,,,,ON,,Canada
+1000012389,45504,PICK UP,,,,ON,,Canada
 10036,93,Sonic Boom,,,Toronto,ON,,Canada
 10046,112,Luna Nanotech Inc.,,,Toronto,ON,,Canada
 1000010046,1307,Luna Nanotech Inc.,,,Toronto,ON,,Canada
@@ -2576,7 +2581,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 11821,3548,Firth Brown Tools,,,Cambr,ON,,Canada
 1000010055,3552,CGL Manufacturing CGL001,,,Guelph,ON,,Canada
 11860,3630,Piccioni Mushroom,,,Dundas,ON,,Canada
-11880,3667,Piccioni Mushrooms,,,Dundas,ON,,Canada
 11906,3727,Mito Graphics,,,CAMBRIDGE,ON,,Canada
 1000011909,3770,Delft Blue Foods,,,CAMBRIDGE,ON,,Canada
 11909,3771,Delft Blue Foods,,,CAMBRIDGE,ON,,Canada
@@ -3130,6 +3134,10 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 19537,43512,Stacked Brewing,,,Sudbury,ON,,Canada
 19563,43817,Muddy York Brewing,,,Concord,ON,,Canada
 1000019563,43819,Muddy York Brewing,,,Concord,ON,,Canada
+19592,45395,Quality Produce,,,Woodstock,ON,,Canada
+1000019592,45398,Quality Produce,,,Woodstock,ON,,Canada
+1000011880,45410,Piccioni Mushrooms,,,Dundas,ON,,Canada
+11880,45411,Piccioni Mushrooms,,,Dundas,ON,,Canada
 11125,1241,Cinnos Mission Critical Incorporated,401A-175 Longwood Road South,,Hamilton,ON,,Canada
 11130,1249,Majopage Creative,Rita,,Dundas,ON,,Canada
 11265,2473,Elvis Wythe,Six Nations,,BRANTFORD,ON,,Canada
@@ -3438,7 +3446,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 15005,13616,Sereneti,509 Wellington St N,,Hamilton,ON,,Canada
 15006,13617,Deep Roots Canada,377 Morse Street,,Thunderbay,ON,,Canada
 15007,13618,BLNDbox,702 Wilson Street,,Toronto,ON,,Canada
-15008,13619,British Pride Bakery,561 Hespeler Rd,,CAMBRIDGE,ON,,Canada
 15010,13621,B4 Networks,10-160 Hwy 20 W,,Fonthill,ON,,Canada
 15019,13652,Tall Skinny Men,909-50 Violet Drive,,Hamilton,ON,,Canada
 1000014880,13676,Wuxly,96 Treeview Drive,,,ON,,Canada
@@ -3586,7 +3593,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000019064,37037,Van Zanten Floral Inc,4094 Martin Rd,,,ON,,Canada
 19064,37038,Van Zanten Floral Inc,4094 Martin Rd,,,ON,,Canada
 19116,37040,Town Brewery,1632 Charles st,,Whiteby,ON,,Canada
-1000018986,37366,Supplyone,8905 Goreway Drive,,Brampton,ON,,Canada
 19165,37579,Nathan Keurentjes,1500 Old Military Rd,,Dalkeith,ON,,Canada
 1000019051,37789,Window Pro Canada,832 Lakeshore Rd E,,Mississauga,ON,,Canada
 19209,38061,DuraCap International,59 Montclair Drive,,Woodstock,ON,,Canada
@@ -3595,7 +3601,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000019044,41525,Mark iv,5815 Coopers Ave,,Mississauga,ON,,Canada
 19269,41636,TBD,*****,,,ON,,Canada
 1000011770,41907,Arcelor Mittal,Gate 3 Beach Road Door 144,,Hamilton,ON,,Canada
-1000012530,42182,Fastenal Canada,100 Shirley Avenue,,Kitchener,ON,,Canada
 1000016678,42189,Fastenal,Millen rd,,,ON,,Canada
 1000018981,42190,Fastenal Canada,1565 Britannia Road East,,Mississauga,ON,,Canada
 1000015811,42205,The UPS Store,2-140 King st E,,Hamilton,ON,,Canada
@@ -3617,6 +3622,11 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000012810,45324,Wolseley,880 Laurentian Drive,,Burlington,ON,,Canada
 1000010019,45333,Design 519,TO BE DETERMINED,,Orangeville,ON,,Canada
 19590,45342,#Unlimited - Mental Edge,4 haines ave,,Dundas,ON,,Canada
+1000015008,45365,British Pride Bakery,561 Hespeler Rd,,CAMBRIDGE,ON,,Canada
+19598,45415,SFS Intec,40 Innovation Dr,,Dundas,ON,,Canada
+1000012530,45520,Fastenal Canada,100 Shirley Avenue,,Kitchener,ON,,Canada
+1000019602,45567,Wratten Holdings,3986 Hwy 3,,Cayuga,ON,,Canada
+19602,45568,Wratten Holdings,3986 Hwy 3,,Cayuga,ON,,Canada
 10014,46,Cayuga Displays Inc,88 Talbot Street,,Cayuga,ON,N0A 1E0,Canada
 10039,104,Moyer Diebel Limited,P.o. Box#301 (2674 N.serv. Rd),,Jordan Station,ON,L0R 1S0,Canada
 10051,118,Vig Computers,1680 Bishop st North,,Cambri,ON,N1R 7S7,Canada
@@ -4749,7 +4759,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 17707,25404,Bud Trainer,484B Red River Drive,,Waterloo,ON,N2T 2H2,Canada
 1000017707,25406,Bud Trainer,484B Red River Drive,,Waterloo,ON,N2T 2H2,Canada
 1000015153,25463,Blue Coast Bundles,616 Beach Lane,,Sarnia,ON,N7V 2Y8,Canada
-1000012040,25466,Curtainsider Inc,17 ADI DASSLER WAY,,PARIS,ON,N3L 0B9,Canada
 12040,25467,Curtainsider Inc,17 ADI DASSLER WAY,,PARIS,ON,N3L 0B9,Canada
 17720,25478,Roopa Knitting,77 Pillsworth Rd,,Bolton,ON,L7E4G4,Canada
 1000017718,25483,Heritage Cannabis,333 Jarvis St,,Fort Erie,ON,L2A 2S9,Canada
@@ -4789,7 +4798,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 17982,26991,Modern Moulding,4185 Seventh Concession Rd,,Windsor,ON,N8V 0A7,Canada
 1000017857,27022,North Hound Life,131 Highway 60 Unit 14,,Hunstville,ON,P1H 1C2,Canada
 17988,27093,Peninsula Plastics,620 Industrial Dr,,Fort Erie,ON,L2A 5M4,Canada
-11867,27103,Westbrook Floral,4743 Lincoln Ave,,Beamsville,ON,L0R 1B0,Canada
 18012,27106,Koen Pack,4684 Bartlett Rd,,Beamsville,ON,L0R 1B0,Canada
 11504,27127,Jeally Bean Entertainment,36 Vimy Street,,Acton,ON,L7J 1S1,Canada
 18023,27232,ER Global,303-875 Notre Dame Ave.,,Sudbury,ON,P3A 2T2,Canada
@@ -4934,7 +4942,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 18406,31682,Jayden Floral,445 Diltz Road,,Dunneville,ON,N1A2W2,Canada
 18406,31683,Jayden Floral,315 McLauglin Road,,Dunnville,ON,N1A 2W2,Canada
 1000018300,31686,Masseys Production,10 Canal Rd,,Trenton,ON,K8V 4K3,Canada
-11867,31699,WESTBROOK GREENHOUSE,4635 DURHAM ROAD,,Beamsville,ON,L0R 1B3,Canada
 1000011585,31711,Redline Packaging,11 Commerce Crt,,Stoneycreek,ON,L8E0H8,Canada
 11540,31730,ST. Joachim CES,75 Concerto Crt,,Ancaster,ON,L9G 4V6,Canada
 1000011890,31746,Niagara Regional Police Service,5700 Valley Way,,Niagara Falls,ON,L2E 1X8,Canada
@@ -5088,9 +5095,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000012375,34922,Split-Fire,285633 AIRPORT ROAD,,Norwich,ON,N0J 1P0,Canada
 12375,34923,Split-Fire,285633 AIRPORT ROAD,,Norwich,ON,N0J 1P0,Canada
 11759,35036,Purity Life Health Products,6 Commerce Cres,,Acton,ON,L7J2X3,Canada
-12704,35063,Scheps Bakeries,486 Norwich Rd,,Norwich,ON,N0J 1P0,Canada
-12704,35064,Scheps Bakeries,486 Norwich Rd,,Norwich,ON,N0J 1P0,Canada
-12704,35065,Schep's Bakeries,813185 Baseline Rd,,Norwich,ON,N0J1P0,Canada
 15542,35092,Maple Lodge Farm,101 FOX RD,,Port Hope,ON,L1A 3V5,Canada
 15542,35093,Fleming Chicks,4412 Ontario St,,Beamsville,ON,L0R 1B0,Canada
 1000014546,35103,Teckmark Label Systems,19 Innovation Drive,,Dundas,ON,L9H 7L8,Canada
@@ -5159,9 +5163,8 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 11587,36274,Bos Smoked Fish Inc.,1175 Pattullo Ave,,Woodstock,ON,N4S 7W3,Canada
 1000016506,36287,Marlig Industries Inc,3308 Fairway Road,,Niagara Falls,ON,L2J3B6,Canada
 1000016506,36288,Marling Industries,159 Cushman RD Unit 7,,St. Catherines,ON,L2M6T4,Canada
-19026,36346,Jarja Floral,577 Charlotteville Rd,,Simcoe,ON,N3Y4K5,Canada
+19026,36346,Jarja Floral,589 CHARLOTTEVILLE ROAD 8,,Simcoe,ON,N3Y4K5,Canada
 15843,36349,AllPack Solutions Inc,233 Corbett Drive,,Pontypool,ON,L0A 1K0,Canada
-1000019026,36350,Jarja Floral,577 Charlotteville Rd,,Simcoe,ON,N3Y4K5,Canada
 1000011979,36372,Promotional Elements,2 Scott Ave,,PARIS,ON,N3L3R1,Canada
 1000015615,36379,Plastruct,4305 Springcreek RD,,VINELAND,ON,L0R2C0,Canada
 19042,36410,Country Meat Packing,1188 HWY #8  RR#1,,Dundas,ON,L9H 5E1,Canada
@@ -5172,7 +5175,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 19055,36572,ESupply Canada,985 French Bay Rd,,Southhampton,ON,N0H 2L0,Canada
 1000018186,36605,Lubecore,7065 Twiss Rd,,Campbellville,ON,L0P 1B0,Canada
 19069,36638,Stegg Limited,294 University Ave,,Belleville,ON,K8N 5S6,Canada
-18370,36669,Flint Packaging,7250 Martin Grove Road,,Woodbr,ON,L4L 9J3,Canada
 1000014249,36678,Paul Davis,1853 Merrittville Hwy,,Fonthill,ON,L0S 1E6,Canada
 19077,36701,SUNRIPE,1141 Lakeshore Rd,,Sarnia,ON,N7V 2V5,Canada
 19060,36702,Heartwood Cidery,5438 Second Line,,Acton,ON,L7J 2L9,Canada
@@ -5274,7 +5276,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 11437,38205,Inderjit Pabla,375 Wilton Drive,,Bolton,ON,L7E 1C6,Canada
 11437,38206,Syed Rizvi,500 Queen street South,,Bolton,ON,L7E 5S5,Canada
 1000018779,38236,Kaydee Farms Ltd,3734 Line 26,,Stratford,ON,N5A 6S3,Canada
-1000016386,38286,Lindy's Flowers,1735 Hwy #3,,Dunnville,ON,N1A 2W7,Canada
 1000010039,38323,Moyer Diebel Limited,P.o. Box#301 (2674 N.serv. Rd),,Jordan Station,ON,L0R 1S0,Canada
 1000010039,38324,Moyer Diebel Limited,2674 N Service Rd,,Jordan Station,ON,L0R 1S0,Canada
 1000017992,38327,Rebox Corp,50 Northline Rd,,East York,ON,M4B 3E2,Canada
@@ -5332,9 +5333,7 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000014168,39258,Kralt Greenhouses LTD,943 Concession 6 West,,Millgrove,ON,L8B 1N4,Canada
 12592,39262,Blackwell Farms,3984 River Road,,Caledonia,ON,N3W 1T6,Canada
 13779,39336,Royal Containers,400 South Edgeware Rd,,St. Thomas,ON,N59 3Z5,Canada
-1000013359,39337,Townsend Butchers,419 14TH ST E,,Simcoe,ON,N3Y 4K3,Canada
 1000019290,39528,Demetres,111 Strada Dr,,Woodbridge,ON,L4L5V9,Canada
-1000014529,39541,Bergkamp Farm,2042 Dunning Road,,Cumberland,ON,K4C 1M1,Canada
 1000011588,39544,Boekestyn Greenhouses,2085 Fourth Avenue,,St.Catharines,ON,L2R 6P9,Canada
 1000012363,39546,Earth Fresh Foods,325 Concession 13 Townsend,,Simcoe,ON,N3Y 4K3,Canada
 19322,39555,Peel St. Beverage Company,68 Huron St.,,New Hamburg,ON,N3A 1J3,Canada
@@ -5385,8 +5384,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 17731,41068,"USANA HEALTH SCIENCES, INC",80 INNOVATION DR,,Woodbridge,ON,L4H 0T2,Canada
 1000010006,41094,Book Depot,67 Front street North,,Thorold,ON,L2V 1X3,Canada
 1000010006,41095,Book Outlet,340 Welland Ave,,St Catharines,ON,L2R 7L9,Canada
-1000011867,41155,Westbrook Floral,4743 Lincoln Ave,,Beamsville,ON,L0R 1B0,Canada
-1000011867,41156,WESTBROOK GREENHOUSE,4635 DURHAM ROAD,,Beamsville,ON,L0R 1B3,Canada
 1000012724,41209,FRANKS PIZZA SUPPLY,2901 PRINCESS ST,,Kingston,ON,K7L 4V2,Canada
 1000012724,41210,Pet Power Containers,625 Zenway Blvd,,Woodbridge,ON,L4H 4J8,Canada
 1000012724,41213, Mavtl Holdings - A Frame Header Insert,44 Bennington Heights Drive,,East York,ON,M4G 1A6,Canada
@@ -5394,7 +5391,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 19371,41237,Blackburn Beer,8001 Blackburn Pkwy,,Niagara Falls,ON,L2H 0A6,Canada
 1000015843,41305,AllPack Solutions Inc,233 Corbett Drive,,Pontypool,ON,L0A 1K0,Canada
 11296,41328,Protectolite Composites,84 Railside Road,,North  York,ON,M3A 1A3,Canada
-1000011924,41381,E.S. Fox Ltd,1201 Egerter Road South,,Port Robinson,ON,LOS 1K0,Canada
 19379,41395,Homestead Growers,3276 First Avenue,,VINELAND,ON,L0R 2E0,Canada
 19381,41399,Martin's Family Fruit Farm,"1420 Lobsinger Line, RR #1",,Waterloo,ON,N2J 4G8,Canada
 1000019381,41400,Martin's Family Fruit Farm,"1420 Lobsinger Line, RR #1",,Waterloo,ON,N2J 4G8,Canada
@@ -5429,7 +5425,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000019397,41942,Hammer & Anvil Boardwalks Inc,4111 Line 73,,Newton,ON,N0K 1R0,Canada
 1000011253,41996,Willibald Distillery,1271 Reidsville Rd,,Ayr,ON,N0B 1E0,Canada
 1000011280,42030,Conestoga Meat Packers Ltd,313 Menno Street,,Breslau,ON,N0B 1M0,Canada
-1000012530,42184,Fastenal,1-45 BLEAMS RD,, KITCHENER,ON,N2C 2G1,Canada
 1000013779,42197,Royal Containers,400 South Edgeware Rd,,St. Thomas,ON,N59 3Z5,Canada
 1000015097,42223,Produce Express,454 Innovation Way,,Woodstock,ON,N4V 0A2,Canada
 1000013231,42226,Promotional Print & Packaging,1049 Squires Beach Rd,,Pickering,ON,L1W 3S3,Canada
@@ -5442,7 +5437,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000011369,42255,New Form Tools,Po Box 23018,,Stratford,ON,N5A 7V8,Canada
 1000011369,42256,New Form Tools,232 Lorne Ave East,,Stratford,ON,N5A 7V8,Canada
 1000016309,42269,Rawlings Sporting Goods Co,9 Adi Dassler Way,,PARIS,ON,N3L 0B9,Canada
-1000019108,42300,Muskoka Brand Gourmet Foods,1 Crescent Rd,,Huntsville,ON,P1H 1Z6,Canada
 1000012756,42307,Hughes Distribution,770 MCKAY RD,,Pickering,ON,L1W 2Y4,Canada
 1000012756,42308,CARDINAL BOXES,770 MCKAY RD,,Pickering,ON,L1W 2Y4,Canada
 1000012756,42310,Descon Conveyor Systems, 1-1274 Ringwell Dr.,,Newmarket,ON,L3Y 9C7,Canada
@@ -5478,8 +5472,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000019435,42514,CJ Punch,47 Harman Drive,,Ajax,ON,L1S 5H8,Canada
 19444,42519,Broadhead Beer,106-1680 Vimont Crt,,Orleans,ON,K4A 3M3,Canada
 1000019444,42520,Broadhead Beer,106-1680 Vimont Crt,,Orleans,ON,K4A 3M3,Canada
-1000012853,42526,Iron Will Raw Inc,600 Read Road,,St. Catharines,ON,L2R 7K6,Canada
-1000012853,42527,Iron Will Raw Inc,600 Read Road,,St. Catharines,ON,L2R 7K6,Canada
 1000019438,42528,Vieni Estate,4553 Fly Rd,,Beamsville,ON,L0R1B2,Canada
 1000019430,42547,Wishbone Brew,80 Alice Street Unit 2,,Waterford,ON,N0E1Y0,Canada
 1000013353,42549,Pine Ridge Gardens,782 DILTZ RD,,Dunnville,ON,N1A 2W2,Canada
@@ -5497,11 +5489,9 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000012429,42669,Coorstek,45 Curtis Ave,,PARIS,ON,N3L 3W1,Canada
 19451,42673,NIAGARA COPACKERS,100 HAYES RD,,Thorold,ON,L2V 1L8,Canada
 18006,42679,Taste Of Nature Foods Inc,28 Sims Crescent,,Richmond Hill,ON,L4B 2N9,Canada
-1000019167,42688,IronWood Cider,1425 Lakeshore Rd,,Niagra on the Lake,ON,L0S1J0,Canada
 19459,42691,SIDE LAUNCH BREWING,1-200 MOUNTAIN ROAD,,Collingwood,ON,L9Y 4V5,Canada
 1000012320,42696,Community Care St,12 North Streeet,,St Catharines,ON,L2R 6W8,Canada
 1000012320,42697,COMMUNITY CARE,214 MARTINDALE RD,,St. Catharines,ON,L2R 6P9,Canada
-19463,42698,Mid-North Containers Limited,257475 Hillview Rd,,New Liskeard,ON,P0J 1PO,Canada
 19464,42699,Nyarai Cellars,36594 Huron Road,,Clinton,ON,N0M 1L0,Canada
 19464,42702,Puddicomb Cider,1468 Highway 8,,Winona,ON,L8E 5K9,Canada
 19465,42705,Original Mohawk Traders,1342 Chiefswood Dr,,Ohsweken,ON,N0A 1M0,Canada
@@ -5549,14 +5539,12 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000011301,43069,Portugallo Sauces,221 Black Walnut Road,,St.George,ON,N.E 1NO,Canada
 18957,43100,Champion Products,3000 Starway Ave,,Windsor,ON,L8H 3R2,Canada
 11134,43106,Simpson Screen Print,865  Sawmill Road,,"Bloomingdale,  Waterloo",ON,N0B 1KO,Canada
-1000018370,43114,Flint Packaging,7250 Martin Grove Road,,Woodbr,ON,L4L 9J3,Canada
 1000013212,43117,Pelee Island Winery,455 Seacliffe Drive,,Kingsville,ON,N9Y 2K5,Canada
 1000012491,43120,Stryker Canada,2 Medicorum Place,,Waterdown,ON,L8B 1W2,Canada
 1000011144,43150,Amazing Clubs Of Canada,1404 CORMORANT ROAD,,Ancaster,ON,L8S 4K2,Canada
 1000011747,43155,Vykan,"4625 Bartlett Road, Unit 4",,Beamsville,ON,L3J 0Z2,Canada
 1000019106,43156,Heemans Strawberries,20422 Nissouri Rd,,THORNDALE,ON,N0M 2P0,Canada
 19106,43159,Puddicomb Cider Company,1468 Highway 8,,Winona,ON,L8E5K9,Canada
-1000011766,43162,Riverside Brass & Aluminum,55 Hamilton Rd,,New Hamburg,ON,N3A 2H1,Canada
 1000019359,43168,Hawco Products,61 Shaver St,,Branford,ON,N3T 5M1,Canada
 1000019359,43169,Hawco Products,61 Shaver St,,Branford,ON,N3T 5M1,Canada
 19515,43185,North Bay Plastics,1063 HWY 94,,Corbeil,ON,P0H 1K0,Canada
@@ -5584,7 +5572,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000019449,43344,HERON INSTRUMENTS,"447 MOXLEY RD, SS106",,Dundas,ON,L9H 5E2,Canada
 1000011175,43426,Fenwood Farms,774 Sawmill Rd,,Ancaster,ON,L9G 3L1,Canada
 1000011175,43427,Fenwood Farm,774 Sawmill Rd,,Ancaster,ON,L9G 3L1,Canada
-1000018597,43430,Healthy Paws,2691 Clifford Street,,SMITHVILLE,ON,L0R 2A0,Canada
 1000011134,43521,Simpson Screen Print,865  Sawmill Road,,"Bloomingdale,  Waterloo",ON,N0B 1KO,Canada
 1000018957,43547,Windsor Fulfillment Corp,2601 Wyandotte St E,,Windsor,ON,N8Y 0A5,Canada
 1000018957,43548,Champion Products,3000 Starway Ave,,Windsor,ON,L8H 3R2,Canada
@@ -5619,10 +5606,7 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000019544,43785, THE WINDMILL COUNTRY MARKET,701 MT PLEASANT RD,,MOUNT PLEASANT,ON,N0E 1K0,Canada
 1000013787,43786,Saf Drives Inc,18 Neville Rd Unit C,,New Hamburg,ON,N3A 4G7,Canada
 1000019092,43804,Brewers Blackbird Kitchen & Brewery,375 Wilson Street E,,Ancaster,ON,L9G 2C1,Canada
-1000018956,43836,Wild Lot Farm Distillery,1990 Fry Rd,,Picton,ON,K0K 2T0,Canada
-1000018956,43837,Puddicombe Cider Company,1468 Highway 8,,Winona,ON,L8E 5K9,Canada
 19480,43838,Puddicombe Cider Company, 1468 HIGHWAY 8,,  WINONA,ON,L8E 5K9,Canada
-1000013756,43842,Lake of Bays Brewing Company,2681 Muskoka Rd.,,Baysville,ON,P0B 1A0,Canada
 18956,43844,Wild Lot Farm Distillery,1990 Fry Rd,,Picton,ON,K0K 2T0,Canada
 18956,43845,Puddicombe Cider Company,1468 Highway 8,,Winona,ON,L8E 5K9,Canada
 1000019480,43851,Puddicombe Cider Company, 1468 HIGHWAY 8,,  WINONA,ON,L8E 5K9,Canada
@@ -5630,7 +5614,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000019565,43857,Freshouse Foods Ltd,71 Todd road,,Georgetown,ON,L7G4R8,Canada
 19568,43878,Purple Lizard,3752 ELM ST,,RIDGEWAY,ON,L0S 1N0,Canada
 1000016036,43893,Loewen Design Studios,22 Shorthill Place,,Fonthill,ON,L0S1C0,Canada
-1000019463,43895,Mid-North Containers Limited,257475 Hillview Rd,,New Liskeard,ON,P0J 1PO,Canada
 1000019078,43898,Peninsula Food Technologies,1 Northrup Cr.,,St. Catharines,ON,L2M 7M3,Canada
 1000019078,43899,Peninsula Food Tech,1 Northrup Crescent,,St. Catherine's,ON,L2M 7M3,Canada
 1000019502,43923,THE WHOLESOME PET,"115 SHARER RD, UNIT 1",,Woodbridge,ON,L4L 8Z3,Canada
@@ -5674,25 +5657,15 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000019422,45161,Ground Control - Blackburn,8001 Blackburn Pkwy,,Niagara Falls,ON,L2H 0A6,Canada
 19422,45163,Rumblers Beverage Ground Control,201-3053 Edgemount Blvd,,North Vancouver,ON,V7R 2N5,Canada
 19422,45164,Ground Control - Blackburn,8001 Blackburn Pkwy,,Niagara Falls,ON,L2H 0A6,Canada
-1000018699,45169,Spectrum Feed Services,33 Booth St. West,,Moorefield,ON,N0G2KO,Canada
-1000018699,45170,Spectrum Feed Services,83 MCFIVERN STREET,,MOOREFILED,ON,N0G 2K0,Canada
 19504,45181,FOAMCORE ARCHITECTURAL ELEMENT,7772 STANLEY AVENUE,,Niagara Falls,ON,L2K 6X8,Canada
 19568,45198,BLACKBURN BEER COMPANY,8001 Blackburn Pkwy,,Niagara Falls,ON,L2H 0A6,Canada
-1000019568,45199,Purple Lizard,3752 ELM ST,,RIDGEWAY,ON,L0S 1N0,Canada
-1000019568,45200,BLACKBURN BEER COMPANY,8001 Blackburn Pkwy,,Niagara Falls,ON,L2H 0A6,Canada
 1000014208,45227,Moore Packaging Corp,191 John St,,Barrie,ON,L4N 2L4,Canada
 1000014208,45228,Moore Packaging Corporation,191 John Street,,Barrie,ON,L4N 2L4,Canada
 1000011312,45272,BIG COUNTRY RAW,3911 Fifteen Rd,,St Anns,ON,L0R 1Y0,Canada
 1000011312,45273,St. David's Cold Storage,365 Four Mile Creek Rd,,Niagara On The Lake,ON,L0S 1J0,Canada
 1000011312,45274,BIG COUNTRY RAW,6159 SPRING CREEK ROAD,,SMITHVILLE,ON,L0R 2A0,Canada
 1000012170,45277,Mitchell's Soup Company,1258 Talbot Street,,St. Thomas,ON,N5P 1G9,Canada
-1000011207,45281,Keen Canada Outdoor Ulc,12734 Coleraine Dr,,Bolton,ON,L7E 4L8,Canada
-1000010010,45284,Niagara Pharmaceuticals Inc.,60 INNOVATION DRIVE,,Flamborough,ON,L9H 7P3,Canada
-1000011853,45286,Hendriks Greenhouses,5095 N Service Rd,,Beamsville,ON,L0R 1B3,Canada
 1000011357,45287,Dorken Systems Inc,4655 Delta Way,,Beamsville,ON,L0R 1B4,Canada
-1000012704,45289,Scheps Bakeries,486 Norwich Rd,,Norwich,ON,N0J 1P0,Canada
-1000012704,45290,Scheps Bakeries,486 Norwich Rd,,Norwich,ON,N0J 1P0,Canada
-1000012704,45291,Schep's Bakeries,813185 Baseline Rd,,Norwich,ON,N0J1P0,Canada
 1000011438,45308,Dutch Mill Garden Inc (Farm),276 Woodhill Rd,,Lynden,ON,L0R 1T0,Canada
 1000010027,45310,Scheps Bakeries,813185 Baseline Rd,,Norwich,ON,N0J 1P0,Canada
 1000010027,45311,Scheps Bakeries,813185 Base Line,,Norwich,ON,N0J 1P0,Canada
@@ -5703,9 +5676,49 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000010027,45317,Scheps -Tillsonburg,1030 Progress Drive,,Tillsonburg,ON,N4G 4G8,Canada
 1000016435,45318,Scheps Bakeries Novelties,813185 Baseline Rd,,Norwich,ON,N0J 1P0,Canada
 1000016435,45319,Scheps Bakeries Novelties,1030 Progress Drive,,Tillsonburg,ON,N4G 4G8,Canada
-1000019042,45336,Country Meat Packing,1188 HWY #8  RR#1,,Dundas,ON,L9H 5E1,Canada
 1000011480,45340,Raw Performance Dog Food,3645 11th Street,,St Catharines,ON,L2R 6P7,Canada
 1000011480,45341,Raw Performance Dog Food,1643 Third Avenue,,St Catharines,ON,L2R 6P9,Canada
+1000018370,45355,Flint Packaging,7250 Martin Grove Road,,Woodbridge,ON,L4L 9J3,Canada
+1000012704,45380,Scheps Bakeries,486 Norwich Rd,,Norwich,ON,N0J 1P0,Canada
+1000012704,45381,Scheps Bakeries,486 Norwich Rd,,Norwich,ON,N0J 1P0,Canada
+1000012704,45382,Schep's Bakeries,813185 Baseline Rd,,Norwich,ON,N0J1P0,Canada
+12704,45385,Scheps Bakeries,486 Norwich Rd,,Norwich,ON,N0J 1P0,Canada
+12704,45386,Scheps Bakeries,486 Norwich Rd,,Norwich,ON,N0J 1P0,Canada
+12704,45387,Schep's Bakeries,813185 Baseline Rd,,Norwich,ON,N0J1P0,Canada
+1000019026,45391,Jarja Floral,589 CHARLOTTEVILLE ROAD 8,,Simcoe,ON,N3Y4K5,Canada
+1000014529,45392,Bergkamp Farm,2042 Dunning Road,,Cumberland,ON,K4C 1M1,Canada
+1000011924,45402,E.S. Fox Ltd,1201 Egerter Road South,,Port Robinson,ON,LOS 1K0,Canada
+19595,45404,Fastenal,7 Hahn Court,,Stratford,ON,N5A6S4,Canada
+1000013756,45420,Lake of Bays Brewing Company,2681 Muskoka Rd.,,Baysville,ON,P0B 1A0,Canada
+1000011867,45423,Westbrook Floral,4743 Lincoln Ave,,Beamsville,ON,L0R 1B0,Canada
+1000011867,45424,WESTBROOK GREENHOUSE,4635 DURHAM ROAD,,Beamsville,ON,L0R 1B3,Canada
+11867,45426,Westbrook Floral,4743 Lincoln Ave,,Beamsville,ON,L0R 1B0,Canada
+11867,45427,WESTBROOK GREENHOUSE,4635 DURHAM ROAD,,Beamsville,ON,L0R 1B3,Canada
+19601,45433,Good NRG Organics,27 Canter Crt,,Ancaster,ON,L9K1K7,Canada
+1000019601,45436,Good NRG Organics,27 Canter Crt,,Ancaster,ON,L9K1K7,Canada
+19088,45437,RNW/National Gourmet,16 Rimini Mews,,Mississuaga,ON,L5N 2R6,Canada
+1000019463,45441,Mid-North Containers Limited,257475 Hillview Rd,,New Liskeard,ON,P0J 1PO,Canada
+19463,45442,Mid-North Containers Limited,257475 Hillview Rd,,New Liskeard,ON,P0J 1PO,Canada
+1000010010,45448,Niagara Pharmaceuticals Inc.,60 INNOVATION DRIVE,,Flamborough,ON,L9H 7P3,Canada
+1000012853,45450,Iron Will Raw Inc,600 Read Road,,St. Catharines,ON,L2R 7K6,Canada
+1000012853,45451,Iron Will Raw Inc,600 Read Road,,St. Catharines,ON,L2R 7K6,Canada
+1000018597,45453,Healthy Paws,2691 Clifford Street,,SMITHVILLE,ON,L0R 2A0,Canada
+1000012040,45474,Curtainsider Inc,17 ADI DASSLER WAY,,PARIS,ON,N3L 0B9,Canada
+1000019568,45475,Purple Lizard,3752 ELM ST,,RIDGEWAY,ON,L0S 1N0,Canada
+1000019568,45476,BLACKBURN BEER COMPANY,8001 Blackburn Pkwy,,Niagara Falls,ON,L2H 0A6,Canada
+1000019108,45489,Muskoka Brand Gourmet Foods,1 Crescent Rd,,Huntsville,ON,P1H 1Z6,Canada
+1000016386,45518,Lindy's Flowers,1735 Hwy #3,,Dunnville,ON,N1A 2W7,Canada
+1000013359,45519,Townsend Butchers,419 14TH ST E,,Simcoe,ON,N3Y 4K3,Canada
+1000012530,45522,Fastenal,1-45 BLEAMS RD,, KITCHENER,ON,N2C 2G1,Canada
+1000019042,45523,Country Meat Packing,1188 HWY #8  RR#1,,Dundas,ON,L9H 5E1,Canada
+1000011207,45526,Keen Canada Outdoor Ulc,12734 Coleraine Dr,,Bolton,ON,L7E 4L8,Canada
+1000019167,45529,IronWood Cider,1425 Lakeshore Rd,,Niagra on the Lake,ON,L0S1J0,Canada
+1000018956,45535,Wild Lot Farm Distillery,1990 Fry Rd,,Picton,ON,K0K 2T0,Canada
+1000018956,45536,Puddicombe Cider Company,1468 Highway 8,,Winona,ON,L8E 5K9,Canada
+1000011766,45542,Riverside Foundry Inc,55 Hamilton Rd,,New Hamburg,ON,N3A 2H1,Canada
+1000011853,45544,Hendriks Greenhouses,5095 N Service Rd,,Beamsville,ON,L0R 1B3,Canada
+1000018699,45560,Spectrum Feed Services,33 Booth St. West,,Moorefield,ON,N0G2KO,Canada
+1000018699,45561,Spectrum Feed Services,83 MCFIVERN STREET,,MOOREFILED,ON,N0G 2K0,Canada
 11558,3039,Toni's Packaging,482 Millway Ave,,Concord,ON,L4K 3V5,Canada
 12066,4085,GreenFresh Marketing,35 Romina Drive,,Concord,ON,L4K 4Z9,Canada
 12070,4090,Pillar Tapes,163 Jardin Drive,,Concord,ON,L4K 1X5,Canada
@@ -5763,21 +5776,21 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000015875,37987,Marketing Impact,50 Planchet Rd,,Concord,ON,L4K2C7,Canada
 13064,39693,Die Cut Displays,1300 Alness Street,,Concord,ON,L4K 1W6,Canada
 13064,39694,Die Cut Displays,1300 Alness Street,,Concord,ON,L4K 1W6,Canada
-19346,40709,Panelim Inc.,473 Basaltic Rd,,Concord,ON,L4K 4W8,Canada
 1000013064,41115,Die Cut Displays,1300 Alness Street,,Concord,ON,L4K 1W6,Canada
 1000013064,41116,Die Cut Displays,1300 Alness Street,,Concord,ON,L4K 1W6,Canada
-1000012389,41556,Gerrity Corrugated Paper Products Ltd,75 Doney Crescent,,Concord,ON,L4K1P6,Canada
 12389,41566,Gerrity Corrugated Paper Products Ltd,75 Doney Crescent,,Concord,ON,L4K1P6,Canada
 1000011558,41675,Toni's Packaging,482 Millway Ave,,Concord,ON,L4K 3V5,Canada
 1000011558,41676,Toni's Packaging,482 Millway Ave,,Concord,ON,L4K 3V5,Canada
 1000014308,42856,Hughes-decorr design and display,249 Courtland Avenue,,Concord,ON,L4K 4T2,Canada
 1000019025,42974,Allcard Limited,460 Applewood Crescent,,Concord,ON,L4K 4Z3,Canada
-1000013802,43076,Hughes  Decorr,249 Courtland Ave.,,Concord,ON,L4K 4T2,Canada
 1000011898,43705,Oneroot Inc.,40 Viceroy Rd,,Concord,ON,L4K 2L8,Canada
 10019,44043,Gerrity Corrugated Paper Products,75 Doney Cres,,Concord,ON,L4K1P6,Canada
-1000019346,45153,Panelim Inc.,473 Basaltic Rd,,Concord,ON,L4K 4W8,Canada
 1000018984,45309,York Metal,310 Rayette Rd,,Concord,ON,L4K 2G5,Canada
 1000010019,45330,Gerrity Corrugated Paper Products,75 Doney Cres,,Concord,ON,L4K1P6,Canada
+1000013802,45347,Hughes  Decorr,249 Courtland Ave.,,Concord,ON,L4K 4T2,Canada
+1000012389,45508,Gerrity Corrugated Paper Products Ltd,75 Doney Crescent,,Concord,ON,L4K1P6,Canada
+1000019346,45562,Panelim Inc.,473 Basaltic Rd,,Concord,ON,L4K 4W8,Canada
+19346,45563,Panelim Inc.,473 Basaltic Rd,,Concord,ON,L4K 4W8,Canada
 11541,3008,Plumbmax International Inc.,11-130 Konrad Cresc,,Markham,ON,L3R 0G5,Canada
 11765,3416,Gibson Printing,4412 -14th Ave.,,Markham,ON,L3R 0J3,Canada
 11893,3696,Hatch Beverage Company,802b Cochrane Dr,,Markham,ON,L3R 8C9,Canada
@@ -5836,7 +5849,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000011429,36565,MSC Canada,"101 AMBER ST, UNIT 16",,Markham,ON,L3R 3B2,Canada
 11429,36567,MSC Canada,"101 AMBER ST, UNIT 16",,Markham,ON,L3R 3B2,Canada
 1000017925,37257,PakFactory US,600 Aldean Road #204,,Markham,ON,L3R 0E7,Canada
-13797,37370,Shipmaster,380 Esna Park Drive,,Markham,ON,L3R 1G5,Canada
 11369,40775,Stax Die Cutting,39 Riviera Dr Units 2 & 3,,Markham,ON,L3R 8N4,Canada
 11735,41105,BCW Bindery Services Ltd.,625 Hood Road,,Markham,ON,L3R 4E1,Canada
 1000011735,41108,BCW Bindery Services Ltd.,625 Hood Road,,Markham,ON,L3R 4E1,Canada
@@ -5844,12 +5856,13 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 18006,42678,Taste Of Nature Foods Inc,230 Ferrier Street,,Markham,ON,L3R 2Z5,Canada
 1000016602,42919,Rayment & Collins,119 Ferrier St,,Markham,ON,L3R 3K6,Canada
 16602,42920,Rayment & Collins,119 Ferrier St,,Markham,ON,L3R 3K6,Canada
-1000013802,43077,Stax Die Cutting inc.,39 Riviera Dr,,Markham,ON,L3R 8N4,Canada
 1000019031,43708,HBC -Radiomatic,"620 ALDEN RD, #103",,Markham,ON,L3R 9R7,Canada
 1000018006,43924,Taste Of Nature Foods Inc,230 Ferrier Street,,Markham,ON,L3R 2Z5,Canada
-1000013797,43964,Shipmaster,380 Esna Park Drive,,Markham,ON,L3R 1G5,Canada
 1000011679,44085,Max Advanced Brakes,280 Hillmount Rd.,,Markham,ON,L6C 3A1,Canada
 1000011679,44086,Max Advanced Brakes,280 Hillmount Rd,,Markham,ON,L6C 3A1,Canada
+1000013802,45348,Stax Die Cutting inc.,39 Riviera Dr,,Markham,ON,L3R 8N4,Canada
+1000013797,45454,Shipmaster,380 Esna Park Drive,,Markham,ON,L3R 1G5,Canada
+13797,45455,Shipmaster,380 Esna Park Drive,,Markham,ON,L3R 1G5,Canada
 11450,2853,Global Muffler Inc,"80 BARBADOS BLVD., UNIT 7",,SCARBOROUGH,ON,M1J 1K9,Canada
 11684,3248,First Choice Exhausts,1744 Midland Avenue,,SCARBOROUGH,ON,M1P 3C2,Canada
 13296,8266,Charmed Aroma,"301 Danforth Rd, Unit 3",,SCARBOROUGH,ON,M1L 3X2,Canada
@@ -5894,7 +5907,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 13610,27942,D & D Poultry,300 MILIKEN BLVD,,SCARBOROUGH,ON,M1V 4T4     /,Canada
 1000017934,27970,Omega Alpha,795 PHARMACY AVE,,SCARBOROUGH,ON,M1L 3K2,Canada
 17934,27971,Omega Alpha,795 PHARMACY AVE,,SCARBOROUGH,ON,M1L 3K2,Canada
-1000014224,29306,Coyle,5600 Finch Ave E,,SCARBOROUGH,ON,M1B 1T1,Canada
 18395,31351,TFF Company,10 Melford Dr unit 3 &4,,SCARBOROUGH,ON,M1B 2G1,Canada
 1000018395,31514,TFF Company,10 Melford Dr unit 3 &4,,SCARBOROUGH,ON,M1B 2G1,Canada
 1000014086,31535,Crystal Claire,165 Milner Ave,,SCARBOROUGH,ON,M1S 4G7,Canada
@@ -5931,6 +5943,8 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000019548,44101,Atlantic Packaging Retail PKG & Display,118-120 Tiffield Road,,SCARBOROUGH,ON,M1V 5N2,Canada
 1000018596,45222,Display Finishers Ltd,24 Cosentino Drive,,SCARBOROUGH,ON,M1P 3A2,Canada
 1000010019,45335,Canadian Print & Packaging,31 Melford Dr,,SCARBOROUGH,ON,M1B 2G6,Canada
+19599,45428,Prime Carton Ltd,860 Progress Ave,,SCARBOROUGH,ON,M1H 2X5,Canada
+1000014224,45473,Coyle,5600 Finch Ave E,,SCARBOROUGH,ON,M1B 1T1,Canada
 11208,2376,BathBox,370 Pond Mills Road,,London,ON,N5Z 3X6,Canada
 11635,3169,Meridian Spas Inc,"PO BOX 9035, 1795 ENEST AVE",,London,ON,N6E 2K4,Canada
 11702,3286,Game Mart,6 Lavender Way,,London,ON,N5X 3J2,Canada
@@ -6011,10 +6025,10 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000019398,42762,Jasper Brewing,695 Sovereign Rd,,London,ON,N5V 4K8,Canada
 1000019077,42863,SUNRIPE,1800 Adelaide St N,,London,ON,N5X 4B7,Canada
 19203,42980,First Onsite Restoration,124 Newbold Court,,London,ON,N6E 1Z7,Canada
-1000019203,43301,First Onsite Restoration,124 Newbold Court,,London,ON,N6E 1Z7,Canada
-1000019280,43900,Booch Inc,900 King Street,,London,ON,N5W 5K3,Canada
 1000019088,44059,I.G.D Machine and Tool Ltd,992 Hubrey Rd,,London,ON,N6N 1B5,Canada
 19088,44070,I.G.D Machine and Tool Ltd,992 Hubrey Rd,,London,ON,N6N 1B5,Canada
+1000019280,45443,Booch Inc,900 King Street,,London,ON,N5W 5K3,Canada
+1000019203,45557,First Onsite Restoration,124 Newbold Court,,London,ON,N6E 1Z7,Canada
 12069,4089,Styleprolix,21 Boot Terrace,,North York,ON,M3J 0A1,Canada
 12165,4306,By Jen and Jan Inc,16 Sheffield St Unit 8,,North York,ON,M6M 3E6,Canada
 12431,4879,Amico Chef,2889 Dufferin Street,,North York,ON,M6B 3S7,Canada
@@ -6180,7 +6194,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000018654,39547,Bam Baits,91 Duke St. Unit C,,Guelph,ON,N1E 5L1,Canada
 1000010040,39696,Ecologix Heating Technologies,90 Monarch Rd,,Guelph,ON,N1K 1S3,Canada
 1000010040,39697,Ecologix Heating Technologies,90 Monarch Rd,,Guelph,ON,N1K 1S3,Canada
-1000018286,39846,Jaycee Herb Traders,21 Airpark Place,,Guelph,ON,N1H 6H8,Canada
 19118,40005,Royal City Brew Co. - warehouse,1 Taggart St,,Guelph,ON,N1L1M6,Canada
 1000014305,40515,Homewood Health,150 Delhi St,,Guelph,ON,N1E 6K9,Canada
 1000010024,40713,Wyckomar Inc,111 Malcolm Road,,Guelph,ON,N1K 1A8,Canada
@@ -6201,12 +6214,13 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000011348,42978,Valcom Manufacturing Group Inc,Po Box 603,,Guelph,ON,L1H 6L3,Canada
 1000011348,42979,Valcom Manufacturing Group Inc,175 Southgate Drive,,Guelph,ON,N1H 6L3,Canada
 1000019371,43209,Wellington Brew,510 GOVERNORS RD,,Guelph,ON,N1K 1E3,Canada
-19119,43211,Fixed Gear Brewing Co.,20 Alma St S,,Guelph,ON,N1H 5W5,Canada
 1000018970,43641,Wellington Brewery,950 Woodlawn Rd,,Guelph,ON,N1K 1G2,Canada
 1000018970,43642,Wellington County Brewery Inc,510 GOVERNORS RD,,Guelph,ON,N1K1E3,Canada
-1000019119,43951,Fixed Gear Brewing Co.,20 Alma St S,,Guelph,ON,N1H 5W5,Canada
-1000012635,45303,Oxi Brite Inc,2-35 Cooper Drive,,Guelph,ON,N1C 0A4,Canada
-1000012635,45304,Oxi Brite Inc,2-35 Cooper Drive,,Guelph,ON,N1C 0A4,Canada
+1000012635,45477,Oxi Brite Inc,2-35 Cooper Drive,,Guelph,ON,N1C 0A4,Canada
+1000012635,45478,Oxi Brite Inc,2-35 Cooper Drive,,Guelph,ON,N1C 0A4,Canada
+1000018286,45564,Jaycee Herb Traders,21 Airpark Place,,Guelph,ON,N1H 6H8,Canada
+1000019119,45565,Fixed Gear Brewing Co.,20 Alma St S,,Guelph,ON,N1H 5W5,Canada
+19119,45566,Fixed Gear Brewing Co.,20 Alma St S,,Guelph,ON,N1H 5W5,Canada
 10118,233,Aztec Electrical Inc,51A Jutland Rd,,Etobicoke,ON,M8Z 2T6,Canada
 11212,2382,Gatekeepers Systems Canada,272 Galaxy Blvd,,Etobicoke,ON,M9W 5R8,Canada
 1000011212,2383,Gatekeepers Systems Canada,272 Galaxy Blvd,,Etobicoke,ON,M9W 5R8,Canada
@@ -6277,7 +6291,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000013066,26304,Monte Design Group Inc.,280 Belfield Road Unit 40,,Etobicoke,ON,M9W-1H6,Canada
 17807,26570,Big Bee Hot Honey Inc,22 Plylon Place,,Etobicoke,ON,M9W 2P3,Canada
 1000015372,27997,Weststar Printing,10 North Queen Street,,Etobicoke,ON,M8Z 2C4,Canada
-1000014224,29305,Cascades Mcleish,274 Humberline Drive,,Etobicoke,ON,M9W5S2,Canada
 1000017807,29332,Big Bee Hot Honey Inc,22 Plylon Place,,Etobicoke,ON,M9W 2P3,Canada
 1000017705,29450,Lakefront Graphix Technology,2679 LAKE SHORE BLVD W,,Etobicoke,ON,M8V 1G6,Canada
 1000011640,31579,Global Payments,151 CARLINGVIEW DR UNIT 16,,Etobicoke,ON,M9W 5E7,Canada
@@ -6295,11 +6308,9 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 19281,38782,Goldys Food Corp,6 Chapel Rd,,Etobicoke,ON,M8W 1G1,Canada
 1000017948,39126,Staples FedEx,275 Belfield Rd,,Etobicoke,ON,M9W 7H9,Canada
 1000013051,39203,Pattison Onestop Warehouse,245 Norseman St,,Etobicoke,ON,M8Z 2R5,Canada
-1000018603,39540,RMAC Surgical Inc,80 Galaxy Blvd Unit 8,,Etobicoke,ON,M9W4Y8,Canada
 19349,40763,Geo Brakes,  557 Dixon Rd unit 125,,Etobicoke,ON,M9W 6K1,Canada
 1000019349,40764,Geo Brakes,  557 Dixon Rd unit 125,,Etobicoke,ON,M9W 6K1,Canada
 1000012724,41212,Vintage Hardwood Flooring,409 Evans Ave.,,Etobicoke,ON,M8Z 1K8,Canada
-1000012389,41555,Weststar Printing,10 N Queen St,,Etobicoke,ON,M8Z 2C4,Canada
 12389,41565,Weststar Printing,10 N Queen St,,Etobicoke,ON,M8Z 2C4,Canada
 1000011245,41708,Wasabi Media,400 ROYAL YORK ROAD,,Etobicoke,ON,M8Y 2R5,Canada
 19415,42522,RNF Pet Products Inc.,340 REXDALE BLVD,,Etobicoke,ON,M9W 1R6,Canada
@@ -6310,11 +6321,14 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 19466,42799,TS IMAGING INC,29 FIMA CRES.,,Etobicoke,ON,M8W3R1,Canada
 1000019415,42819,RNF Pet Products Inc.,340 REXDALE BLVD,,Etobicoke,ON,M9W 1R6,Canada
 1000019466,43051,TS IMAGING INC,29 FIMA CRES.,,Etobicoke,ON,M8W3R1,Canada
-1000013802,43075,Ad Creative,70 Shendale Drive,,Etobicoke,ON,M9W 2B5,Canada
 18065,43322,Martinrea Industrial Canada,340 Carlingview Drive,,Etobicoke,ON,M9W 5G5,Canada
 1000019088,44050,Global Payments,151 Carlingview Dr #1,,Etobicoke,ON,M9W 5S4,Canada
 19088,44061,Global Payments,151 Carlingview Dr #1,,Etobicoke,ON,M9W 5S4,Canada
 1000016305,44102,Vintage Hardwood Flooring,409 Evans Ave,,Etobicoke,ON,M8Z 1K8,Canada
+1000013802,45346,Ad Creative,70 Shendale Drive,,Etobicoke,ON,M9W 2B5,Canada
+1000014224,45472,Cascades Mcleish,274 Humberline Drive,,Etobicoke,ON,M9W5S2,Canada
+1000018603,45479,RMAC Surgical Inc,80 Galaxy Blvd Unit 8,,Etobicoke,ON,M9W4Y8,Canada
+1000012389,45507,Weststar Printing,10 N Queen St,,Etobicoke,ON,M8Z 2C4,Canada
 11142,1264,NeuroGym Technologies Inc.,100-1050 Morrison Drive,,Ottawa,ON,K2H 8K7,Canada
 1000011142,2486,NeuroGym Technologies Inc.,100-1050 Morrison Drive,,Ottawa,ON,K2H 8K7,Canada
 11302,2565,LaughingStock Licensing Inc.,7 Windeyer Cres,,Ottawa,ON,K2K 2P6,Canada
@@ -6424,7 +6438,7 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000017948,39118,SHOPIFY,151 O Connor St,,Ottawa,ON,K2P 2M5,Canada
 1000014305,40476,Madeleine LePage,800-1600 Carling Avenue,,Ottawa,ON,K1Z 1G3,Canada
 19203,41848,First Onsite Restoration,2760 Sheffield Rd,,Ottawa,ON,K1B 3V9,Canada
-1000019203,43297,First Onsite Restoration,2760 Sheffield Rd,,Ottawa,ON,K1B 3V9,Canada
+1000019203,45553,First Onsite Restoration,2760 Sheffield Rd,,Ottawa,ON,K1B 3V9,Canada
 10107,222,Future Stars,"944 South Service Rd., Unit 29",,Stoney Creek,ON,L8E 6A2,Canada
 11230,2411,Mainway Solutions,,,Stoney Creek,ON,L8E 5H5,Canada
 11271,2480,Milburn Universal Designs,291 Arvin ave,,Stoney Creek,ON,L8E 2M3,Canada
@@ -6492,7 +6506,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 13310,16646,VG Meats,131 Upper Centennial Parkway,,Stoney Creek,ON,L8J 0B2,Canada
 1000013310,16671,VG Meats,131 Upper Centenail Parkway,,Stoney Creek,ON,L8J 0B2,Canada
 16119,18026,Munck Cranes,403 Dewitt Road,,Stoney Creek,ON,L8E 4B9,Canada
-1000012442,18204,Freudenberg Oil & Gas Technologies,803 Barton Street,,Stoney Creek,ON,L8E 5G6,Canada
 1000013500,18481,Commercial Lighting Devices Inc.,188 South Service Rd.,,Stoney Creek,ON,L8E 3H6,Canada
 13500,18482,Commercial Lighting Devices Inc.,188 South Service Rd.,,Stoney Creek,ON,L8E 3H6,Canada
 1000011353,18981,Smiling Sultan Fine Foods,6 Acacia Street,,Stoney Creek,ON,L8J 1V6,Canada
@@ -6512,7 +6525,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000013638,29342,Walldecor 3D,2 Ventura Drive,,Stoney Creek,ON,L8J 1W6,Canada
 1000016541,29675,SGK Inc,862 Arvine Avenue,,Stoney Creek,ON,L8E 5P2,Canada
 1000016541,29676,SKS IND/ARMOUR PROTECTIVE PKG,862 Arvine Avenue,,Stoney Creek,ON,L8E 5P2,Canada
-1000011206,29814,Ellsworth Adhesives Canada,560 Arvin Ave Suite 5,,Stoney Creek,ON,L8E 5P1,Canada
 16119,30033,MUNCK CRANES SERVICE,419 MILLEN RD,,Stoney Creek,ON,L8E 2P6,Canada
 1000016119,30104,Munck Cranes,403 Dewitt Road,,Stoney Creek,ON,L8E 4B9,Canada
 1000016119,30105,MUNCK CRANES SERVICE,419 MILLEN RD,,Stoney Creek,ON,L8E 2P6,Canada
@@ -6540,6 +6552,8 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000019486,42937,Everly,665 Arvin Avenue,,Stoney Creek,ON,L8E 5R2,Canada
 1000012491,43119,Proforma-Battlefield Advertising,"429 Dewitt Road, Unit 9",,Stoney Creek,ON,L8E 4C3,Canada
 1000011392,43342,PatientCare Solutions,9 Community Ave Unit 6,,Stoney Creek,ON,L8E 2X9,Canada
+1000012442,45351,Freudenberg Oil & Gas Technologies,803 Barton Street,,Stoney Creek,ON,L8E 5G6,Canada
+1000011206,45531,Ellsworth Adhesives Canada,560 Arvin Ave Suite 5,,Stoney Creek,ON,L8E 5P1,Canada
 11264,2469,Morval Div Of Woodbridge Foam,68 Shirley Ave,,Kitchener,ON,N2G 4E1,Canada
 11397,2763,Colt Canada Corp.,1036 Wilson Ave,,Kitchener,ON,N2C 1J3,Canada
 11424,2814,Bench Craft Leather Inc,1572 Victoria Street North,,Kitchener,ON,N2B 3E5,Canada
@@ -6641,7 +6655,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000011544,41673,Vaderstad Industries Inc.,269 Trillium Drive,,Kitchener,ON,N3C 4E8,Canada
 1000018689,41876,ELIZABETH AZUYA,193 WEST OAK TRAIL,,Kitchener,ON,N2R 0R9,Canada
 1000011267,42180,Fastenal,100 Shirley Ave,,Kitchener,ON,N2B 2E1,Canada
-1000012530,42183,FASTENAL COMPANY,900 WABANAKI DR,,Kitchener,ON,N2C 0B7,Canada
 1000013899,42187,FASTENAL COMPANY,900 WABANAKI DRIVE,,Kitchener,ON,N2C 0B7,Canada
 19363,42442,Blowing Smoke Hot Sauce,176 WOODRIDGE DR,,Kitchener,ON,N2N 2J5,Canada
 19439,42507,The Great Canadian Sauce Company,192 Cedar Street South,,Kitchener,ON,N2G 3M1,Canada
@@ -6653,14 +6666,15 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000019241,43221,RUBY KNIGHT,84 EDWIN STREET,,Kitchener,ON,N2H 4N9,Canada
 1000018717,43240,Spicers Canada,1460 Strasburg Road,,Kitchener,ON,N2R 1K1,Canada
 1000018717,43241,Spicers Canada,4-41 Ardelt Place,,Kitchener,ON,N2C 2C8,Canada
-1000019203,43302,First Onsite Restoration,91 Trillium Drive,,Kitchener,ON,N2E 1W8,Canada
-1000010041,43346,Jake Connor And Crew,199 Trillium Drive,,Kitchener,ON,N2A 1A1,Canada
-1000010041,43347,Jake Connor And Crew,1-199 Trillium Dr,,Kitchener,ON,N2E 1W9,Canada
 1000013098,43464,Richelieu Hardware Canada Ltd.,800 Wilson Ave,,Kitchener,ON,N2C 0A2,Canada
 11644,43590,Onward Cluthe Hardware,10 Centennial Road,,Kitchener,ON,N2B 3G1,Canada
 1000010048,43792,Flamaglo Foods Sustainable Creamery,60 Steckle Place,,Kitchener,ON,N2E 2C3,Canada
 1000014208,45229,Kilne c/o Megan Lewis,703-87 Cedar Street South,,Kitchener,ON,N2G3L6,Canada
 1000011644,45294,Onward Cluthe Hardware,10 Centennial Road,,Kitchener,ON,N2B 3G1,Canada
+1000012530,45521,FASTENAL COMPANY,900 WABANAKI DR,,Kitchener,ON,N2C 0B7,Canada
+1000010041,45540,Jake Connor And Crew,199 Trillium Drive,,Kitchener,ON,N2A 1A1,Canada
+1000010041,45541,Jake Connor And Crew,1-199 Trillium Dr,,Kitchener,ON,N2E 1W9,Canada
+1000019203,45558,First Onsite Restoration,91 Trillium Drive,,Kitchener,ON,N2E 1W8,Canada
 10088,197,ALGREEN PRODUCTS,100 PINEBUSH RD,,CAMBRIDGE,ON,N1R 8J8,Canada
 11270,2479,Four Fathers Brewing Company,125 Guelph Ave,,CAMBRIDGE,ON,N3C1A5,Canada
 11366,2685,Galt Display Rack Company,141 Savage Drive,,CAMBRIDGE,ON,N1T 1S5,Canada
@@ -6784,9 +6798,9 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000010048,43788,Flamaglo Foods,1070 Fountain Street N,,CAMBRIDGE,ON,N3E 1A3,Canada
 1000010048,43789,Simtech,501A Franklin Blvd,,CAMBRIDGE,ON,N1R 8G9,Canada
 1000010048,43791,Flamaglo Foods,25 Goddard Crescent,,CAMBRIDGE,ON,N3E 0B1,Canada
-1000011270,43828,Four Fathers Brewing Company,125 Guelph Ave,,CAMBRIDGE,ON,N3C1A5,Canada
 16170,43870,Freedom Pet Supplies,480 Thompson Dr,,CAMBRIDGE,ON,N1T 2K8,Canada
 1000012451,43896,Yellow Goat Design INC,500 Collier-Macmillan Dr,,CAMBRIDGE,ON,N1R6R5,Canada
+1000011270,45515,Four Fathers Brewing Company,125 Guelph Ave,,CAMBRIDGE,ON,N3C1A5,Canada
 11165,1296,Muro North America,7 Tilbury Crt,,Brampton,ON,L6T 3T4,Canada
 11567,3057,Outset Media,36 Bramtree crt,,Brampton,ON,L6S 5Z7,Canada
 11688,3257,Best Buy,9520 Airport Rd,,Brampton,ON,L6P 1A1,Canada
@@ -6920,6 +6934,7 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000010090,44099,DRYTAC WAREHOUSE,175 NUGGET COURT,,Brampton,ON,L6T 5A9,Canada
 1000018940,45132,Metric Packaging,50 Devon Road,,Brampton,ON,L6T 5B5,Canada
 11195,45172,Swiss Print International,175 Sandalwood Parkway West,,Brampton,ON,L7A 1E8,Canada
+1000018986,45400,Supplyone,8905 Goreway Drive,,Brampton,ON,L6T 0B7,Canada
 11228,2409,Mohawk Equipment Ltd,PO Box 103,,BRANTFORD,ON,N3T 5M3,Canada
 11240,2421,Apd Printing,159 Mary St,,BRANTFORD,ON,N3S 3C1,Canada
 1000011281,2514,Forte Produce,106 Winniett Street,,BRANTFORD,ON,N3T 1N2,Canada
@@ -7071,9 +7086,10 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000019485,44089,Spence Print Solutions,17 Tamara Place,,BRANTFORD,ON, N3P 1M8,Canada
 1000011363,44134,Precision Veneer,110 Morton Avenue,,BRANTFORD,ON,N3R 7J7,Canada
 1000012085,45231,Goodminds.com,188 Mohawk St.,,BRANTFORD,ON,N3P 1A1,Canada
-1000018578,45282,Grissin Bon Ltd,43 Roy Blvd.,,BRANTFORD,ON,N3R 7K1,Canada
 1000011903,45306,Koolatron Corp,139 Copernicus Blvd,,BRANTFORD,ON,N3P 1N4,Canada
 1000011903,45307,Concept Plastics,27 Catharine Avenue,,BRANTFORD,ON,N3T 1X5,Canada
+1000011166,45482,BLAKE MEDICAL,60 PRINCE CHARLES RD,,BRANTFORD,ON,N3S 0H4,Canada
+1000018578,45490,Grissin Bon Ltd,43 Roy Blvd.,,BRANTFORD,ON,N3R 7K1,Canada
 11234,2415,Boutique De Luxe,165 Hughnot Road,,Oakville,ON,L6H 0I4,Canada
 11345,2653,Envy Pillow CO,2213 Galloway Drive,,Oakville,ON,L6H 5M1,Canada
 11401,2776,Maison Apothecare Inc.,1173 North Service Rd W,,Oakville,ON,L6M 2V9,Canada
@@ -7422,7 +7438,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000010120,36903,Abba Parts and Service,5370 Munro Court,,Burlington,ON,L7L 5N8,Canada
 1000019006,37009,Liquid Earth,1770 Appleby Lne,,Burlington,ON,L7L 5P8,Canada
 19006,37011,Liquid Earth,1770 Appleby Lne,,Burlington,ON,L7L 5P8,Canada
-1000016509,37041,Deboers Poultry Ltd,4485 Harvester rd,,Burlington,ON,L7L 4X3,Canada
 19117,37053,Cool Display Solutions,3179 Mainway Drive,,Burlington,ON,L7M 1A6,Canada
 19121,37090,UNIQUE PHARMA INDUSTRIES INC.,1080 CLAY AVENUE,,Burlington,ON,L7L 0A1,Canada
 13964,37203,Earth Fresh Farms,1095 Clay Ave,,Burlington,ON,L7L 0A1,Canada
@@ -7465,7 +7480,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000012083,42924,Bass Paper & Packaging Ltd,4380 Harvester Road,,Burlington,ON,L7L 4X2,Canada
 12083,42925,Bass Paper & Packaging Ltd,4380 Harvester Road,,Burlington,ON,L7L 4X2,Canada
 1000016121,42926,Grayloc Products,1129 NORTHSIDE RD UNIT #1,,Burlington,ON,L7M 1H5,Canada
-1000012819,42991,Edge Imaging,940 Gateway Drive,,Burlington,ON,L7L 5K7,Canada
 12819,42992,Edge Imaging,940 Gateway Drive,,Burlington,ON,L7L 5K7,Canada
 1000011371,43170,Watts Water Technologies,5435 North Service Rd,,Burlington,ON,L7L 5H7,Canada
 1000019303,43197,Secondshop Inc.,1213 INTERNATIONAL BLVD,,Burlington,ON,L7L 0K3,Canada
@@ -7475,9 +7489,11 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000019221,44118,Food For Life,2258 Mountainside Drive,,Burlington,ON,L7P 1B7,Canada
 1000012975,44130,Bio Sculpture Canada Inc,5100 South Service Rd,,Burlington,ON,L7L 6A5,Canada
 1000012742,45235,Pool Supplies Canada Inc.,3100 Mainway,,Burlington,ON,L7M 1A5,Canada
-1000011207,45279,Keen Canada Outdoor Ulc,4150 Mainway Bldg 1,,Burlington,ON,L7L 0A6,Canada
 1000011675,45322,Wolseley #11620,5145 North Service Rd,,Burlington,ON,L7L 5H6,Canada
 1000012496,45323,Wolseley # 12214 4325 Harvester Rd,4325 Harvester Roard,,Burlington,ON,L7L 5M4,Canada
+1000011207,45524,Keen Canada Outdoor Ulc,4150 Mainway Bldg 1,,Burlington,ON,L7L 0A6,Canada
+1000016509,45527,Deboers Poultry Ltd,4485 Harvester rd,,Burlington,ON,L7L 4X3,Canada
+1000012819,45528,Edge Imaging,940 Gateway Drive,,Burlington,ON,L7L 5K7,Canada
 10119,234,Global Stainless Hardware,144 Wueen Street North,,Hamilton,ON,L8R-2V9,Canada
 1000010119,235,Global Stainless Hardware,144 Wueen Street North,,Hamilton,ON,L8R-2V9,Canada
 11203,2368,Edson Packaging,215 Hemstead Drive,,Hamilton,ON,L8W 2E6,Canada
@@ -7734,8 +7750,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000016481,37180,Veradek,469 Woodward Ave,,Hamilton,ON,L8H 6N6,Canada
 1000011328,37191,Rangeview Manfacturing,1940 Brampton St,,Hamilton,ON,L8H 3S3,Canada
 1000011571,37419,Morrison Moving,130 Brockley Dr,,Hamilton,ON,L8E 3C5,Canada
-19157,37493,Clifford Brewing,398 Nash Rd N,,Hamilton,ON,L8H7P5,Canada
-1000019157,37495,Clifford Brewing,398 Nash Rd N,,Hamilton,ON,L8H7P5,Canada
 1000012298,37524,Bullwarc Inc,690 Rennie Street,,Hamilton,ON,L8H 3R2,Canada
 1000012298,37525,,Delivery Address Will Change,,Hamilton,ON,L8H 3R2,Canada
 19168,37609,M-Line Pharmacy,1289 Upper James St. Unit 2,,Hamilton,ON,L9C 3B3,Canada
@@ -7761,16 +7775,10 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000019369,41649,Belicious Beverages,1468 Highway 8,,Hamilton,ON,L8E559,Canada
 19408,41989,Aquanova Brewing Company,67 Frid Street,,Hamilton,ON,L8P 4M3,Canada
 1000013874,42000,George Perriera Sample Account,690 Rennie St,,Hamilton,ON,L8H 3R2,Canada
-1000013007,42087,Alumabrite * Kromet,20 Milburn Road,,Hamilton,ON,L8E 3L9,Canada
 1000011707,42157,C.f.f. Stainless Steel Inc,1840 Burlington St East,,Hamilton,ON,L8H 3L4,Canada
 12271,42321,Walters Inc,"1318 Rymal Road, East",,Hamilton,ON,L8W 3N1,Canada
 1000012271,42325,Walters Inc,"1318 Rymal Road, East",,Hamilton,ON,L8W 3N1,Canada
 12271,42326,Denninger's,55 Brant Street,,Hamilton,ON,L8L 4C7,Canada
-1000011166,42479,Blake Medical Distribution,42 Niagara St.,,Hamilton,ON,L8L 6A2,Canada
-1000011166,42480,Blake Medical Distribution,461 Cumberland Ave,,Hamilton,ON,L8M 2A8,Canada
-1000011166,42481,Blake Medical Distribution,42 Niagara St,,Hamilton,ON,L8L 6A2,Canada
-1000011342,43090,Tech Stone Inc - Diach Coatings,304 Gage Ave North,,Hamilton,ON,L8L 7A7,Canada
-1000011342,43091,Tech Stone Inc.,1980 Brampton St E,,Hamilton,ON,L8H 3S5,Canada
 19526,43287,Profast,1341 MAIN STREET EAST,,Hamilton,ON,L8K 1B6,Canada
 19203,43319,First Onsite Restoration,180 Chatham Street,,Hamilton,ON,L8P 2B6,Canada
 18835,43505,Springer's Meat Inc,19 Morley Street,,Hamilton,ON,L8H 3R6,Canada
@@ -7788,6 +7796,12 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 10001,44009,Whitebird,690 Rennie  St,,Hamilton,ON,L8E 3R2,Canada
 1000018849,44084,1000539083 Ontario Inc. (Bello Foods),395 Anchor Rd. Unit 24,,Hamilton,ON,L8W 0C7,Canada
 1000018951,45325,Wolseley #11621,351 Nash Rd. N. Unit 5&6,,Hamilton,ON,L8H7P4,Canada
+1000011342,45462,Tech Stone Inc - Diach Coatings,304 Gage Ave North,,Hamilton,ON,L8L 7A7,Canada
+1000011342,45463,Tech Stone Inc.,1980 Brampton St E,,Hamilton,ON,L8H 3S5,Canada
+1000013007,45465,Alumabrite * Kromet,20 Milburn Road,,Hamilton,ON,L8E 3L9,Canada
+1000011166,45480,Blake Medical Distribution,42 Niagara St.,,Hamilton,ON,L8L 6A2,Canada
+1000011166,45481,Blake Medical Distribution,461 Cumberland Ave,,Hamilton,ON,L8M 2A8,Canada
+1000019203,45559,First Onsite Restoration,180 Chatham Street,,Hamilton,ON,L8P 2B6,Canada
 10034,90,Patera Group Inc.,910 Rowntree Dairy Rd,,Mississauga,ON,M3H 6A7,Canada
 10126,243,Natures Artifacts,3-4170 Sladeview cres,,Mississauga,ON,L5L 0A1,Canada
 11139,1261,3Points Aviation,1375 Aimco Blvd #7-8,,Mississauga,ON,L4W 1B5,Canada
@@ -8073,7 +8087,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000018137,28887,Accu Plus Dental Lab,"385 Admiral Blvd, Unit 9",,Mississauga,ON,L5T 2M8,Canada
 1000011421,29253,Shelf Talkers Manufact Inc,2230 Meadowpine Blvd.,,Mississauga,ON,L5N 6H6,Canada
 18157,29255,CanGreen Industries,"Suite 204, 6750 Davand Drive,",,Mississauga,ON,L5T 2L8,Canada
-1000014224,29303,Prinex Media,7485 Bath Road,,Mississauga,ON,L4T 4C1,Canada
 1000017940,29360,COOKS WHO FEED INC,32 TROY ST,,Mississauga,ON,L6G 1S7,Canada
 1000017898,29434,GEMZ Sports Treasures,4025 MARIGOLD CRES,,Mississauga,ON,L5L 2A4     /,Canada
 18215,29655,IKL INTERNATIONAL SHIPPING,"5716 Coopers Ave, Unit # 8",,Mississauga,ON,L4Z 2E8,Canada
@@ -8175,7 +8188,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 18986,37372,Loxcreen Canada Ltd,5720 Ambler Drive,,Mississauga,ON,L4W 2B1,Canada
 1000013366,37375,CARLA PEREIRA,568 AMARONE COURT,,Mississauga,ON,L4W0A7,Canada
 1000011171,37433,Idros Group Inc.,1577 Meyerside Dr,,Mississauga,ON,L5T 1B9,Canada
-19203,38028,FIRST ONSITE Property Restoration,110 Matheson Blvd W,,Mississauga,ON,L5R 4G7,Canada
 19205,38036,JJ Wilk Pierogies,1190 Midway Blvd #10,,Mississauga,ON,L5T 2B9,Canada
 1000012510,38038,GM Packaging,5450 Maingate Drive,,Mississauga,ON,L4W 1R8,Canada
 1000017841,38217,ProRec Inc,2679 Slough St,,Mississauga,ON,L4W 1G4,Canada
@@ -8239,8 +8251,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 19501,43078,Areion International Ltd,3400 Ridgeway Unit 11,,Mississauga,ON,L5L 0A2,Canada
 1000019333,43122,DGN Marketing Services Ltd,1577 MEYERSIDE DRIVE Unit #6A,,Mississauga,ON,L5T 1B9,Canada
 1000016368,43203,Puroclean Restoration Niagara,6843 Summer Heights Drive,,Mississauga,ON,L5N 7E7,Canada
-1000019203,43296,FIRST ONSITE Property Restoration,110 Matheson Blvd W,,Mississauga,ON,L5R 4G7,Canada
-1000019203,43298,First Onsite Restoration,190 Matheson Blvd E,,Mississauga,ON,L4Z 1X1,Canada
 1000017696,43493,Rapid Aid,4120A Sladeview Crescent,,Mississauga,ON, L5L 5Z3,Canada
 18692,43583,Nancy Cavar,7164 Overstone Lane,,Mississauga,ON,L5N 7S8,Canada
 1000010002,43614,FUTURE MOBILITY,6750 PROFESSIONAL COURT,,Mississauga,ON,L4V 1X6,Canada
@@ -8265,9 +8275,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000019523,44095,Precision Concepts,7300 East Danbro Crescent,,Mississauga,ON,L5N 6C2,Canada
 1000012235,44103,Slotlabel,"3470 Laird Road, Unit 6",,Mississauga,ON,L5L 5Y4,Canada
 1000019375,45144,Awake Chocolate,10 Kingsbridge Garden Circle Ste 700,,Mississauga,ON,L5R 3K6,Canada
-1000010083,45233,Grime Eater Products Inc,4140 B Sladeview Crescent,,Mississauga,ON,L5L6A1,Canada
-1000011207,45280,National Logistics Services,350 Admiral Blvd,,Mississauga,ON,L5T2N6,Canada
-1000010015,45299,Nexal Aluminum,5938 Ambler Drive,,Mississauga,ON,L4W 2N3     /,Canada
 1000011282,45300,Industrial Filter,6176 Kestrel Road,,Mississauga,ON,L5T 1Z2,Canada
 1000011282,45302,Mgs Filters,6176 Kestrel Road,,Mississauga,ON,L5T 1Z2     /,Canada
 1000010093,45321,Radial,6100 Freemont Blvd,,Mississauga,ON,L5R 3V7,Canada
@@ -8276,7 +8283,14 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000010019,45331,TurnKey Merchandising Solutions,350 Traders Blvd,,Mississauga,ON,L4Z 1W7,Canada
 1000010019,45332,Complete Design & Packaging,6790 Pacific Circle,,Mississauga,ON,L5T 1N8,Canada
 1000010019,45334,Turn-key Merchandising,2600 Drew Rd.,,Mississauga,ON,L4T 3X1,Canada
-1000012811,45339,Mevotech,6700 Northwest Drive,,Mississauga,ON,L4V 1L5,Canada
+1000010015,45369,Nexal Aluminum,5938 Ambler Drive,,Mississauga,ON,L4W 2N3     /,Canada
+1000012811,45372,Mevotech,6700 Northwest Drive,,Mississauga,ON,L4V 1L5,Canada
+1000018986,45401,Loxcreen Canada Ltd,5720 Ambler Drive,,Mississauga,ON,L4W 2B1,Canada
+1000010083,45418,Grime Eater Products Inc,4140 B Sladeview Crescent,,Mississauga,ON,L5L6A1,Canada
+1000014224,45470,Prinex Media,7485 Bath Road,,Mississauga,ON,L4T 4C1,Canada
+1000011207,45525,National Logistics Services,350 Admiral Blvd,,Mississauga,ON,L5T2N6,Canada
+1000019203,45552,FIRST ONSITE Property Restoration,110 Matheson Blvd W,,Mississauga,ON,L5R 4G7,Canada
+1000019203,45554,First Onsite Restoration,190 Matheson Blvd E,,Mississauga,ON,L4Z 1X1,Canada
 10028,83,Shockingly Healthy Inc.,231-1100 Lansdowne Ave,,Toronto,ON,M3J 2E5,Canada
 11214,2390,Orlova Boutique,506-375 Brunswick Ave,,Toronto,ON,M5R 2Z3,Canada
 11217,2393,Orlova,506-375 Brunswick Ave,,Toronto,ON,M5R 2Z3,Canada
@@ -8806,12 +8820,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 19159,41175,Lumo Beverage Corp., 471 Atlas Ave,,Toronto,ON,M6C 3R1,Canada
 19159,41176,Lumo Beverage,200 Fairbank Ave,,Toronto,ON,M6B 4C5,Canada
 19269,41550,Indigo,620 King Street West,,Toronto,ON,M5V 1M6,Canada
-1000012389,41551,Custom Box Builder,33 Woodlawn Ave E,,Toronto,ON,M4T 1B9,Canada
-1000012389,41553,Custom Box Builder,33 Woodlawn Ave E,,Toronto,ON,M4T 1B9,Canada
-1000012389,41554,Cameron Advertising,12 Nantucket Blvd,,Toronto,ON,M3H 6A7,Canada
-1000012389,41558,Custom Box Builder,33 Woodlawn Ave E,,Toronto,ON,M4T 1B9,Canada
-1000012389,41559,Custom Box Builder,33 Woodlawn Ave E,,Toronto,ON,M4T 1B9,Canada
-1000012389,41560,Custom Box Builder,880 Steeprock Drive,,Toronto,ON,M3J 2X2,Canada
 12389,41561,Custom Box Builder,33 Woodlawn Ave E,,Toronto,ON,M4T 1B9,Canada
 12389,41563,Custom Box Builder,33 Woodlawn Ave E,,Toronto,ON,M4T 1B9,Canada
 12389,41564,Cameron Advertising,12 Nantucket Blvd,,Toronto,ON,M3H 6A7,Canada
@@ -8844,9 +8852,17 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000019556,43803,Direct Global Solutions,1137 Davenport Road,,Toronto,ON,M6H 2G4,Canada
 1000019480,43849,Protini Beverage,231 Woburn Ave,,Toronto,ON,M5M 1L1,Canada
 1000019480,43850,LCBO,100 Queens Quay East,,Toronto,ON,M5E 0C7,Canada
+19569,43993,Public Health Ontario,"661 University Ave,",,Toronto,ON,M5G 1M1,Canada
 1000011195,45149,Swiss Print International,37 Enterprise Road,,Toronto,ON,M9W 1C4,Canada
 19582,45157,Ete Garden,87 Mowat Avenue,,Toronto,ON,M6K 3E3,Canada
 1000019582,45159,Ete Garden,87 Mowat Avenue,,Toronto,ON,M6K 3E3,Canada
+19600,45432,Food Dudes Hospitality,24 Carlaw Ave #2,,Toronto,ON,M4M 2R7,Canada
+1000012389,45503,Custom Box Builder,33 Woodlawn Ave E,,Toronto,ON,M4T 1B9,Canada
+1000012389,45505,Custom Box Builder,33 Woodlawn Ave E,,Toronto,ON,M4T 1B9,Canada
+1000012389,45506,Cameron Advertising,12 Nantucket Blvd,,Toronto,ON,M3H 6A7,Canada
+1000012389,45510,Custom Box Builder,33 Woodlawn Ave E,,Toronto,ON,M4T 1B9,Canada
+1000012389,45511,Custom Box Builder,33 Woodlawn Ave E,,Toronto,ON,M4T 1B9,Canada
+1000012389,45512,Custom Box Builder,880 Steeprock Drive,,Toronto,ON,M3J 2X2,Canada
 10097,209,Samarit Medical Ind Inc.,55 Fleming Dr,,CAMBRIDGE,ON,N1P 1A1,
 11354,2668,West Star Printing Limited,10 North Queen Street,,Etobicoke,ON,M8Z 2C4,
 11677,3232,12601958 Canada Inc,"4306 Bartlett Rd, Unit 2",,Beamsville,ON,L0R 1B1,
@@ -9026,7 +9042,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000011574,42218,Camden Door Controls,5502 Timberlea Blvd,,Mississauga,ON,L4W 2T7,
 1000011677,42546,12601958 Canada Inc,"4306 Bartlett Rd, Unit 2",,Beamsville,ON,L0R 1B1,
 1000011693,42986,Cargojet Airways,2281 North Sheridan Way,,Mississauga,ON,L0R 1W0,
-1000011766,43163,Riverside Brass & Aluminum,55 Hamilton Rd,,New Hamburg,ON,N3A 2H1,
 1000010110,43995,Printmate Graphics (pmg) Ltd,60 Copernicus Blvd,,BRANTFORD,ON,N3P 1K5,
 10110,43997,Printmate Graphics (pmg) Ltd,60 Copernicus Blvd,,BRANTFORD,ON,N3P 1K5,
 1000010001,44004,HT Productions,690 Rennie,,,ON,,
@@ -9036,10 +9051,11 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000013411,44093,Bayview Flowers,3764 Jordon Rd,,Jordon Station,ON,L0R 1S0,
 1000010090,44098,Drytac,105 Nuggett Court,,Brampton,ON,L6T 5A9,
 1000011363,44135,Precision Veneer,110 Morton Avenue,,BRANTFORD,ON,N3R 7J7,
-1000010010,45285,Niagara Pharmaceuticals Inc.,60 INNOVATION DRIVE,,Flamborough,ON,L9H 7P3,
 1000011695,45297,Richelieu Hardware Canada Ltd.,800 Wilson Ave,,Kitchener,ON,N2C 0A2,
 1000011282,45301,Mgs Filters,5605-A Mcadam Road,,Mississauga,ON,L4Z 1N4,
 1000011824,45305,Accuflex  Industrial Hose Ltd,760 Imperial Rd North,,Guelph,ON,N1K 1Z3,
+1000010010,45449,Niagara Pharmaceuticals Inc.,60 INNOVATION DRIVE,,Flamborough,ON,L9H 7P3,
+1000011766,45543,Riverside Brass & Aluminum,55 Hamilton Rd,,New Hamburg,ON,N3A 2H1,
 18746,33861,Network Agent,690 Rennie St,,Hamilton,ON,L8H 3R2,CA
 18747,33862,Network Agent,690 Rennie St,,Hamilton,ON,L8H 3R2,CA
 18749,33863,Network Agent,690 Rennie St,,Hamilton,ON,L8H 3R2,CA
@@ -9312,7 +9328,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 18680,34815,Mike's Hard Lemonade Co,167 N. Green St,,Chicago,IL,60607,USA
 18854,34825,RGT Glass America,369 Jefferson Ave,,Saddle Brook,NJ,07663,USA
 1000018854,34826,RGT Glass America,369 Jefferson Ave,,Saddle Brook,NJ,07663,USA
-12704,35062,"Rip Van Wafels, Inc",67 West Street,,Brooklyn,NY,11222,USA
 1000018200,35154,Stratus Group,4383 Exchange Ave,,Vernon,CA,90058,USA
 1000018200,35157,Draco LLC,5851 West 80th Steet,,Indianapolis,IN,46278,USA
 1000010020,35161,Heidelberg Canada,Po Box 3090,,Kennesaw,GA,30156,USA
@@ -9346,9 +9361,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000018996,36442,Green Giftz,532 Ottawa Ave NW,,Grand Rapids,MI,49503,USA
 18996,36443,Steelcase AMQ,764 Walsh Ave,,Santa Clara,CA,95050,USA
 18632,36460,Crown Packaging,1400 Imperial Way,,West Deptford,NJ,08066,USA
-1000013648,36529,Bibbidi Bobbidi Boxes,50 Dean Goss Drive,,Jasper,GA,30143,USA
-1000013648,36530,Bibbidi Bobbidi Boxes,1052 E Church St Suite H,,Jasper,GA,30143,USA
-1000013648,36532,Bibbidi Bobbidi Boxes,33 Waleska Highway 108,,Jasper,GA,30143,USA
 18993,36537,Stran promotional solutions,2 Heritage Drive,,Quincy,MA,02171,USA
 14290,36553,Safeway Seattle Distribution,3520 Pacific Ave N,,Auburn,WA,98047,USA
 14290,36566,Target Corp,1000 Nicolett Mall,,Minneapolis,MN,55403,USA
@@ -9624,14 +9636,8 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 19585,45177,Corrugated Packaging,15 Oak Hill Lane,,Fitchburg,MA,01420,USA
 1000019547,45178,Edison Lithograph & Printing Corp,3725 Tonnelle Avenue,,North Bergen,NJ,07047,USA
 19547,45179,Edison Lithograph & Printing Corp,3725 Tonnelle Avenue,,North Bergen,NJ,07047,USA
-1000019585,45186,Corrugated Packaging,15 Oak Hill Lane,,Fitchburg,MA,01420,USA
 19282,45191,"Sugar Plum, Inc.",88 Dilley Street,,Forty Fort,PA,18704,USA
 1000019282,45192,"Sugar Plum, Inc.",88 Dilley Street,,Forty Fort,PA,18704,USA
-1000013523,45215,Blue Mountain Packaging Llc,1211 Haselton Rd,,Wilmington,NY,12997,USA
-1000013523,45216,Blue Mountain Packaging Llc,235 Murray St.,,Newark,NY,14513,USA
-1000013523,45217,Blue Mountain Packaging,50 Carlson Rd,,Rochester,NY,14610,USA
-1000013523,45218,Jamestown Containers,2775 Broadway,,Buffalo,NY,14227,USA
-1000013523,45219,Packaging Design and Supply,1014 Northampton Street,,Buffalo,NY,14211,USA
 1000018930,45236,BCI Rochester - Buckeye Corrugated,797 Old Dutch Road,,Victor,NY,14564,USA
 1000018930,45237,BCI Syracuse Division,1203 Kinne Street,,Syracuse,NY,13057,USA
 1000018938,45238,BCI Syracuse - Buckeye Corrugated,1203 Kinne Street,,Syracuse,NY,13057,USA
@@ -9661,7 +9667,19 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000014275,45269,JCC Lyons,100 Dunn Road,,Lyons,NY,14489,USA
 1000014275,45271,Chapin International Inc,700 Ellicott Street,,Batavia,NY,14020-3794,USA
 1000011312,45275,Endflex,4760 NW 128th St.,,Opa-Locka,FL,33054,USA
-1000012704,45288,"Rip Van Wafels, Inc",67 West Street,,Brooklyn,NY,11222,USA
+1000012704,45379,"Rip Van Wafels, Inc",67 West Street,,Brooklyn,NY,11222,USA
+12704,45384,"Rip Van Wafels, Inc",67 West Street,,Brooklyn,NY,11222,USA
+13523,45394,Southern Tier Logistics,50 Electric Parkway,,Horseheads,NY,14845,USA
+1000019585,45430,Corrugated Packaging,15 Oak Hill Lane,,Fitchburg,MA,01420,USA
+1000013523,45483,Blue Mountain Packaging Llc,1211 Haselton Rd,,Wilmington,NY,12997,USA
+1000013523,45484,Blue Mountain Packaging Llc,235 Murray St.,,Newark,NY,14513,USA
+1000013523,45485,Blue Mountain Packaging,50 Carlson Rd,,Rochester,NY,14610,USA
+1000013523,45486,Jamestown Containers,2775 Broadway,,Buffalo,NY,14227,USA
+1000013523,45487,Packaging Design and Supply,1014 Northampton Street,,Buffalo,NY,14211,USA
+1000013523,45488,Southern Tier Logistics,50 Electric Parkway,,Horseheads,NY,14845,USA
+1000013648,45545,Bibbidi Bobbidi Boxes,50 Dean Goss Drive,,Jasper,GA,30143,USA
+1000013648,45546,Bibbidi Bobbidi Boxes,1052 E Church St Suite C,,Jasper,GA,30143,USA
+1000013648,45548,Bibbidi Bobbidi Boxes,33 Waleska Highway 108,,Jasper,GA,30143,USA
 12463,4950,Carpenter Co.,5016 Monument Ave.,,Richmond,VA,,USA
 1000012930,7712,Metcan USA,545 Industral Rd,,Adrian,MI,,USA
 13855,10359,Hillcrest Foods,2735 E. 40th Street,,Cleavland,OH,,USA
@@ -9775,7 +9793,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 19030,36359,Albright Packaging,,,,FL,,USA
 1000019030,36360,Albright Packaging,,,,IN,,USA
 19040,36391,Stran,,,Quincy,MA,,USA
-1000013648,36531,COURIER,,,,GA,,USA
 1000016219,36607,Givr Packaging,,,Melbourne,FL,,USA
 19112,37016,Mid America Display,,,,MO,,USA
 1000018833,38733,Visual print solutions,,,,NY,,USA
@@ -9790,6 +9807,7 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000014565,43246,TBD,,,,CA,,USA
 1000014565,43252,,,,Hayward,CA,,USA
 1000014304,43435,ALEX,,,,NY,,USA
+1000013648,45547,COURIER,,,,GA,,USA
 1000010085,186,Red River Paddle,590  Montrose Street,,Winnipeg,MB,R3M 3N1,Canada
 10085,187,Red River Paddle,590  Montrose Street,,Winnipeg,MB,R3M 3N1,Canada
 10099,211,Chick Inn,651 Kintore Road,,Upper Kintore,NB,E7H 2N4,Canada
@@ -10018,7 +10036,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000016611,21904,Stweart Farms,9-78 Miltown Blvd,,Sr Stephen,NB,E3L 1G6,Canada
 16612,21909,Made with Local,3-35 Portland Street,,Cartmouth,NS,B2Y 1H1,Canada
 1000012105,21978,Ah! Communications,52 Burpee Street,,Edmunston,NB,E3V 1Z5,Canada
-11867,24053,Westbrook Floral,4995 North Service Rd,,Beamsville,CA,L3J 1J8,Canada
 12105,24206,Érablière Vallières,748 Chemin Grand Reed,,Baker brook,NB,E7A 1T7,Canada
 1000014732,25679,Crescent Beach Cottages,750 West Hawk Blvd,,Whiteshell,MB,R0E 2H0,Canada
 14732,25680,Crescent Beach Cottages,750 West Hawk Blvd,,Whiteshell,MB,R0E 2H0,Canada
@@ -10089,10 +10106,8 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 19194,37860,Evolution Raw,414 Ave N S,,Saskatoon,SA,S7M 2N4,Canada
 1000011994,38481,Behlen Industries LP,927 Douglas Street,,Brandon,MB,R7A 7B3,Canada
 19274,38734,Chill Street,2 Lakemist Court,,Dartmouth,NS, B3A 4Z,Canada
-1000014754,39559,Evova Foods,1302 Quebec Ave,,Saskatoon,SA,S7K 1V5,Canada
 1000018419,39629,Biblical Nutrition and Health,840 9 STREET SW,,Calgary,AL,T2P 2T1,Canada
 1000019194,39635,Evolution Raw,414 Ave N S,,Saskatoon,SA,S7M 2N4,Canada
-18353,40051,Duvet Allied - CAN funds,69056 W. Acco St,,Montebello,CA,90640,Canada
 1000014305,40481,Christie Fessler,296 Lockwood Road,,Regina,SA,S4S 6E2,Canada
 1000014305,40482,Prairie Advertising,588 1st Ave East,,Regina,SA,S4N 5T6,Canada
 1000014305,40493,MNP LLP,1401 Princess Avenue,,Brandon,MB,R7A 7L7,Canada
@@ -10104,12 +10119,10 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000012343,41049,National Trailer Parts,2494 South Service Road West,,Swift Current,SA,S9H 5J8,Canada
 1000012343,41050,Dexter Distribution Group,2494 South Service Road West,,Swift Current,SA,S9H 5J8,Canada
 1000012343,41051,National Trailer Parts,150 Adams Boulevard,,BRANTFORD,SA,N3S 7V2,Canada
-1000011867,41154,Westbrook Floral,4995 North Service Rd,,Beamsville,CA,L3J 1J8,Canada
 18689,41401,FUELBOXX,15737 HESBY ST,,ENCINO,CA,91436,Canada
 19394,41840,HIT BOX SPORTS CARDS,79 SISKIN BAY,,Winnipeg,MB,R3X 0T2,Canada
 1000019394,41841,HIT BOX SPORTS CARDS,79 SISKIN BAY,,Winnipeg,MB,R3X 0T2,Canada
 1000018689,41873,FUELBOXX,15737 HESBY ST,,ENCINO,CA,91436,Canada
-1000018353,42126,Duvet Allied - CAN funds,69056 W. Acco St,,Montebello,CA,90640,Canada
 1000014727,42282,Atlas Containers Corporation,8140 Telegraph Rd,,Severn,MD,21144,Canada
 1000014727,42283,Atlas Container Corporation,8140 Telegraph Rd,,Severn,MD,21144,Canada
 12724,42394,Geoff Morse,25 Borden Ave,,Dartmouth,NS,B3B 1C7,Canada
@@ -10126,6 +10139,11 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000018537,43088,Heeter Printing,701 Technology Drive,,Cannonsburg,PA,15317,Canada
 1000018537,43089,MKB Company LLC,83 Central Penn Ave,,Belleville,PA,17004,Canada
 19540,43566,Forex eShip Winnipeg,310 Keewatin St,,Winnipeg,MB,R2X 2Y3,Canada
+1000018353,45373,Duvet Allied - CAN funds,69056 W. Acco St,,Montebello,CA,90640,Canada
+18353,45376,Duvet Allied - CAN funds,69056 W. Acco St,,Montebello,CA,90640,Canada
+1000011867,45422,Westbrook Floral,4995 North Service Rd,,Beamsville,CA,L3J 1J8,Canada
+11867,45425,Westbrook Floral,4995 North Service Rd,,Beamsville,CA,L3J 1J8,Canada
+1000014754,45551,Evova Foods,1302 Quebec Ave,,Saskatoon,SA,S7K 1V5,Canada
 10089,198,RF Luge,101 Crystalridge CT,,Okotoks,AB,T1S 1X7,Canada
 11138,1260,LUX Beauty Boutique,12515-102 Avenue,,Edmonton,AB,T5N 0M4,Canada
 11336,2637,Blingbebe Greetings,Box 76,,Plamondon,AB,T0A 2T0,Canada
@@ -10264,6 +10282,8 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000019527,43504,Horizon Beers,822C 10TH STREET,,Canmore,AB,T1W 2A7,Canada
 1000016277,43950,VPC GROUP INC - CALGARY BIB,4545-54TH AVENUE SE.E.,,CAGARY,AB,T2C 2L9,Canada
 1000014052,44129,Levven,9741 - 54 Avenue NW,,Edmonton,AB,T6B 5J4,Canada
+18956,45431,River Valley Beverage,48 Airport Rd NW,,Edmonton,AB,T5G 0W7,Canada
+1000018956,45537,River Valley Beverage,48 Airport Rd NW,,Edmonton,AB,T5G 0W7,Canada
 11170,2661,Monashee Spring Water Distributors Ltd,"Unit D 3851 21 Street, NW",,Calgary,AB,T2E 6T5,Canada
 11670,3224,Empire Kitchen & Bath,5539 1st Street SE,,Calgary,AB,T2H 1H9,Canada
 11828,3569,Wonderlab,,,Calgary,AB,T2E 3M4,Canada
@@ -10598,11 +10618,11 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 13820,42324,Tomas Koronczi,808 Clark Dr,,Vancouver,BC,V5L 0C6,Canada
 1000018692,42810,Treetop Marketing & Promotion Inc.,1272 Vernon Drive,,Vancouver,BC,V6A 4C9,Canada
 19546,43624,Uni Express,300-10271 Shellbridge Way,,Richmond,BC,V6X 2W8,Canada
-1000019546,45195,Uni Express,300-10271 Shellbridge Way,,Richmond,BC,V6X 2W8,Canada
-1000016165,45201,7th Element Supplements,101 -1865 Dilworth Dr. Suite #740,,Kelowna,BC,V1Y 9T1,Canada
-1000016165,45202,MEALPREP 4U,#101 - 2237 LECKIE RD,,Kelowna,BC,V1X 6Y5,Canada
-16165,45204,7th Element Supplements,101 -1865 Dilworth Dr. Suite #740,,Kelowna,BC,V1Y 9T1,Canada
-16165,45205,MEALPREP 4U,#101 - 2237 LECKIE RD,,Kelowna,BC,V1X 6Y5,Canada
+16165,45362,7th Element Supplements,101 -1865 Dilworth Dr. Suite #740,,Kelowna,BC,V1Y 9T1,Canada
+16165,45363,MEALPREP 4U,#101 - 2237 LECKIE RD,,Kelowna,BC,V1X 6Y5,Canada
+1000019546,45444,Uni Express,300-10271 Shellbridge Way,,Richmond,BC,V6X 2W8,Canada
+1000016165,45532,7th Element Supplements,101 -1865 Dilworth Dr. Suite #740,,Kelowna,BC,V1Y 9T1,Canada
+1000016165,45533,MEALPREP 4U,#101 - 2237 LECKIE RD,,Kelowna,BC,V1X 6Y5,Canada
 10078,178,Lootopia,501 Rue Principale,,Cowansville,QC,J2K 1J8,Canada
 1000010078,184,Lootopia,501 Rue Principale,,Cowansville,QC,J2K 1J8,Canada
 1000010079,204,ONYX Sleep,170 de L'industrie,,Candiac,QC,J5R 1J3,Canada
@@ -10810,7 +10830,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 18054,41641,Keypak Montreal,2000 BEAULAC,,ST.LAURENT,QC,H4R 2E7,Canada
 18054,41642,PRECISE WAREHOUSING,555 AVE LEE,,BAIE D'URFE,QC,H9X 3S3,Canada
 19403,41925,Functional Alchemy Beverages,254 BD INDUSTRIEL,,CHATEAUGUAY,QC,J6J 4Z2,Canada
-1000018544,42231,Lanart Rug Inc,300 St-Louis,,Saint-jean-sur-richelieu,QC,J3B 1Y4,Canada
 1000012948,42234,PDI,3360 CHEMIN DE LA BARONNIE,,VARENNES,QC,J3X 1P7,Canada
 1000018054,42245,Keypak Montreal,20600 Clark Graham,,Baie D'Urfie,QC,H9X 4B6,Canada
 1000018054,42246,Keypak Montreal,2000 BEAULAC,,ST.LAURENT,QC,H4R 2E7,Canada
@@ -10821,6 +10840,8 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000014565,43264,Britt Rozenblat,26 Colchester,,Hempstead,QC,H3X 3V5,Canada
 19576,44096,NaturSource INC,1330 Trans Canada Route,,Dorval,QC,H9P 1H7,Canada
 1000018198,45207,Multi Services Inc,1875 Blvd Industriel,,Magog,QC,J1X 5N4,Canada
+19603,45516,NexKemia Petrochemicals Inc.,24 Rue Bellevue,,Mansonville,QC,J0E 1X0,Canada
+1000018544,45530,Lanart Rug Inc,300 St-Louis,,Saint-jean-sur-richelieu,QC,J3B 1Y4,Canada
 10091,200,ALLIED GROUP,9393 Boulevard St-Michel,,Montreal,QC,H1Z 3H3,Canada
 11233,2414,Knotz Pour Homme,433 Chabanel St. West,,Montreal,QC,H2N 2J5,Canada
 1000011233,2516,Knotz Pour Homme,433 Chabanel St. West,,Montreal,QC,H2N 2J5,Canada
@@ -10899,11 +10920,9 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 18907,37192,Heritage Home Fashions Inc,Suite 150 - 5000 Jean Talon West,,Montreal,QC, H4P 1W9,Canada
 17948,37729,CECILE CHASSELINE,3500 BOULEVARD DE MAISONN,,Montreal,QC,H3Z 3C1,Canada
 1000017948,39128,CECILE CHASSELINE,3500 BOULEVARD DE MAISONN,,Montreal,QC,H3Z 3C1,Canada
-18353,40052,Duvet Allied Inc,9393 Boulevard St Michael,,Montreal,QC,H1Z 3H3,Canada
 1000014709,40613,White Star Software,3095 Arcand,,Montreal,QC,H1N 3C6,Canada
 18863,41860,Cup-O Coffee Inc,102-3800 Rue St Patrick,,Montreal,QC,H4E 1A4,Canada
 1000018689,41866,Packwire,"485 McGill, Office 200",,Montreal,QC,H2Y 2H4,Canada
-1000018353,42127,Duvet Allied Inc,9393 Boulevard St Michael,,Montreal,QC,H1Z 3H3,Canada
 19413,42340,Stefano Faita,48 Dante Street,,Montreal,QC,H2S 1J5,Canada
 1000019413,42341,Stefano Faita,48 Dante Street,,Montreal,QC,H2S 1J5,Canada
 18299,42379,Intelcom Courier Canada Inc.,1380 Rue William,,Montreal,QC,H3C 1R5,Canada
@@ -10914,6 +10933,8 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000017985,43957,Duvet Allied Inc,9393 BOULEVARD ST. MICHAEL,,Montreal,QC,H1Z 3H3,Canada
 17985,43961,Duvet Allied Inc,9393 BOULEVARD ST. MICHAEL,,Montreal,QC,H1Z 3H3,Canada
 1000018299,43976,Intelcom Courier Canada Inc.,1380 Rue William,,Montreal,QC,H3C 1R5,Canada
+1000018353,45374,Duvet Allied Inc,9393 Boulevard St Michael,,Montreal,QC,H1Z 3H3,Canada
+18353,45377,Duvet Allied Inc,9393 Boulevard St Michael,,Montreal,QC,H1Z 3H3,Canada
 11153,1279,Keto Bake Club,127-425 Simcoe Street,,Victoria,BC,,Canada
 1000011153,1280,Keto Bake Club,127-425 Simcoe Street,,Victoria,BC,,Canada
 11194,2355,Sage ISG,203S 203 38 AVE NE,,Calgary,AB,,Canada
@@ -11472,7 +11493,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 16623,41070,CP Packaging Corp,17854 Chesterfield,Airport Rd,Chestefield,MO,63005,Canada
 1000011544,41674,Vaderstad,2 Miles North of Langbank,on Highway #9,LANGBANK,SA,S0G 2X0,Canada
 18689,41913,Collective Essence,900 Cure-labelle,508,Laval,QC,H7V 0C8,Canada
-1000016048,42173,True North Foods,38079 PTH 13,BOX 1259,CARMAN,MB,R0G 0J0,Canada
 19451,42600,Oak Leaf,2050 RUE DANDURAND, SUITE 309,Montreal,QC,H2G 1Y9,Canada
 1000019451,42778,Oak Leaf,2050 RUE DANDURAND, SUITE 309,Montreal,QC,H2G 1Y9,Canada
 1000012016,42970,Packaging Solutions,1350 Remington Rd,Suite C,Schaumburg,IL,60173,Canada
@@ -11481,8 +11501,9 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000014565,43255,Faan Rossouw,Teonan Biomedical Inc,324 Rue Marie Curie,Vaudreuil-Dorion,QC,J7V5V%,Canada
 1000019334,43564,Forex eShip,2360 Portland St SE,Unit 111,Calgary,AB,T2G 4M6,Canada
 17948,44071,Entrepot Remax QC,"2578, boul Le Corbusier",Porte arriere: 29,Laval,QC,H7S 2K8,Canada
-1000016165,45203,RMS Holistic,116-5100 Anderson Way,Suite 385,Vernon,BC,V1T 0C4,Canada
-16165,45206,RMS Holistic,116-5100 Anderson Way,Suite 385,Vernon,BC,V1T 0C4,Canada
+16165,45364,RMS Holistic,116-5100 Anderson Way,Suite 385,Vernon,BC,V1T 0C4,Canada
+1000016048,45517,True North Foods,38079 PTH 13,BOX 1259,CARMAN,MB,R0G 0J0,Canada
+1000016165,45534,RMS Holistic,116-5100 Anderson Way,Suite 385,Vernon,BC,V1T 0C4,Canada
 14845,13332,PrintSimply,5709 Gardendale Drive,Suite C,Houston,TX,,USA
 1000014845,13333,PrintSimply,5709 Gardendale Drive,Suite C,Houston,TX,,USA
 18200,29637,Chris Doerr/Erin Stein,345 34th St,Unit B,Brigantine,NJ,08203,USA
@@ -11530,7 +11551,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000018638,39515,ESTWING MFG,2647 8TH STREET,CENTER GATE,Rockford,IL,61109,USA
 1000018821,39531,Ferguson #0987,6807 Elroy Drive,Building 3,Del Valle,TX,78617,USA
 18821,39534,Ferguson #0987,6807 Elroy Drive,Building 3,Del Valle,TX,78617,USA
-18353,40053,Allied Home LLC,270 North Ave,Suite 404,New Rochelle,NY,10801,USA
 14275,40937,Enerco Group,22801 Aurora Rd,Suites 3 & 4,Bedford Heights,OH,44146,USA
 14275,40943,JCC Buffalo,2775 Broadway,Suite 150,Cheektowaga,NY,14227,USA
 14275,40945,Malorie Burden,829 Riverside Dr,Suite 110,Asheville,NC,28801,USA
@@ -11564,7 +11584,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000014290,42108,KMG,5200 WILLSON RD,Suite 300,Edina,MN,55424,USA
 1000014290,42111,HERO LABS INC,548 MARKET ST,PMB,San Francisco,CA,94104,USA
 1000014290,42114,ALEXANDER'S,1811 HIGHLAND,MARKET DRIVE,BATON ROUGE,LA,70810,USA
-1000018353,42128,Allied Home LLC,270 North Ave,Suite 404,New Rochelle,NY,10801,USA
 1000019033,42286,SOUPERGIRL,9701 Philadelphia CT  suite c,Dock 4 or 5,Lanham,MD,20706,USA
 1000013881,42401,Sutherland Packaging Inc,254 Brighton Avenue,PO Box 1429,Andover,NJ,07821,USA
 14275,42796,HI-WAY DISTRIBUTING,5555 MASSILLON RD,WAREHOUSE E,NORTH CANTON,OH,44720,USA
@@ -11580,7 +11599,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000014565,43257,Wulf's Fish,"8 Seafood Way,",Bays 17-22,Boston,MA,02210,USA
 1000014565,43261,JerkyGent LLC,11690 Cedar Rock Dr NE,Ste #2,Rockford,MI,49341,USA
 1000014565,43268,Painted Plate Inc,54 Sprint St.,Apt 2R,New York,NY,,USA
-1000019203,43299,First Onsite Restoration,25 Kinnear Ct,Unit 2,Richmond Hill,OR,L4B 1H9,USA
 1000014304,43434,NUTPODS - MICHELE SILBEY,15900 SE EASGATE WAY,SUITE 125,BELLEVUE,WA,98008,USA
 1000016349,45225,The Children's Place,500 Plaza Drive,4th Floor,Secaucus,NJ,07094,USA
 1000014275,45243,JCC Buffalo,2775 Broadway,Suite 150,Cheektowaga,NY,14227,USA
@@ -11592,6 +11610,8 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000014275,45265,Enerco Group,22801 Aurora Rd,Suites 3 & 4,Bedford Heights,OH,44146,USA
 1000014275,45270,HI-WAY DISTRIBUTING,5555 MASSILLON RD,WAREHOUSE E,NORTH CANTON,OH,44720,USA
 1000010027,45312,CASESTACK C/O KANE IS ABLE,STAUFFER INDUSTRIAL PARK,DC #6,TAYLOR,PA,18517,USA
+1000018353,45375,Allied Home LLC,270 North Ave,Suite 404,New Rochelle,NY,10801,USA
+18353,45378,Allied Home LLC,270 North Ave,Suite 404,New Rochelle,NY,10801,USA
 11925,3766,Pandora,Havnehomen 17-19,DK-1561 Kobenhaven,Copenhagen,,,Denmark
 1000011925,3818,Pandora,Havnehomen 17-19,DK-1561 Kobenhaven,Copenhagen,,,Denmark
 18200,29673,Packaging Validators,755 W. Carmel Drive,Suite 216,Carmel,IN,46032,USD
@@ -11780,6 +11800,7 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 14939,13498,Fastsigns of Gta,4610 Dufferin street,Unit 15B,North York,ON,,Canada
 11525,13500,MERCANTI SPECIALTY FOODS INC,175 NEBO RD,Unit B,Hamilton,ON,L8W 2E4,Canada
 14956,13534,Agape Valley Bible Camp,392 Killman Road,RR #1,Ridgeville,ON,L0S 1MO,Canada
+15008,13619,British Pride Bakery,125 MCGOVERN DRIVE,Unit 8,CAMBRIDGE,ON,N3H 4R7,Canada
 15009,13620,D5 Collectors,123 Tormina Blvd,Unit 12700,Whitby,ON,,Canada
 15013,13644,Barebones Inc,1315 Lawrence Ave East,Suite 312,North York,ON,,Canada
 12620,13680,At Work Sales Inc,1266 South Serivce Road,Unit B1-2,Stoney Creek,ON,L8E 5R9,Canada
@@ -11931,7 +11952,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000013383,28722,Schinkels,19 MCGREGOR PLACE,RR#4,Chatham,ON,N7M 5J4     /,Canada
 1000015299,28818,Ellis Studios,14845 Yonge St,Unit 6. Suite 186,Aurora,ON,L4G 6H8,Canada
 1000012641,29262,Ancaster Food Equipment,396 HENRY ST,Unit #1,BRANTFORD,ON,N3S 7W1,Canada
-1000014224,29304,Stax Diecutting,39 Riviera Drive,Unit 2 & 3,Markham,ON,L3R 8N4,Canada
 1000017807,29331,Big Bee Hot Honey,19 Bergamot Ave,Apt 1,Etotobicoke,ON,M9M 1W1,Canada
 1000015682,29344,PATRICIA GUERNSEY,ROYAL LE PAGE,357 FRONT STREET,Belleville,ON,K8N 2Z9,Canada
 1000016594,29356,Old Son's Distillery,150 Bradwick Dr,Unit #6,Concord,ON,L4K 4M7,Canada
@@ -12039,7 +12059,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000013662,34946,Genumark Cambridge,c/o Jo-Ann Hammer,77 Shadeland Court,CAMBRIDGE,ON,N1V 1VA,Canada
 11383,34994,Secured Shipping and Delivery,30 Adelaide st N,Unit 2D4,London,ON,L6B 3N5,Canada
 1000011383,34996,Secured Shipping and Delivery,30 Adelaide st N,Unit 2D4,London,ON,L6B 3N5,Canada
-12704,35066,,2110 Williams Parkway,Unit 6  Auction 10,Brampton,ON,L6S 5X6,Canada
 12445,35068,Professional Development Centre,1385 Woodroffe Ave Darren #172,"P Bldg, Room P111",Ottawa,ON,K2G 1V8,Canada
 12244,35102,Aj's Woodworking,2172 Wyecroft Rd,Unit 11,Oakville,ON,L6L 6R1,Canada
 1000012244,35129,Aj's Woodworking,2172 Wyecroft Rd,Unit 11,Oakville,ON,L6L 6R1,Canada
@@ -12073,6 +12092,7 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000011552,36453,BORDER BOUND WAREHOUSE,1453 Cornwall Road,"UNIT #3, DOORS 6-10",Oakville,ON,L6J 7T5,Canada
 1000011341,36528,Kuriyama,140 Roy Blvd,Doors 11-14,BRANTFORD,ON,N3R 7K2,Canada
 1000011162,36571,DOMITE WEAR TECHNOLOGY INC,20 LEE AVENUE,PO BOX 521,PARIS,ON,N3L 3T6,Canada
+18370,36669,Flint Packaging,7250 Martin Grove Road,Doors 1-6,Woodbridge,ON,L4L 9J3,Canada
 19085,36780,FedEx,103-2750 Peddie Road,L9T 6Y9,Milton,ON,,Canada
 1000019085,36783,FedEx,103-2750 Peddie Road,L9T 6Y9,Milton,ON,,Canada
 19091,36802,EZ Pop Inc,17 Brownridge Rd,Unit 14,Halton Hills,ON,L7G 0E2,Canada
@@ -12090,6 +12110,7 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000013366,37377,Alexandra Shena,1300 South Service Rd W,Dock 13- Shipping Attn: Google Cage- Alex,Oakville,ON,L6L 5T7,Canada
 1000013076,37417,Ontario Native Plants,1504 Brock Rd.,RR# 4,Dundas,ON,L9H-5E4,Canada
 13076,37418,Ontario Native Plants,1504 Brock Rd.,RR# 4,Dundas,ON,L9H-5E4,Canada
+19157,37493,Clifford Brewing,398 Nash Rd N,Unit 1,Hamilton,ON,L8H7P5,Canada
 1000011915,37528,Witteveen Meats Ltd.,RR NO 1,154 Brant Road,St George,ON,L0E 1N0,Canada
 1000018065,37634,Martinrea Industrial Canada,100 Belfield Rd,Unit#2,Etobicoke,ON,M9W 1G1,Canada
 18065,37636,Martinrea Industrial Canada,100 Belfield Rd,Unit#2,Etobicoke,ON,M9W 1G1,Canada
@@ -12123,8 +12144,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 17948,39292,STAPLES,9040 LESLIE STREET,UNIT 10-12,Richmond Hill,ON,L4B 3M4,Canada
 1000018848,39551,Global Industrial,35 Staples Ave,Suite 110,Richmond Hill,ON,L4B4W6,Canada
 1000015782,39554,T&S Granite,38A Bigwin Rd,Unit 5,Hamilton,ON,L8W 3R4,Canada
-1000014754,39557,Falcon Retail,13 Holland Dr,Unit 5,Bolton,ON,L7E 1G4,Canada
-1000014754,39558,Namoji Inc,200 Connie Cres,Unit 11-14,Concord,ON,L4K 1M1,Canada
 19201,39572,Benny's Holdings Ltd,1 Keyes Ct,Unit 2,Woodbridge,ON,L4H 5A3,Canada
 10002,39614,Kromet Langs,866 Langs Drive,MAN DOOR 4,CAMBRIDGE,ON,N3H 5P6,Canada
 10002,39615,LASER WELD CREATION,355 RAYETTE RD,Unit 1,Vaughan,ON,L4K 2G2,Canada
@@ -12200,7 +12219,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000011161,42943,AMICO CLINICAL SOLUTIONS CORP,B-122 EAST BEAVER CREEK ROAD,RECEIVING DOCK #18,Richmond,ON,L4B 4V1,Canada
 19455,43029,Made2Match - DGM Enterprises,1173 North Service Rd W,UNIT D8,Oakville,ON,L6M 2V9,Canada
 1000019455,43030,Made2Match - DGM Enterprises,1173 North Service Rd W,UNIT D8,Oakville,ON,L6M 2V9,Canada
-1000011342,43092,Tech Stone,1980 Brampton St.E,Parkdale Warehouse,Hamilton,ON,L8H 3S5,Canada
 11134,43107,Stax Die Cutting inc.,39 Riviera Drive,Unit 2 & 3,Markham,ON,L3R 8N4,Canada
 1000012491,43118,Proforma-Battlefield Advertising,398 Nash Road North,Unit 5,Hamilton,ON,L8H 7P5,Canada
 1000015573,43213,Kaiser Design,23 Hannover Drive,2nd Floor,St. Catherines,ON,L2W 1A3,Canada
@@ -12208,7 +12226,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000019074,43223,Fastenal Canada,45 Bleams Rd,Unit 1,Kitchener,ON,N2C 2G1,Canada
 1000015958,43232,Crossby Systems Inc,327 Glover Road,Unit 2,Stoney Creek,ON,L8E 5M2,Canada
 1000014565,43265,Jordan Campbell,Attn:SPINCO Podium Inc,141 New Huntington Road - Unit 2,Vaughan,ON,L4H 0P5,Canada
-1000019203,43300,First Onsite Restoration,110 Woodbine Downs Blvd,Unit 3,Etobicoke,ON,M9W 5S56,Canada
 1000019404,43323,Northern Canning,6 HOLLAND DRIVE,Unit 3,Bolton,ON,L7E 4J2,Canada
 1000011392,43341,M-Health Solutions,150 Chatham St,Unit 3,Hamilton,ON,L8P 2B6,Canada
 1000011392,43343,M-Health Solutions,150 Chatham St,Unit 3,Hamilton,ON,L8P 2B6,Canada
@@ -12226,7 +12243,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000011898,43704,Oneroot Inc.,40 Viceroy Rd,Unit 22,Concord,ON,L4K 2L8,Canada
 1000010048,43790,Heritage Storage,1250 Franklin Blvd,Unit 2,CAMBRIDGE,ON,N1R 8B7,Canada
 1000012754,43820,Access Retail Group,286 Rutherford Rd,"S #8,",Brampton,ON,L6W 3K7,Canada
-1000013756,43843,LAKE OF BAYS,685 ECCLESTONE DR,DOCK 2 & 3,Bracebridge,ON,P1L 1R2,Canada
 1000016036,43894,Loewen Design Studios,3250 Schmon Pkwy,Unit 6 & 7,Thorold,ON,L2V 4Y6,Canada
 1000012451,43897,2023 YGD,500 Collier MacMillan Dr,Unit B,CAMBRIDGE,ON,N1R 6R5,Canada
 1000013964,43943,Berlo's Best,325 Concession,13 Townsend,Simcoe,ON,N3Y 4K3,Canada
@@ -12253,16 +12269,29 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000014208,45230,MAC,49 Truman Road,Door E7,Barrie,ON,L4N 8Y7,Canada
 1000012170,45276,Mitchell's Soup Company,516 John St. N,Unit 7B,Aylmer,ON,N5H 0A6,Canada
 1000012170,45278,Mitchell's Soup Co.,516 John Street North,Unit 7B,Aylmer,ON,N5H 2B8,Canada
-1000018578,45283,Grissin Bon,10 Abbott Court,"UNIT 405, D BUILDING",BRANTFORD,ON,N3S 0E7,Canada
-1000012704,45292,,2110 Williams Parkway,Unit 6  Auction 10,Brampton,ON,L6S 5X6,Canada
 1000011644,45293,Richelieu Hardware Canada Ltd ONW002,800 Wilson Ave,Unit 2,Kitchener,ON,N2C 0A2,Canada
 1000011644,45295,Neos/GordanPly Div Richelieu,100 Main Street,Suite 200,Thunder Bay,ON,P7B 6R9,Canada
 1000011695,45296,Richelieu Hardware Canada Ltd.,800 Wilson Ave,Unit 2,Kitchener,ON,N2C 0A2,Canada
 1000015740,45298,Richelieu Hardware Canada Ltd RIC003,100  Main Street,Suite 200,Thunder Bay,ON,P7B 6R9,Canada
 1000019151,45320,Scheps-RipVan,813185 BaseLine,RR#3 NORWICH,Norwich,ON,N0J 1P0,Canada
 1000010019,45329,Stax Die Cutting Inc,39 Riviera Dr,Unit 2 & 3,Markham,ON,L3R 8N4,Canada
-1000012811,45337,MoryEng Inc,311 Bowes Rd,Unit A6,Concord,ON,L4K 1J1,Canada
-1000012811,45338,MoryEng Inc,311 Bowes Rd,Unit A6,Concord,ON,L4K 1J1,Canada
+1000019157,45345,Clifford Brewing,398 Nash Rd N,Unit 1,Hamilton,ON,L8H7P5,Canada
+19551,45356,White House Graphics Inc.,35 Royal Group Crescent,Unit 6,Woodbridge,ON,L4H 1X9,Canada
+1000019551,45358,White House Graphics Inc.,35 Royal Group Crescent,Unit 6,Woodbridge,ON,L4H 1X9,Canada
+1000012811,45370,MoryEng Inc,311 Bowes Rd,Unit A6,Concord,ON,L4K 1J1,Canada
+1000012811,45371,MoryEng Inc,311 Bowes Rd,Unit A6,Concord,ON,L4K 1J1,Canada
+1000012704,45383,,2110 Williams Parkway,Unit 6  Auction 10,Brampton,ON,L6S 5X6,Canada
+12704,45388,,2110 Williams Parkway,Unit 6  Auction 10,Brampton,ON,L6S 5X6,Canada
+1000013756,45421,LAKE OF BAYS,685 ECCLESTONE DR,DOCK 2 & 3,Bracebridge,ON,P1L 1R2,Canada
+19558,45439,Pulp Moulded Products,1 Logistics Court,Unit 4,Keswick,ON,L4P 0L3,Canada
+1000019558,45452,Pulp Moulded Products,1 Logistics Court,Unit 4,Keswick,ON,L4P 0L3,Canada
+1000011342,45464,Tech Stone,1980 Brampton St.E,Parkdale Warehouse,Hamilton,ON,L8H 3S5,Canada
+1000014224,45471,Stax Diecutting,39 Riviera Drive,Unit 2 & 3,Markham,ON,L3R 8N4,Canada
+1000018578,45491,Grissin Bon,10 Abbott Court,"UNIT 405, D BUILDING",BRANTFORD,ON,N3S 0E7,Canada
+1000014754,45549,Falcon Retail,13 Holland Dr,Unit 5,Bolton,ON,L7E 1G4,Canada
+1000014754,45550,Namoji Inc,200 Connie Cres,Unit 11-14,Concord,ON,L4K 1M1,Canada
+1000019203,45555,First Onsite Restoration,25 Kinnear Ct,Unit 2,Richmond Hill,ON,L4B 1H9,Canada
+1000019203,45556,First Onsite Restoration,110 Woodbine Downs Blvd,Unit 3,Etobicoke,ON,M9W 5S56,Canada
 10092,201,URTECH Manufacturing,835 Harrington Crrt,Unit 1,Burlington,ON,L7N 3P3,Canada
 11513,2956,Integricare,1156 King Rd,Unit 30,Burlington,ON,L7T 0C5,Canada
 11514,2957,Elreg Distributors LTD,1175 Corporate drive,Unit 3,Burlington,ON,L7N 5V5,Canada
@@ -12330,9 +12359,9 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000011735,41109,Battlefield Press,5338 John Lucas Dr,Unit A,Burlington,ON,L7L 6A6,Canada
 1000010092,41920,URTECH Manufacturing,835 Harrington Crrt,Unit 1,Burlington,ON,L7N 3P3,Canada
 18889,43004,Globe Commercial Products,4214 South Service Rd,Unit 1,Burlington,ON,L7L 4X5,Canada
-1000019212,43685,URtech Manufacturing Inc.,835 Harrington Ct,Unit 1,Burlington,ON,L7N 3P3,Canada
-1000019212,43686,URtech Manufacturing Inc.,835 Harrington Ct,Unit 1 Door 3,Burlington,ON,L7N 3P3,Canada
 1000018889,44121,Globe Commercial Products,4214 South Service Rd,Unit 1,Burlington,ON,L7L 4X5,Canada
+1000019212,45538,URtech Manufacturing Inc.,835 Harrington Ct,Unit 1,Burlington,ON,L7N 3P3,Canada
+1000019212,45539,URtech Manufacturing Inc.,835 Harrington Ct,Unit 1 Door 3,Burlington,ON,L7N 3P3,Canada
 11310,2584,Wholly Veggie,50 Portland Street,Unit 315,Toronto,ON,M5V 2N7,Canada
 11339,2642,Baby Box Subscriptions,1068 Avenue Road,Unit A,Toronto,ON,M5N 2C9,Canada
 11645,3184,Carnivore Club,54 Wolseley St,1A,Toronto,ON,M5T 1A5,Canada
@@ -12454,7 +12483,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000014305,40503,ZURICH CANADA,100 KING ST W,SUITE 5500,Toronto,ON,M5X 1C9,Canada
 1000014305,40505,MNP LLP,SUITE 300,111 RICHMOND ST W,Toronto,ON,M5H 2G4,Canada
 1000011472,41146,Mejuri Inc.,361 Front St,Unit 1808,Toronto,ON,M5V 3R5,Canada
-1000012389,41557,Custom Box Builder,4100 Chesswood Drive,Unit 3,Toronto,ON,M3J 2B9,Canada
 12389,41567,Custom Box Builder,4100 Chesswood Drive,Unit 3,Toronto,ON,M3J 2B9,Canada
 19269,41611,Indigo,620 King Street West,4th Floor,Toronto,ON,M5V 1M6,Canada
 1000011759,42249,Brust Beverages,220 Duncan Mill Rd,Suite 415,Toronto,ON,M3B 3J5,Canada
@@ -12470,6 +12498,9 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000019422,45162,,3250 Bloor St. West,"East Tower, Suite 901",Toronto,ON,M8X 2X9,Canada
 19422,45165,,3250 Bloor St. West,"East Tower, Suite 901",Toronto,ON,M8X 2X9,Canada
 1000018596,45223,MAURICIO SANCHEZ,311 - 4 OVERLAND DR,BUZZER 1652,Toronto,ON,M3C 2C4,Canada
+12389,45429,Custom Box Builder,620 Supertest Rd,Unit 3,Toronto,ON,M3J 2M5,Canada
+1000012389,45509,Custom Box Builder,4100 Chesswood Drive,Unit 3,Toronto,ON,M3J 2B9,Canada
+1000012389,45513,Custom Box Builder,620 Supertest Rd,Unit 3,Toronto,ON,M3J 2M5,Canada
 10121,237,Poppa Corn Corp POP001,5135 CREEKBANK ROAD,UNIT C,Mississauga,ON,L4W 1R3,Canada
 11415,2797,Minuteman Press,6355 Kennedy Road,Unit 8,Mississauga,ON,L5T 2L5,Canada
 1000011415,2798,Minuteman Press,6355 Kennedy Road,Unit 8,Mississauga,ON,L5T 2L5,Canada
@@ -12575,6 +12606,7 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 1000013366,37376,Alexandra Shena,2700 Matheson Blvd East,"#101, East Tower",Mississauga,ON,L4W 4V9,Canada
 17948,37732,INTEGRATED MERCHANDISING,6370 BELGRAVE RD,Unit 1A,Mississauga,ON,L5R,Canada
 1000016516,37939,Special Buys,1325 Amico Blvd,Rear Unit #5 & 6,Mississauga,ON,L4W 1B4,Canada
+19203,38028,FIRST ONSITE Property Restoration,110 Matheson Blvd W,Unit 3,Mississauga,ON,L5R 4G7,Canada
 1000013645,38559,Innovative Displays,2270 ARGENTINA RD,Unit 2,Mississauga,ON,L5N 6A6     /,Canada
 18148,38576,Nieu Cabinet Doors Inc.,3180 RIDGEWAY,UNIT 40,Mississauga,ON,L5L 5S7,Canada
 1000018148,38580,Nieu Cabinet Doors Inc.,3180 RIDGEWAY, UNIT 40,Mississauga,ON,L5L 5S7,Canada
@@ -12606,6 +12638,6 @@ customer_id,address_id,name_1,address_1,address_2,city,province,postal_code,coun
 19584,45171,EDC Export Development Canada,1 City Centre Drive,Suite 805,Mississauga,ON,L5B 1M2,Canada
 1000019584,45174,EDC Export Development Canada,1 City Centre Drive,Suite 805,Mississauga,ON,L5B 1M2,Canada
 19546,45194,Uni Express Inc,2475 Meadowpine Blvd,Unit 2,Mississauga,ON,L5N 6L7,Canada
-1000019546,45196,Uni Express Inc,2475 Meadowpine Blvd,Unit 2,Mississauga,ON,L5N 6L7,Canada
-1000010083,45232,Grime Eater Products Inc,3163 Winston Churchhill Blvd,PO box 26048,Mississauga,ON,L5L 5W7,Canada
-1000010083,45234,Grime Eater Products Limited,3610 Odyssey Drive,Unit 1,Mississauga,ON,L5M 0Z9,Canada
+1000010083,45417,Grime Eater Products Inc,3163 Winston Churchhill Blvd,PO box 26048,Mississauga,ON,L5L 5W7,Canada
+1000010083,45419,Grime Eater Products Limited,3610 Odyssey Drive,Unit 1,Mississauga,ON,L5M 0Z9,Canada
+1000019546,45445,Uni Express Inc,2475 Meadowpine Blvd,Unit 2,Mississauga,ON,L5N 6L7,Canada

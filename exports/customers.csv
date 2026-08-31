@@ -819,7 +819,6 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 15005,,Sereneti,,Sereneti,,0,22
 15006,,Deep Roots Canada,,Deep,,0,22
 15007,,BLNDbox,,BLNDbox,,0,22
-15008,,British Pride Bakery,,British,,0,22
 15009,,D5 Collectors,,D5,,0,22
 15010,,B4 Networks,,B4,,0,22
 15012,,CannaCulture Ltd,,CannaCulture,,0,22
@@ -1855,6 +1854,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19553,,Renaissance Pizza,,Renaissance,,0,15
 19580,,Identity Pet Nutrition,,Identity,,0,15
 19586,,Vanzanten Greenhouse,,Vanzanten,,0,15
+19594,,Scenic Floral,,Scenic,,0,15
 10009,,OHM Industrial Designer,,OHM,,0,2
 10012,,Ardent Zehr Farm,,Ardent,,0,2
 10031,,The Hamilton Brewery,,The,,0,2
@@ -1916,7 +1916,6 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 11865,,Grey Owl Paddles,,Grey,,0,2
 11871,,Craftadian,,Craftadian,,0,2
 11873,,Nu-Edge Tools,,Nu-Edge,,0,2
-11880,,Piccioni Mushrooms,,Piccioni,,0,2
 11901,,Oxford Pallet,,Oxford,,0,2
 11909,,Delft Blue Foods,,Delft,,0,2
 11910,,Box Lunch Brigade,,Box,,0,2
@@ -2197,6 +2196,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 11652,,Grove Brew House,,Grove Brewhouse,,0,46
 11663,,The Clean Candle Company,,Clean Candle,,0,9
 11664,,Imperial Captial,,Imperial,,0,9
+11880,,Piccioni Mushrooms,,Piccioni,,0,53
 11925,,Pandora,,Pandora,,0,9
 11969,,Boreal Wildcraft,,Boreal,,0,9
 12023,,Petites Poupees,,Petites,,0,9
@@ -2301,6 +2301,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 16540,,Rapid Packaging,,Rapid,,0,34
 16544,,Laminacorr,,Laminacorr,,0,0
 16608,,Relay Graphics - not this one,,Relay,,0,34
+16636,,Colt Paper,,Colt,,0,34
 16639,,White Woods Kitchen & Home,,White,,0,13
 16643,,The Craft Beer,,The,,0,0
 16652,,MDMK Designs,,MDMK,,0,9
@@ -2371,7 +2372,6 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19013,,Stingray Design and Manufacturing,,Stingray,,0,46
 19017,,HCL Logistics,,HCL,,0,46
 19020,,Compeer International,,Compeer,,0,45
-19026,,Jarja Floral,,Jarja,,0,46
 19027,,Lon TEST,,Lon,,0,45
 19028,,4est Brewery,,Forest,,0,46
 19032,,Lon,,Lon,,0,0
@@ -2404,7 +2404,6 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19146,,Something in the Water,,Something,,0,46
 19147,,Cambridge Label,,Cambridge,,0,47
 19148,,Florentina Foods Ltd.,,Florentina,,0,47
-19157,,Clifford Brewing,,Clifford,,0,47
 19163,,King David Frozen Pizza,,King,,0,47
 19178,,Boshkung Brewing,,Boshkung,,0,47
 19179,,Ace Beverages,,Ace,,0,47
@@ -2546,7 +2545,6 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19549,,Winao Canada Inc,,Winao,,0,46
 19554,,Wavemaker Brewing,,Wavemaker,,0,47
 19557,,Stallion,,Stallion,,0,46
-19558,,Pulp Moulded Products,,Pulp,,0,10
 19559,,Jacobs & Thompson,,Jacobs,,0,55
 19560,,Ched Pallet,,Ched,,0,52
 19561,,Ontario Native Plants,,Ontario,,0,56
@@ -2560,9 +2558,16 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19573,,Witomy,,Witomy,,0,47
 19574,,Jamie's Cracked Corn,,Jamie's,,0,55
 19575,,Organika,,Organika,,0,47
-19577,,Sulco Industries,,Sulco,,0,52
+19577,,Sulco Industries,,Sulco,,0,53
 19578,,Glendale Bakery,,Glendale,,0,53
 19581,,The Freeman Co.,,The,,0,55
+19591,,Wildly Delicious,,Wildly,,0,0
+19592,,Quality Produce,,Quality,,0,47
+19595,,Fastenal,,Fastenal,,0,57
+19597,,Avenue Industrial,,Avenue,,0,10
+19598,,SFS Intec,,SFS,,0,53
+19601,,Good NRG Organics,,Good,,0,47
+19602,,Wratten Holdings,,Wratten,,0,53
 11400,,George quote account,,George,,0,1
 11508,,Catelli,,Catelli,,0,1
 12192,,Cascades Ecommerce,,Cascades,,0,1
@@ -2629,6 +2634,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19112,,Mid America Display,,Mid,,0,1
 19326,,Pro Shipper,,Pro,,0,1
 19579,,Interpac cold corrugator,,Interpac,,0,1
+19599,,Prime Carton Ltd,,Prime,,0,1
 12228,,J&J MFG,,J&J,,0,25
 12245,,Jobark Industrial Supplies,,Jobark,,0,25
 12361,,Maas Safety Inc.,,Maas,,0,25
@@ -2702,7 +2708,6 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 16585,,It's Okay Design Studio,,It's,,0,25
 16596,,Rita B Designs,,Rita,,0,25
 16607,,Matt Plant,,Matt,,0,25
-16636,,Colt Paper,,Colt,,0,25
 16683,,Visual Voice Graphics,,Visual,,0,25
 17691,,Boom Imaging,,Boom,,0,25
 17702,,Colour Innovations,,Colour,,0,25
@@ -3075,6 +3080,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 18711,,FRASER DIRECT DISTRIBUTION,,,,0,34
 18726,,Pollard Windows & Doors,,,,0,34
 18830,,Spruce Home Decor Inc.,,,,0,34
+18837,,Allegra Hamilton,,,,0,34
 18852,,Red Rock Printing,,,,0,34
 18861,,Inhand Networks Nord Inc.,,,,0,34
 18888,,Radiant,,,,0,34
@@ -3112,7 +3118,6 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19524,,Shade FX,,,,0,34
 19532,,Gelato,,,,2,34
 19541,,Leveled Up Consulting,,,,0,34
-19551,,White House Graphics Inc.,,,,0,34
 19588,,TwinPro Graphics Inc.,,,,0,34
 19589,,Rocklyn Springs Farm,,,,0,34
 17862,,Ansel Press,,,,2,25
@@ -3221,7 +3226,6 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 18777,,Packpro Inc,,,,0,46
 18778,,Concord Store Fixture Group,,,,0,44
 18819,,Microcel Corporation,,,,0,40
-18837,,Allegra Hamilton,,,,0,44
 18846,,Gertex Hosiery,,,,0,45
 18864,,Canadian Industrial Distribution (CIPG),,,,0,46
 18985,,Niagara College Teaching Winery,,,,0,46
@@ -3245,6 +3249,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19461,,West Wind Trading Co,,,,0,47
 19518,,ReadyPine,,,,0,53
 19550,,Winoa Canada & USA,,,,0,46
+19593,,Goodlot Farm & Farmstead Brew,,,,0,46
 11222,,The Masters Collection,,,(905)928-0284,0,22
 11510,,B & I International,,,(905)802-8075,0,22
 16476,, Silverthorne Refractories inc,,,(905)774-1269,0,0
@@ -3323,7 +3328,6 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 18510,,Aim Redistribution,,,(___)___-____,0,44
 18549,,Backyard Innovations Company,,,(905)749-1958,0,38
 18562,,Tayal Holdings,,,(905)783-363_,0,38
-18587,,Prager Nuform,,,(905)362-9100,0,45
 18592,,Unirope Limited,,,(905)624-5131,0,38
 18660,,Corporate Facility Supply,,,(905)682-8888,0,44
 18668,,Harbour Printing and Distribution Ltd,,,(905)678-2511,0,44
@@ -3484,6 +3488,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 18491,,Sterling Marking Products,,,(519)434-5788,0,34
 18533,,Top Of The Line,,,(412)761-1964,0,34
 18539,,one imaging inc,,,(416)804-8642,0,34
+18587,,Prager Nuform,,,(905)362-9100,0,34
 18591,,Julie Thibault,,,(613)824-1223,0,34
 18607,,Canadian Down & Feather Company Inc.,,,(416)532-3200,0,34
 18635,,Line Change,,,(709)727-8229,0,34
@@ -3716,7 +3721,6 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19543,,BCI Plattsburgh,,BCI,(518)561-6150,2,45
 10058,,Foamcore Mouldings,,Foamcore,(905)358-3626,0,10
 11243,,Professional Packaging Supplies Inc.,,Professional,(905)336-2656,0,25
-11270,,Four Fathers Brewing Company,,Four Fathers,(519)575-3687,0,47
 11295,,Barrelling Tide Distillery,,Barrelling,(902)542-1627,0,15
 11382,,Dominion City Brewing Company,,Dominion,(613)688-6207,0,47
 11408,,Koru Distribution,,Hyung,(877)795-5678,0,5
@@ -3839,6 +3843,9 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19583,,Move Ease Services,,Move,(365)833-1644,0,47
 19584,,EDC Export Development Canada,,EDC,(416)573-5426,0,34
 19590,,#Unlimited - Mental Edge,,#Unlimited,(128)930-8700,0,47
+19596,,ThryveOn Naturals,,ThryveOn,(647)285-2697,0,47
+19600,,Food Dudes Hospitality,,Food,(647)340-3833,0,0
+19603,,NexKemia Petrochemicals Inc.,,NexKemia,(450)292-3333,0,57
 13872,,Planet Displays & Packaging Inc,,Planet,(216)251-9641,2,22
 13895,,Ashtonne Packaging,,Ashtonne,(419)289-7181,2,22
 14099,,Packaging Material Services,,Packaging,(330)745-9722,2,22
@@ -5414,6 +5421,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 11159,BGI155,Bgi Graphics Inc * Adi Dassler,,BGI,(519)442-7000,0,10
 11247,JCG001,JC Group,,JC,(705)727-4993,0,27
 11253,WIL030,Willibald Distillery,,Willibald,(519)807-1326,0,47
+11270,FOU018,Four Fathers Brewing Company,,Four Fathers,(519)575-3687,0,47
 11303,RUT003,Rutherford Controls,,Rutherford,(519)621-7651,0,35
 11366,GAL010,Galt Display Rack Company,,Galt,(519)623-0430,0,56
 11393,APO006,Apogee Ceramics,,Apogee,(519)442-3636,0,53
@@ -5514,6 +5522,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 14825,HHS001,Hamilton Health Sciences,,Hamilton,(905)521-2100,0,27
 14848,NEW034,Newprint,,New,(613)738-0531,0,25
 14918,TAN002,Tandem Designs,,Tandem,(416)543-0763,0,25
+15008,BAK007,British Pride Bakery,,British,(519)222-2836,0,47
 15139,DIS015,District Ventures Ltd.,,District,(403)630-1266,0,25
 15243,REH001,Rehoboth Christian School,,Rehoboth,(905)627-5977,0,10
 15292,JDP001,J & D Peters,,J&D Peters,(519)866-5185,0,57
@@ -5606,6 +5615,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19141,RIV012,Riverside Natural Foods,,Riverside,(416)360-8200,0,47
 19149,MAG027,Magnotta Winery,,Magnotta,(905)738-9463,0,47
 19154,MAT023,Matron Fine Beer,,Matron,(613)393-9195,0,47
+19157,CLI004,Clifford Brewing,,Clifford,(905)560-5444,0,47
 19159,LUM010,Lumo Beverage Corp.,,Lumo,(416)655-9823,0,47
 19167,IRO030,IronWood Cider,,IronWood,(905)468-8878,0,47
 19203,FIR027,FIRST ONSITE Property Restoration,,First Onsite,(905)696-2900,0,52
@@ -5649,6 +5659,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19530,PER015,PERFORMANCE FINISHING SOL,,Performance,(905)629-7007,0,52
 19546,UNI028,Uni Express,,Uni Express,(604)229-2007,0,52
 19548,RET009,Atlantic Packaging Retail PKG & Display,,Atlantic Retail,(416)298-8101,0,10
+19558,POL019,Pulp Moulded Products,,Pulp Moulded,(905)751-7759,0,10
 19568,LIZ003,Purple Lizard,,Purple,(289)219-3429,0,47
 10034,PAT003,Patera Group Inc.,,Patera,(416)241-8700,0,22
 10124,NEX001,Nexas Networks,,Nexas,(905)581-3717,0,22
@@ -5782,7 +5793,6 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 14215,VOO001,Voortman,,Voortman,(905)335-9500,0,15
 14291,BIG006,Big Spruce Brewing,,Big,(902)295-2537,0,15
 14455,TAI001,Tailwagco,,Tailwagco,(416)556-0852,0,15
-14529,BER011,Bergkamp Farm,,Bergkamp,(613)833-3419,0,15
 14661,JUN002,Juno Pet Foods,,Juno,(800)877-5866,0,15
 14768,ROY010,Royal Meats,,Royal Meats,(416)409-5736,0,15
 14789,YOU005,Your Effortless Event,,Your Effortless,(416)670-2767,0,15
@@ -5917,6 +5927,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 13965,MIL018,Miltera Machining,,Miltera,(519)725-2554,0,46
 14041,CAN087,Canadian Plastic Cards,,Canadian,(905)827-5243,0,46
 14246,DEL020,DELTA ELEVATORS,,DELTA,(519)745-5789,0,46
+14529,BER011,Bergkamp Farm,,Bergkamp,(613)833-3419,0,46
 15167,AST001,Astound,,Astound,(905)465-0474,0,46
 15185,NOR036,Norgen Bioteck Corp.,,Norgen,(905)227-8848,0,46
 15542,MAP008,Maple Lodge Hatcheries Ltd,,Maple,(905)885-6337,0,46
@@ -5948,6 +5959,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 18984,YMP001,York Metal,,York,(905)660-7238,0,46
 19004,HAP007,IM A HAPPY CAMPER,,HAPPY CAMPER,(905)961-1547,0,46
 19006,LIQ013,Liquid Earth,,Liquid,(289)308-6011,0,46
+19026,JAR006,Jarja Floral,,Jarja,(519)582-3930,0,46
 19031,HBC002,HBC -Radiomatic,,HBC,(437)836-8625,0,46
 19060,HFC001,Heartwood Cidery,,Heartwood,(226)791-3005,0,46
 19072,THE064,The Equipment Specialist Inc,,The Equipment,(905)544-9215,0,46
@@ -6512,6 +6524,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19383,MEL013,MELE JEWELRY BOX CORPORATION,,MELE,(519)805-4347,0,34
 19485,SIR003,Spence Print Solutions,,Spence Print,(519)756-0755,0,34
 19502,THE189,The Wholesome Pet Company Ltd,,Wholesome Pet,(437)778-8786,0,34
+19551,WHI044,White House Graphics Inc.,,White House,(905)605-6770,0,34
 19556,DIR009,DIRECT GLOBAL SOLUTIONS,,Direct,(416)535-1234,0,34
 19570,CRE040,Creative Path Digital,,Creative Path,(905)709-9609,0,34
 10028,SHO021,Shockingly Healthy Inc.,,Shockingly,(647)835-5287,0,41
@@ -7176,7 +7189,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 18646,,ASL Print FX,AWT Labels & Packaging Company,,,0,44
 18657,,New Democratic Party,NDP,,,0,34
 18664,PEN004,TurnSpout,via Peninsula Plastics,TurnSpout,,0,46
-18699,SPE040,Spectrum Feed Services,Tier 3 (T-3),Spectrum,,0,35
+18699,SPE040,Spectrum Feed Services,Tier 3 (T-3),Spectrum,,0,56
 18722,PRO107,Produce Express,Tier 3 (T-3),Produce Exp,,0,47
 18856,,Brust Beverages,Tier 3 (T-3),Bruust,,0,41
 18869,MIL045,Miller Foods Inc,Oma's Pride,Oma's,,2,41
@@ -7241,7 +7254,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 11624,LEO006,Bizlink Elocab Ltd,(formerly Leoni),BizLink,(519)893-1155,0,46
 11626,UPS036,UPS Store 286,Tier 3 (T-3),UPS,(905)788-9993,0,25
 11644,ONW002,Richelieu Hardware Canada Ltd ONW002,Tier 2 (T-2),Onward,(519)578-3770,0,46
-11655,NAT040,North American Transit Supply,Corporation (natsco),North,(905)876-0255,0,57
+11655,NAT040,North American Transit Supply,Corporation (natsco),North,(905)876-0255,0,34
 11658,TRO002,Tippet Richardson Records,TR Overseas Moving 1927 Inc,Tippets,(888)847-7380,0,9
 11666,LAY001,Laydon Composites,OptiFlow Wabco,Laydon,(905)829-9200,0,38
 11671,BEE002,Bvt (bee Vectoring,Technologies),BVT,(647)298-8927,0,2
@@ -7273,7 +7286,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 12320,COM026,Community Care St,Catherine's & Thorld,Community,(905)685-7349,0,34
 12343,NAT065,National Trailer Parts,Dexter Distribution Group,National,(306)778-7308,0,34
 12406,DIV002,XGP Canada,formerly Diversco Supply Inc,XGP,(519)740-1210,0,2
-12442,BLU003,Freudenberg Oil & Gas Technologies,Deliver to: Bluesky Process Solutions LTD,Freudenberg,(905)643-9600,0,2
+12442,BLU003,Freudenberg Oil & Gas Technologies,Deliver to: Bluesky Process Solutions LTD,Freudenberg,(905)643-9600,0,46
 12448,UTO001,Diamond Integrated Marketing,Utours Inc,Diamond,(647)389-3212,0,22
 12458,ALL056,TELUS Health – Virtual Pharmacy,FKA -Alliance Pharmacy,Alliance Pharm,(289)221-3839,0,41
 12471,FIE005,Fielding Estate Winery,C/o Fielding Wines Ltd,Feilding,(905)563-0668,0,15

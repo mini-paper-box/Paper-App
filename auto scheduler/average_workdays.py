@@ -26,76 +26,179 @@ CONN_STRING = (
 # )
 
 QUERY = """
-SELECT
-    c.short_name,
-    CAST(oh.order_id AS varchar(25)) + '-' + CAST(od.order_line_nbr AS varchar(25)) AS order_id,
-    od.docket_id,
-    CASE
-        WHEN d.docket_dsc LIKE '%Board and Print%' THEN 'Board and Print'
-        WHEN pd.printing_dsc LIKE '%Nozomi%' THEN 'Digital'
-        ELSE 'Brown Box'
-    END AS printing_type,
-    CAST(oh.order_dte AS DATE) AS order_dte,
-    recv.mat_recv_dte,
-    CAST(od.scheduled_dte AS DATE) AS ship_dte,
-    (
-        DATEDIFF(DAY, recv.mat_recv_dte, od.scheduled_dte)
-        - (DATEDIFF(WEEK, recv.mat_recv_dte, od.scheduled_dte) * 2)
-        - CASE WHEN DATEPART(WEEKDAY, recv.mat_recv_dte) = 1 THEN 1 ELSE 0 END
-        - CASE WHEN DATEPART(WEEKDAY, od.scheduled_dte)  = 7 THEN 1 ELSE 0 END
-    ) + 3 AS workdays
-
-FROM order_header oh
-LEFT JOIN order_details od
-    ON oh.order_id = od.order_id
-LEFT JOIN customer c
-    ON oh.customer_id = c.customer_id
-LEFT JOIN docket d
-    ON od.docket_id = d.docket_id
-LEFT JOIN printing_dsc pd
-    ON d.printing_id = pd.printing_id
-LEFT JOIN (
-    SELECT
+WITH cte_finish_goods AS (
+    SELECT 
         order_id,
         order_line_nbr,
-        purchase_id,
-        purchase_line_nbr,
-        ROW_NUMBER() OVER (
-            PARTITION BY order_id, order_line_nbr
-            ORDER BY purchase_id
-        ) AS rn
-    FROM purchase_details
-) pod
-    ON od.order_id = pod.order_id
-    AND od.order_line_nbr = pod.order_line_nbr
-    AND pod.rn = 1
-LEFT JOIN (
-    SELECT
-        purchase_id,
-        purchase_line_nbr,
-        MIN(receipt_dte) AS receipt_dte
-    FROM purchase_receipts
-    GROUP BY purchase_id, purchase_line_nbr
-) pr
-    ON pod.purchase_id = pr.purchase_id
-    AND pod.purchase_line_nbr = pr.purchase_line_nbr
-CROSS APPLY (
-    SELECT CAST(
-        CASE
-            WHEN pr.receipt_dte IS NOT NULL THEN pr.receipt_dte
-            ELSE DATEADD(DAY,
-                     3 + 2 * (((DATEPART(WEEKDAY, oh.order_dte) + @@DATEFIRST - 2) % 7 + 2) / 5),
-                     CAST(oh.order_dte AS DATE))
-        END
-    AS DATE) AS mat_recv_dte
-) recv
+        MIN(finish_dte) AS start_date,
+        SUM(finish_qty) AS total_qty
+    FROM finished_goods
+    GROUP BY 
+        order_id,
+        order_line_nbr
+),
 
-WHERE oh.status_id = 4
-AND DATEPART(ISO_WEEK, od.scheduled_dte) = ?
-AND YEAR(od.scheduled_dte) = ?
-AND c.customer_id not in  (15562, 12853)
-AND recv.mat_recv_dte IS NOT NULL
-AND od.scheduled_dte IS NOT NULL
+cte_base AS (
+    SELECT
+        c.short_name,
+
+        CAST(oh.order_id AS varchar(25))
+            + '-'
+            + CAST(od.order_line_nbr AS varchar(25)) AS order_id,
+
+        od.docket_id,
+
+        CASE
+            WHEN d.docket_dsc LIKE '%Board and Print%'
+                THEN 'Board and Print'
+            WHEN pd.printing_dsc LIKE '%Digital%'
+                THEN 'Digital'
+            ELSE 'Brown Box'
+        END AS printing_type,
+
+        CAST(oh.order_dte AS DATE) AS order_dte,
+
+        recv.mat_recv_dte,
+
+        ship.ship_date,
+
+        DATEDIFF(
+            DAY,
+            CAST(oh.order_dte AS DATE),
+            ship.ship_date
+        )
+        - DATEDIFF(
+            WEEK,
+            CAST(oh.order_dte AS DATE),
+            ship.ship_date
+        ) * 2
+        - CASE
+            WHEN DATEPART(
+                WEEKDAY,
+                CAST(oh.order_dte AS DATE)
+            ) = 1 THEN 1
+            ELSE 0
+          END
+        - CASE
+            WHEN DATEPART(
+                WEEKDAY,
+                ship.ship_date
+            ) = 7 THEN 1
+            ELSE 0
+          END AS workdays
+
+    FROM order_details od
+
+    LEFT JOIN order_header oh
+        ON oh.order_id = od.order_id
+
+    LEFT JOIN customer c
+        ON oh.customer_id = c.customer_id
+
+    LEFT JOIN docket d
+        ON od.docket_id = d.docket_id
+
+    LEFT JOIN printing_dsc pd
+        ON d.printing_id = pd.printing_id
+
+    LEFT JOIN cte_finish_goods cfg
+        ON od.order_id = cfg.order_id
+        AND od.order_line_nbr = cfg.order_line_nbr
+
+    LEFT JOIN (
+        SELECT
+            order_id,
+            order_line_nbr,
+            purchase_id,
+            purchase_line_nbr,
+            ROW_NUMBER() OVER (
+                PARTITION BY order_id, order_line_nbr
+                ORDER BY purchase_id
+            ) AS rn
+        FROM purchase_details
+    ) pod
+        ON od.order_id = pod.order_id
+        AND od.order_line_nbr = pod.order_line_nbr
+        AND pod.rn = 1
+
+    LEFT JOIN (
+        SELECT
+            purchase_id,
+            purchase_line_nbr,
+            MIN(receipt_dte) AS receipt_dte
+        FROM purchase_receipts
+        GROUP BY
+            purchase_id,
+            purchase_line_nbr
+    ) pr
+        ON pod.purchase_id = pr.purchase_id
+        AND pod.purchase_line_nbr = pr.purchase_line_nbr
+
+    CROSS APPLY (
+        SELECT CAST(
+            CASE
+                WHEN pr.receipt_dte IS NOT NULL
+                    THEN pr.receipt_dte
+                ELSE DATEADD(
+                    DAY,
+                    3 + 2 * (
+                        (
+                            (DATEPART(WEEKDAY, oh.order_dte)
+                            + @@DATEFIRST - 2) % 7 + 2
+                        ) / 5
+                    ),
+                    CAST(oh.order_dte AS DATE)
+                )
+            END
+            AS DATE
+        ) AS mat_recv_dte
+    ) recv
+
+    CROSS APPLY (
+        SELECT COALESCE(
+            CAST(cfg.start_date AS DATE),
+            CAST(od.scheduled_dte AS DATE)
+        ) AS ship_date
+    ) ship
+
+    WHERE oh.status_id = 4
+      AND DATEPART(ISO_WEEK, od.scheduled_dte) = ?
+      AND YEAR(od.scheduled_dte) = ?
+      AND c.customer_id NOT IN (15562, 12853)
+      AND recv.mat_recv_dte IS NOT NULL
+      AND od.scheduled_dte IS NOT NULL
+),
+
+cte_averages AS (
+    SELECT
+        printing_type,
+        AVG(CAST(workdays AS decimal(10,2))) AS avg_workdays
+    FROM cte_base
+    WHERE workdays <= 15
+    GROUP BY printing_type
+)
+
+SELECT
+    b.short_name,
+    b.order_id,
+    b.docket_id,
+    b.printing_type,
+    b.order_dte,
+    b.mat_recv_dte,
+    b.ship_date,
+
+    b.workdays AS original_workdays,
+
+    CASE
+        WHEN b.workdays > 15
+            THEN ROUND(a.avg_workdays, 2)
+        ELSE b.workdays
+    END AS workdays
+
+FROM cte_base b
+
+LEFT JOIN cte_averages a
+    ON b.printing_type = a.printing_type;
 """
 
 
@@ -236,7 +339,7 @@ def generate_pdf(week_num: int, year_num: int, output_path: str = None):
                   'Order Date', 'Recv Date', 'Ship Date', 'Workdays']
     det_data = [det_header]
 
-    df_sorted = df.sort_values(['printing_type', 'ship_dte'])
+    df_sorted = df.sort_values(['printing_type', 'ship_date'])
     for _, row in df_sorted.iterrows():
         wdays = int(row['workdays']) if row['workdays'] <= 30 else f"{int(row['workdays'])}*"
         det_data.append([
@@ -246,7 +349,7 @@ def generate_pdf(week_num: int, year_num: int, output_path: str = None):
             str(row['printing_type']),
             str(row['order_dte'])    if pd.notna(row['order_dte'])    else '',
             str(row['mat_recv_dte']) if pd.notna(row['mat_recv_dte']) else '',
-            str(row['ship_dte'])     if pd.notna(row['ship_dte'])     else '',
+            str(row['ship_date'])     if pd.notna(row['ship_date'])     else '',
             str(wdays),
         ])
 

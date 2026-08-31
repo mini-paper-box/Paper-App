@@ -47,6 +47,7 @@ class Orders(ttk.Frame):
         
         # Load data
         self.data = MakeSimpleSql().get_orders()
+        print( MakeSimpleSql().get_orders())
         self.filtered_data = self.data.copy() if self.data else []  # Store filtered results
         self.suppliers = ["All"]
         self.get_suppliers()

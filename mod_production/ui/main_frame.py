@@ -429,7 +429,6 @@ class ProductionPlannerFrame(tb.Frame):
                 self.routing_data.at[idx, 'run_m'] = run_m
                 self.routing_data.at[idx, 'confidence'] = conf
                 predictions.append((total_m, setup_m, run_m, conf))
-            print(predictions)
             total_predicted = self.routing_data['total_m'].sum()
             avg_conf = self.routing_data['confidence'].mean()
 
@@ -455,6 +454,9 @@ class ProductionPlannerFrame(tb.Frame):
                     remaining = total_m
                     temp_alloc = {}
                     day = candidate
+                    
+                    print("TYPE:", type(self.process_df))
+                    print("VALUE:", self.process_df)
                     df_idx = self.process_df.set_index('process_id')
                     while remaining > 0 and day in workdays:
                         booked = self.booked_mins_lookup.get((pid, day), 0)

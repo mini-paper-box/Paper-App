@@ -14,7 +14,8 @@ class MakeSimpleSql():
         Connect to database
         :return: Database connection
         """
-        path = 'C:/Users/sang.n/OneDrive - whitebird.ca/Paper App/prod_db.db'
+        # path = 'C:/Users/sang.n/OneDrive - whitebird.ca/Paper App/prod_db.db'
+        path = 'C:/Users/sang.n/Desktop/Whitebird Project/Paper-App/prod_db.db'
         return sqlite3.connect(path)
 
     def create_tables(self) -> None:
