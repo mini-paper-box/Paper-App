@@ -94,7 +94,10 @@ SHIPMENT_PRODUCTION_RECIPIENTS = (
     "shipping@whitebird.ca;"
     "craig.a@whitebird.ca;"
     "william@whitebird.ca;"
+    "hendrik@moyydesign.com;"
     "allen.g@whitebird.ca;"
+    "jason.w@moyydesign.com;"
+    "brandon.h@whitebird.ca;"
     "erin.l@moyydesign.com;"
     "catherine.s@moyydesign.com;"
 )
