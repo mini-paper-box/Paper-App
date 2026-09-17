@@ -24,3 +24,6 @@ env/
 *.exe
 *.zip
 *.dll
+
+*.csv
+*.db

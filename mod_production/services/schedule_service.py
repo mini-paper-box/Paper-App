@@ -2,77 +2,52 @@ import logging
 import logging.handlers
 import os
 from datetime import datetime, date, timedelta
-
 import pandas as pd
-
 from mod_production.data.sql_manager import SQLManager
 from mod_production.core.predictor2 import ProductionAI
 
-
-# ---------------------------------------------------------------------------
-# Logging setup
-# ---------------------------------------------------------------------------
-# Main application logger (INFO and above)
 logger = logging.getLogger(__name__)
-
-# Dedicated per-day scheduling trace logger (DEBUG — writes to rotating file)
 sched_logger = logging.getLogger(f"{__name__}.schedule_trace")
 
+FARMOUT_PROCESS_IDS = frozenset({236, 257, 168})
+FARMOUT_BUFFER_DAYS = 5
+PLANNING_HORIZON = 90
+BATCH_HORIZON = 120
+MIN_START_AVAIL_MINS = 60
+MIN_BLOCK_AVAIL_MINS = 60
+FALLBACK_BASE_MINS = 15.0
+FALLBACK_PER_UNIT = 0.01
 
-def _configure_schedule_log(log_dir: str = "logs", max_bytes: int = 10 * 1024 * 1024, backup_count: int = 7) -> None:
-    """
-    Attach a rotating file handler to the schedule_trace logger.
-    Call once at application startup (or let ScheduleService.__init__ call it).
-    Safe to call multiple times — skips setup if a file handler already exists.
-    """
+
+def _configure_schedule_log(log_dir="logs", max_bytes=10 * 1024 * 1024, backup_count=7):
     if any(isinstance(h, logging.handlers.RotatingFileHandler) for h in sched_logger.handlers):
         return
-
     os.makedirs(log_dir, exist_ok=True)
-    log_path = os.path.join(log_dir, "schedule_trace.log")
-
     handler = logging.handlers.RotatingFileHandler(
-        log_path, maxBytes=max_bytes, backupCount=backup_count, encoding="utf-8"
+        os.path.join(log_dir, "schedule_trace.log"),
+        maxBytes=max_bytes,
+        backupCount=backup_count,
+        encoding="utf-8",
     )
     handler.setLevel(logging.DEBUG)
     handler.setFormatter(logging.Formatter(
         "%(asctime)s  %(levelname)-8s  %(message)s",
         datefmt="%Y-%m-%d %H:%M:%S",
     ))
-
     sched_logger.setLevel(logging.DEBUG)
-    sched_logger.propagate = False   # don't flood the root logger with trace lines
+    sched_logger.propagate = False
     sched_logger.addHandler(handler)
-
-
-# ---------------------------------------------------------------------------
-# Constants
-# ---------------------------------------------------------------------------
-
-FARMOUT_PROCESS_IDS  = frozenset({236, 257,168})
-FARMOUT_BUFFER_DAYS  = 5
-PLANNING_HORIZON     = 90          # workdays for build_schedule
-BATCH_HORIZON        = 120         # workdays for build_schedule_from_df
-MIN_START_AVAIL_MINS = 60          # candidate day must have at least this free
-MIN_BLOCK_AVAIL_MINS = 60          # skip days below this (unless job finishes)
-FALLBACK_BASE_MINS   = 15.0
-FALLBACK_PER_UNIT    = 0.01
 
 
 class SchedulingError(Exception):
     """Raised when a process cannot be placed within the planning horizon."""
 
 
-# ---------------------------------------------------------------------------
-# Module-level calendar helpers
-# ---------------------------------------------------------------------------
-
-def _normalize_date(d) -> date:
+def _normalize_date(d):
     return d.date() if isinstance(d, datetime) else d
 
 
-def _add_workdays(start: date, n: int, holidays: set) -> date:
-    """Advance n working days forward, skipping weekends and holidays."""
+def _add_workdays(start, n, holidays):
     current = start
     added = 0
     while added < n:
@@ -82,8 +57,7 @@ def _add_workdays(start: date, n: int, holidays: set) -> date:
     return current
 
 
-def _first_workday_after_lead(lead_days: int, holidays: set) -> date:
-    """Return the first working date strictly after lead_days working days from today."""
+def _first_workday_after_lead(lead_days, holidays):
     current = date.today()
     counted = 0
     while counted < lead_days:
@@ -96,9 +70,8 @@ def _first_workday_after_lead(lead_days: int, holidays: set) -> date:
     return current
 
 
-def _build_workdays(start: date, n: int, holidays: set) -> list[date]:
-    """Return a list of n working dates beginning on or after start."""
-    days: list[date] = []
+def _build_workdays(start, n, holidays):
+    days = []
     current = start
     while len(days) < n:
         if current.weekday() < 5 and current not in holidays:
@@ -107,601 +80,737 @@ def _build_workdays(start: date, n: int, holidays: set) -> list[date]:
     return days
 
 
-def _build_capacity_lookup(process_df: pd.DataFrame) -> dict[int, dict[int, float]]:
-    """
-    Build {process_id: {isoweekday: capacity_hours}}.
-    isoweekday() 1=Mon … 7=Sun matches capacity_1 … capacity_7 columns directly.
-    """
+def _build_capacity_lookup(process_df):
     return {
         r.process_id: {
-            1: r.capacity_2, 2: r.capacity_3, 3: r.capacity_4,
-            4: r.capacity_5, 5: r.capacity_6, 6: r.capacity_7,
+            1: r.capacity_2,
+            2: r.capacity_3,
+            3: r.capacity_4,
+            4: r.capacity_5,
+            5: r.capacity_6,
+            6: r.capacity_7,
             7: r.capacity_1,
         }
         for r in process_df.itertuples()
     }
 
 
-# ---------------------------------------------------------------------------
-# ScheduleService
-# ---------------------------------------------------------------------------
-
 class ScheduleService:
-
-    def __init__(self, holidays=None, process_df=None, booked_mins_lookup=None,
-                 log_dir: str = "logs"):
-        """
-        Initialize scheduling engine and preload finite-capacity datasets.
-        Pass holidays and process_df to skip the DB fetch (useful in tests).
-        log_dir controls where schedule_trace.log is written.
-        """
+    def __init__(self, holidays=None, process_df=None, booked_mins_lookup=None, log_dir="logs"):
         _configure_schedule_log(log_dir=log_dir)
-
-        self.db        = SQLManager()
+        self.db = SQLManager()
         self.ai_engine = ProductionAI()
-
         today = date.today()
 
-        def weekday_range(start: date, end: date) -> set[date]:
+        def weekday_range(start, end):
             return {
-                d
+                start + timedelta(days=i)
                 for i in range((end - start).days + 1)
-                if (d := start + timedelta(days=i)).weekday() < 5  # Mon-Fri
+                if (start + timedelta(days=i)).weekday() < 5
             }
 
         self.by_pass_dates = {
-            69: weekday_range(today, today + timedelta(days=1)), # Langston
-            # 69: weekday_range(date(2026, 7, 10), date(2026, 7, 24)), #Langston
-            189: weekday_range(date(2026, 7, 10), date(2026, 7, 23)), #Nozomi
-            166: weekday_range(date(2026, 7, 10), date(2026, 7, 24)), #United
-            # 189: weekday_range(today, today + timedelta(days=7)), #Nozomi
+            69: weekday_range(today, today + timedelta(days=1)),
+            189: weekday_range(date(2026, 7, 10), date(2026, 7, 23)),
+            166: weekday_range(date(2026, 7, 10), date(2026, 7, 24)),
         }
 
-        # self.by_pass_dates: dict[int, set[date]] = {
-        #     69:  {date(2026, 5, 29)},
-        #     166: {date(2026, 7, 10), date(2026, 7, 13), date(2026, 7, 14), date(2026, 7, 15), date(2026, 7, 16),
-        #           date(2026, 7, 17), date(2026, 7, 20), date(2026, 7, 21), date(2026, 7, 22), date(2026, 7, 23), date(2026, 7, 24)},
-        #     189: {date(2026, 6, 15), date(2026, 6, 16), date(2026, 6, 17),
-        #           date(2026, 6, 18), date(2026, 6, 19), date(2026, 6, 22)},
-        # }
-
-        self.booked_mins_lookup: dict[tuple, float] = {}
-        self.booked_jobs_lookup: dict[tuple, int]   = {}
-        self.booked_sqft_lookup: dict[tuple, float] = {}
-
-        if holidays is None or process_df is None:
-            self.initialize_capacity_cache()
-        else:
-            self.raw_jobs   = None
-            self.holidays   = holidays
-            self.process_df = process_df
-
-    # ------------------------------------------------------------------ #
-    #  Cache initialisation                                                #
-    # ------------------------------------------------------------------ #
-
-    def initialize_capacity_cache(self) -> None:
-        """
-        Load booked jobs and build fast in-memory lookup dicts.
-        Falls back gracefully on any error.
-        """
-        try:
-            start_time = datetime.now()
-
-            raw_jobs, self.holidays, self.process_df = (
-                self.db.fetch_booked_and_holidays_and_process()
-            )
-
-            if raw_jobs is None or raw_jobs.empty:
-                self._initialize_empty_cache()
-                return
-
-            if not self.ai_engine.is_trained:
-                self._build_cache_with_fallback(raw_jobs)
-                return
-
-            processed_df = self._predict_for_cache(raw_jobs)
-
-            processed_df['booked_sqft'] = (
-                processed_df['job_qty'] * processed_df['sqfpm'] / 1000
-            )
-
-            self.booked_df = processed_df.groupby(
-                ['process_id', 'schedule_date'], as_index=False
-            ).agg(
-                mins_booked=('total_m',     'sum'),
-                booked_sqft=('booked_sqft', 'sum'),
-                booked_jobs=('process_id',  'count'),
-            )
-
-            self.booked_mins_lookup = {
-                (r.process_id, r.schedule_date): r.mins_booked
-                for r in self.booked_df.itertuples()
-            }
-            self.booked_sqft_lookup = {
-                (r.process_id, r.schedule_date): r.booked_sqft
-                for r in self.booked_df.itertuples()
-            }
-            self.booked_jobs_lookup = {
-                (r.process_id, r.schedule_date): r.booked_jobs
-                for r in self.booked_df.itertuples()
-            }
-
-            self.cache_load_seconds = (datetime.now() - start_time).total_seconds()
-            logger.info("Capacity cache loaded in %.2fs", self.cache_load_seconds)
-
-        except Exception:
-            logger.exception("initialize_capacity_cache failed — using empty cache")
-            self._initialize_empty_cache()
-
-    def _predict_for_cache(self, raw_jobs: pd.DataFrame) -> pd.DataFrame:
-        """Run AI prediction for cache build; falls back to a linear formula on failure."""
-
-        def _fallback(df):
-            return [FALLBACK_BASE_MINS + r.job_qty * FALLBACK_PER_UNIT
-                    for r in df.itertuples()]
-
-        for col, default in [('style_id', 'UNKNOWN'), ('printing_id', 'UNKNOWN'),
-                              ('full_path', ''), ('sqfpm', 1000)]:
-            raw_jobs[col] = raw_jobs.get(col, default)
-            if hasattr(raw_jobs[col], 'fillna'):
-                raw_jobs[col] = raw_jobs[col].fillna(default)
-
-        try:
-            if hasattr(self.ai_engine, 'predict_batch'):
-                batch_df = pd.DataFrame({
-                    'process_id':  raw_jobs['process_id'],
-                    'style_id':    raw_jobs['style_id'],
-                    'printing_id': raw_jobs['printing_id'],
-                    'full_path':   raw_jobs['full_path'],
-                    'qty':         raw_jobs['job_qty'],
-                    'sqfpm':       raw_jobs['sqfpm'],
-                })
-                predictions  = self.ai_engine.predict_batch(batch_df)
-                processed_df = pd.concat(
-                    [raw_jobs.reset_index(drop=True),
-                     predictions.reset_index(drop=True)],
-                    axis=1,
-                )
-            else:
-                total_mins: list[float] = []
-                for _, job in raw_jobs.iterrows():
-                    try:
-                        t, *_ = self.ai_engine.predict_ai(
-                            job['process_id'], job['style_id'], job['printing_id'],
-                            job['full_path'], job['job_qty'], job['sqfpm'], buffer=True,
-                        )
-                        total_mins.append(float(t))
-                    except Exception:
-                        total_mins.append(FALLBACK_BASE_MINS + job['job_qty'] * FALLBACK_PER_UNIT)
-
-                processed_df = raw_jobs.copy()
-                processed_df['total_m'] = total_mins
-
-        except Exception:
-            logger.exception("AI prediction failed in cache build — using linear fallback")
-            processed_df = raw_jobs.copy()
-            processed_df['total_m'] = _fallback(raw_jobs)
-
-        return processed_df
-
-    def _initialize_empty_cache(self) -> None:
-        """Set up empty scheduling structures when no historical bookings exist."""
-        self.booked_df = pd.DataFrame(
-            columns=['process_id', 'schedule_date', 'mins_booked', 'booked_sqft', 'booked_jobs']
-        )
         self.booked_mins_lookup = {}
         self.booked_jobs_lookup = {}
         self.booked_sqft_lookup = {}
 
-    # ------------------------------------------------------------------ #
-    #  Core allocation primitive                                           #
-    # ------------------------------------------------------------------ #
+        if holidays is None or process_df is None:
+            self.initialize_capacity_cache()
+        else:
+            self.raw_jobs = None
+            self.holidays = holidays
+            self.process_df = process_df
+
+    def initialize_capacity_cache(self):
+        try:
+            self.raw_jobs, self.holidays, self.process_df = (
+                self.db.fetch_booked_and_holidays_and_process()
+            )
+
+            if self.raw_jobs is None or self.raw_jobs.empty:
+                self._initialize_empty_cache()
+                return
+
+            if not self.ai_engine.is_trained:
+                self._build_cache_with_fallback(self.raw_jobs)
+                return
+
+            processed_df = self._predict_for_cache(self.raw_jobs)
+
+            processed_df["booked_sqft"] = (
+                processed_df["job_qty"] * processed_df["sqfpm"] / 1000
+            )
+
+            grouped = (
+                processed_df.groupby(["process_id", "schedule_date"])
+                .agg(
+                    mins_booked=("total_m", "sum"),
+                    booked_sqft=("booked_sqft", "sum"),
+                    booked_jobs=("process_id", "count"),
+                )
+                .reset_index()
+            )
+
+            self.booked_mins_lookup = {
+                (r.process_id, _normalize_date(r.schedule_date)): float(r.mins_booked)
+                for r in grouped.itertuples()
+            }
+            self.booked_sqft_lookup = {
+                (r.process_id, _normalize_date(r.schedule_date)): float(r.booked_sqft)
+                for r in grouped.itertuples()
+            }
+            self.booked_jobs_lookup = {
+                (r.process_id, _normalize_date(r.schedule_date)): int(r.booked_jobs)
+                for r in grouped.itertuples()
+            }
+
+            sched_logger.info(
+                "Capacity cache loaded: %s rows",
+                len(processed_df),
+            )
+
+        except Exception:
+            sched_logger.exception("Failed to initialize capacity cache")
+            self._initialize_empty_cache()
+
+    def _build_cache_with_fallback(self, raw_jobs):
+        processed = raw_jobs.copy()
+
+        if "job_qty" not in processed.columns:
+            processed["job_qty"] = 0
+
+        processed["total_m"] = (
+            FALLBACK_BASE_MINS +
+            processed["job_qty"].fillna(0).astype(float) * FALLBACK_PER_UNIT
+        )
+        processed["setup_m"] = 0.0
+        processed["run_m"] = processed["total_m"]
+        processed["confidence"] = 0.0
+
+        if "schedule_date" not in processed.columns:
+            processed["schedule_date"] = date.today()
+
+        processed["schedule_date"] = processed["schedule_date"].apply(_normalize_date)
+        processed["booked_sqft"] = 0.0
+
+        grouped = (
+            processed.groupby(["process_id", "schedule_date"])
+            .agg(
+                mins_booked=("total_m", "sum"),
+                booked_sqft=("booked_sqft", "sum"),
+                booked_jobs=("process_id", "count"),
+            )
+            .reset_index()
+        )
+
+        self.booked_mins_lookup = {
+            (r.process_id, r.schedule_date): float(r.mins_booked)
+            for r in grouped.itertuples()
+        }
+        self.booked_sqft_lookup = {
+            (r.process_id, r.schedule_date): float(r.booked_sqft)
+            for r in grouped.itertuples()
+        }
+        self.booked_jobs_lookup = {
+            (r.process_id, r.schedule_date): int(r.booked_jobs)
+            for r in grouped.itertuples()
+        }
+
+    def _predict_for_cache(self, raw_jobs):
+        df = raw_jobs.copy()
+
+        defaults = {
+            "style_id": "UNKNOWN",
+            "printing_id": "UNKNOWN",
+            "full_path": "",
+            "sqfpm": 1000.0,
+        }
+
+        for col, value in defaults.items():
+            if col not in df.columns:
+                df[col] = value
+            else:
+                df[col] = df[col].fillna(value)
+
+        if hasattr(self.ai_engine, "predict_batch"):
+            batch = pd.DataFrame({
+                "process_id": df["process_id"],
+                "style_id": df["style_id"],
+                "printing_id": df["printing_id"],
+                "full_path": df["full_path"],
+                "qty": df["job_qty"],
+                "sqfpm": df["sqfpm"],
+            })
+
+            try:
+                predictions = self.ai_engine.predict_batch(batch, buffer=True)
+                return pd.concat(
+                    [df.reset_index(drop=True), predictions.reset_index(drop=True)],
+                    axis=1,
+                )
+            except Exception:
+                sched_logger.exception("Batch AI prediction failed; using fallback")
+
+        results = []
+        for row in df.itertuples():
+            try:
+                pred = self.ai_engine.predict_ai(
+                    process_id=row.process_id,
+                    style_id=row.style_id,
+                    printing_id=row.printing_id,
+                    full_path=row.full_path,
+                    qty=row.job_qty,
+                    sqfpm=row.sqfpm,
+                    buffer=True,
+                )
+            except Exception:
+                pred = {
+                    "total_m": FALLBACK_BASE_MINS + float(row.job_qty or 0) * FALLBACK_PER_UNIT,
+                    "setup_m": 0.0,
+                    "run_m": 0.0,
+                    "confidence": 0.0,
+                }
+
+            results.append(pred)
+
+        return pd.concat(
+            [df.reset_index(drop=True), pd.DataFrame(results)],
+            axis=1,
+        )
+
+    def _initialize_empty_cache(self):
+        self.booked_mins_lookup = {}
+        self.booked_jobs_lookup = {}
+        self.booked_sqft_lookup = {}
+        self.raw_jobs = pd.DataFrame()
+        self.process_df = pd.DataFrame(
+            columns=[
+                "process_id",
+                "capacity_1",
+                "capacity_2",
+                "capacity_3",
+                "capacity_4",
+                "capacity_5",
+                "capacity_6",
+                "capacity_7",
+            ]
+        )
 
     def _slot_process(
         self,
-        pid:             int,
-        pname:           str,
+        pid,
+        pname,
         docket_id,
-        total_m:         float,
-        workdays:        list[date],
-        earliest:        date,
-        farmout:         bool,
-        capacity_lookup: dict[int, dict[int, float]],
-        session_booked:  dict[tuple, float],
-        *,
-        use_existing_bookings: bool = False,
-        holidays:        set | None = None,
-    ) -> tuple[date | None, date | None, dict[date, float]]:
-        """
-        Find the earliest start where total_m minutes can be allocated
-        across consecutive workdays, respecting capacity and bookings.
+        total_m,
+        workdays,
+        earliest,
+        farmout,
+        capacity_lookup,
+        session_booked,
+        use_existing_bookings=False,
+        holidays=None,
+    ):
+        holidays = holidays or set()
+        bypass_dates = self.by_pass_dates.get(pid, set())
 
-        Emits a per-day trace line to schedule_trace.log for every day
-        evaluated, with the reason it was skipped or how many minutes
-        were allocated.
-
-        Mutates session_booked in-place on success.
-        Returns (start_date, end_date, allocation_map).
-        """
-        bypass_dates  = self.by_pass_dates.get(pid, set())
-        tag           = f"[docket={docket_id} | pid={pid} | {pname}]"
-        need          = total_m
-
-        sched_logger.debug("%s  START SEARCH  need=%.0f min  earliest=%s", tag, need, earliest)
-
-        for cand_idx, candidate in enumerate(workdays):
+        for candidate in workdays:
             if candidate < earliest:
-                sched_logger.debug(
-                    "%s  %s  SKIPPED — before earliest (%s)", tag, candidate, earliest
-                )
                 continue
 
-            sched_logger.debug("%s  Trying candidate start: %s", tag, candidate)
+            remaining = float(total_m)
+            temp_alloc = {}
 
-            remaining:  float             = total_m
-            temp_alloc: dict[date, float] = {}
-            wd_idx = cand_idx
+            for day in workdays:
+                if day < candidate:
+                    continue
 
-            while remaining > 0 and wd_idx < len(workdays):
-                day = workdays[wd_idx]
-                if pid == 69:
-                    print(day)
-                    print(day.isoweekday())
-                    print(capacity_lookup.get(pid,{}))
+                capacity_hrs = (
+                    0.0
+                    if day in bypass_dates
+                    else float(capacity_lookup.get(pid, {}).get(day.isoweekday(), 8.0) or 0)
+                )
 
-                # ── Determine raw capacity ───────────────────────────────────
-                if day in bypass_dates:
-                    capacity_hrs = 0.0
-                    cap_reason   = "bypass date"
-                else:
-                    capacity_hrs = float(
-                        capacity_lookup.get(pid, {}).get(day.isoweekday(), 8.0)
-                    )
-                    cap_reason = f"capacity={capacity_hrs:.1f}h"
-
-                booked_existing = (
+                existing = (
                     float(self.booked_mins_lookup.get((pid, day), 0))
-                    if use_existing_bookings else 0.0
+                    if use_existing_bookings
+                    else 0.0
                 )
-                booked_session = session_booked.get((pid, day), 0.0)
-                capacity_mins  = capacity_hrs * 60
-                available      = max(0.0, capacity_mins - booked_existing - booked_session)
 
-                # ── Start-day gate ───────────────────────────────────────────
-                if day == candidate and available < MIN_START_AVAIL_MINS:
-                    sched_logger.debug(
-                        "%s    %s  [candidate]  SKIPPED START — avail=%.0f min < %d min  "
-                        "(%s  booked_existing=%.0f  booked_session=%.0f)",
-                        tag, day, available, MIN_START_AVAIL_MINS,
-                        cap_reason, booked_existing, booked_session,
-                    )
-                    break   # try next candidate
-
-                # ── Allocation decision ──────────────────────────────────────
-                if available >= MIN_BLOCK_AVAIL_MINS or (available > 0 and available >= remaining):
-                    alloc = min(available, remaining)
-                    temp_alloc[day] = alloc
-                    remaining -= alloc
-                    sched_logger.debug(
-                        "%s    %s  ALLOCATED %.0f min  "
-                        "(avail=%.0f  booked_existing=%.0f  booked_session=%.0f  %s)  "
-                        "remaining=%.0f",
-                        tag, day, alloc,
-                        available, booked_existing, booked_session, cap_reason,
-                        remaining,
-                    )
-                else:
-                    sched_logger.debug(
-                        "%s    %s  SKIPPED — avail=%.0f min too low  "
-                        "(%s  booked_existing=%.0f  booked_session=%.0f)",
-                        tag, day, available,
-                        cap_reason, booked_existing, booked_session,
-                    )
-
-                wd_idx += 1
-
-            # ── Did this candidate succeed? ──────────────────────────────────
-            if remaining <= 0:
-                end_date = max(temp_alloc.keys())
-
-                # Commit to session slate
-                for d, m in temp_alloc.items():
-                    key = (pid, d)
-                    session_booked[key] = session_booked.get(key, 0.0) + m
-
-                if farmout:
-                    h = holidays if holidays is not None else set(self.holidays)
-                    original_end = end_date
-                    end_date = _add_workdays(end_date, FARMOUT_BUFFER_DAYS, h)
-                    sched_logger.debug(
-                        "%s  FARMOUT  end extended %s → %s (+%d workdays)",
-                        tag, original_end, end_date, FARMOUT_BUFFER_DAYS,
-                    )
+                session = float(session_booked.get((pid, day), 0))
+                available = max(0.0, capacity_hrs * 60.0 - existing - session)
 
                 sched_logger.debug(
-                    "%s  SCHEDULED  start=%s  end=%s  days_used=%d",
-                    tag, candidate, end_date, len(temp_alloc),
+                    "docket=%s pid=%s day=%s capacity=%.1f existing=%.1f session=%.1f available=%.1f remaining=%.1f",
+                    docket_id,
+                    pid,
+                    day,
+                    capacity_hrs * 60.0,
+                    existing,
+                    session,
+                    available,
+                    remaining,
                 )
-                return candidate, end_date, temp_alloc
 
-            else:
-                sched_logger.debug(
-                    "%s  Candidate %s FAILED — %.0f min still unallocated, trying next",
-                    tag, candidate, remaining,
-                )
+                if available < MIN_BLOCK_AVAIL_MINS:
+                    break
+
+                if available >= MIN_BLOCK_AVAIL_MINS or (
+                    available > 0 and available >= remaining
+                ):
+                    allocated = min(available, remaining)
+                    temp_alloc[day] = allocated
+                    remaining -= allocated
+
+                if remaining <= 0:
+                    for alloc_day, mins in temp_alloc.items():
+                        session_booked[(pid, alloc_day)] = (
+                            session_booked.get((pid, alloc_day), 0) + mins
+                        )
+
+                    end = max(temp_alloc)
+
+                    if farmout:
+                        end = _add_workdays(
+                            end,
+                            FARMOUT_BUFFER_DAYS,
+                            holidays,
+                        )
+
+                    return candidate, end, temp_alloc
 
         sched_logger.warning(
-            "%s  EXHAUSTED %d-day horizon — could not allocate %.0f min",
-            tag, len(workdays), total_m,
+            "docket=%s pid=%s (%s) could not be scheduled",
+            docket_id,
+            pid,
+            pname,
         )
         return None, None, {}
 
-    # ------------------------------------------------------------------ #
-    #  build_schedule  (single docket, respects existing bookings)        #
-    # ------------------------------------------------------------------ #
+    def _prepare_predictions(self, routing_data, qty):
+        routing_data = routing_data.copy()
 
-    def build_schedule(self, docket_id, qty, lead_days) -> list[dict]:
-        """
-        Generate a finite-capacity production schedule for a single docket
-        using AI-predicted process durations.
-        """
-        sched_logger.info(
-            "=== build_schedule  docket=%s  qty=%s  lead_days=%s ===",
-            docket_id, qty, lead_days,
+        style_id = routing_data.get("style_id", pd.Series(["UNKNOWN"] * len(routing_data)))
+        printing_id = routing_data.get("printing_id", pd.Series(["UNKNOWN"] * len(routing_data)))
+        sqfpm = routing_data.get("sqfpm", pd.Series([1000.0] * len(routing_data)))
+
+        routing_data["style_id"] = style_id.fillna("UNKNOWN")
+        routing_data["printing_id"] = printing_id.fillna("UNKNOWN")
+        routing_data["sqfpm"] = pd.to_numeric(sqfpm, errors="coerce").fillna(1000.0)
+        routing_data["full_path"] = "->".join(
+            routing_data["process_id"].astype(str)
         )
+        routing_data["qty"] = qty
 
-        routing_data = self.db.fetch_docket_routing(docket_id, qty)
-        if routing_data is None or routing_data.empty:
-            sched_logger.warning("docket=%s — no routing data found, returning []", docket_id)
-            return []
+        batch_df = routing_data[
+            ["process_id", "style_id", "printing_id", "full_path", "qty", "sqfpm"]
+        ].copy()
 
-        style_id, printing_id, sqfpm = self.db.get_docket_metadata(docket_id)
-        style_id    = style_id    or "UNKNOWN"
-        printing_id = printing_id or "UNKNOWN"
-        sqfpm       = float(sqfpm or 1000.0)
+        pred_df = self.ai_engine.predict_batch(
+            batch_df,
+            buffer=True,
+        ).reset_index(drop=True)
 
-        path_str = "->".join(routing_data['process_id'].astype(str))
-        h_set    = set(self.holidays)
-
-        first_day = _first_workday_after_lead(lead_days, h_set)
-        workdays  = _build_workdays(first_day, PLANNING_HORIZON, h_set)
-
-        sched_logger.info(
-            "docket=%s  path=%s  calendar_start=%s  horizon=%d days",
-            docket_id, path_str, first_day, PLANNING_HORIZON,
-        )
-
-        batch_df = routing_data.copy().assign(
-            style_id=style_id, printing_id=printing_id,
-            full_path=path_str, qty=qty, sqfpm=sqfpm,
-        )
-        pred_df      = self.ai_engine.predict_batch(batch_df, buffer=True)
         routing_data = routing_data.reset_index(drop=True)
-        pred_df      = pred_df.reset_index(drop=True)
 
         if len(pred_df) != len(routing_data):
             raise SchedulingError(
-                f"AI returned {len(pred_df)} predictions for "
-                f"{len(routing_data)} routing steps on docket {docket_id}."
+                f"Prediction count {len(pred_df)} does not match routing count {len(routing_data)}"
             )
 
-        for col in ('total_m', 'setup_m', 'run_m', 'confidence'):
-            routing_data[col] = pd.to_numeric(pred_df[col], errors='coerce').fillna(0.0)
+        for col in ["total_m", "setup_m", "run_m", "confidence"]:
+            routing_data[col] = pd.to_numeric(
+                pred_df[col],
+                errors="coerce",
+            ).fillna(0.0)
 
-        if self.process_df.empty or 'process_id' not in self.process_df.columns:
-            raise ValueError("process_df is missing required 'process_id' column.")
+        return routing_data
+
+    def _build_schedule(
+        self,
+        docket_id,
+        qty,
+        lead_days,
+        routing_data,
+        session_booked=None,
+    ):
+        if routing_data is None or routing_data.empty:
+            return []
+
+        session_booked = session_booked if session_booked is not None else {}
+
+        h_set = set(self.holidays or [])
+
+        if self.process_df is None or self.process_df.empty:
+            sched_logger.warning(
+                "docket=%s — process capacity data unavailable",
+                docket_id,
+            )
+            return []
 
         capacity_lookup = _build_capacity_lookup(self.process_df)
-        session_booked: dict[tuple, float] = {}
-        process_schedule: list[dict]       = []
-        prev_end_date: date | None         = None
 
-        for step_idx, (_, proc) in enumerate(routing_data.iterrows(), 1):
-            pid     = int(proc['process_id'])
-            pname   = proc.get('process_name') or f"Process {pid}"
-            total_m = float(proc['total_m'])
+        try:
+            routing_data = self._prepare_predictions(routing_data, qty)
+        except Exception:
+            sched_logger.exception(
+                "docket=%s — prediction failed",
+                docket_id,
+            )
+            return []
 
-            earliest = (
-                _add_workdays(prev_end_date, 1, h_set)
-                if prev_end_date else workdays[0]
+        process_schedule = []
+        prev_end_date = None
+
+        for idx, row in routing_data.iterrows():
+            pid = int(row["process_id"])
+            pname = row.get("process_name", f"Process {pid}")
+            total_m = float(row["total_m"])
+            setup_m = float(row["setup_m"])
+            run_m = float(row["run_m"])
+            confidence = float(row["confidence"])
+            sqfpm = float(row.get("sqfpm", 1000.0) or 1000.0)
+            seq_order = int(row.get("seq_order", idx + 1))
+
+            if prev_end_date is None:
+                first_day = _first_workday_after_lead(
+                    lead_days,
+                    h_set,
+                )
+            else:
+                first_day = prev_end_date + timedelta(days=1)
+                while (
+                    first_day.weekday() >= 5
+                    or first_day in h_set
+                ):
+                    first_day += timedelta(days=1)
+
+            workdays = _build_workdays(
+                first_day,
+                PLANNING_HORIZON,
+                h_set,
             )
 
-            sched_logger.info(
-                "── Step %d/%d  pid=%s (%s)  need=%.0f min  earliest=%s",
-                step_idx, len(routing_data), pid, pname, total_m, earliest,
-            )
+            farmout = pid in FARMOUT_PROCESS_IDS
 
-            start_date, end_date, allocation_map = self._slot_process(
-                pid, pname, docket_id,
-                total_m, workdays, earliest,
-                farmout=pid in FARMOUT_PROCESS_IDS,
+            start, end, allocation_map = self._slot_process(
+                pid=pid,
+                pname=pname,
+                docket_id=docket_id,
+                total_m=total_m,
+                workdays=workdays,
+                earliest=first_day,
+                farmout=farmout,
                 capacity_lookup=capacity_lookup,
                 session_booked=session_booked,
                 use_existing_bookings=True,
                 holidays=h_set,
             )
 
-            if start_date is None:
-                logger.warning(
-                    "Could not schedule process %s (%s) for docket %s within %d-day horizon.",
-                    pid, pname, docket_id, PLANNING_HORIZON,
-                )
+            if start is None:
                 sched_logger.warning(
-                    "Step %d UNSCHEDULED  pid=%s (%s)  docket=%s",
-                    step_idx, pid, pname, docket_id,
+                    "docket=%s process=%s could not be scheduled",
+                    docket_id,
+                    pid,
                 )
-            else:
-                sched_logger.info(
-                    "Step %d DONE  pid=%s (%s)  start=%s  end=%s  days_used=%d",
-                    step_idx, pid, pname, start_date, end_date, len(allocation_map),
-                )
-
-            prev_end_date = end_date
 
             blank_per_hour = (
-                int(qty / (proc['run_m'] / 60)) if proc['run_m'] > 0 else 0
+                int(qty / (run_m / 60))
+                if run_m > 0
+                else 0
             )
 
             process_schedule.append({
-                'process_id':     pid,
-                'process_name':   pname,
-                'seq_order':      step_idx,
-                'start':          start_date,
-                'end':            end_date,
-                'total_m':        total_m,
-                'setup_m':        float(proc['setup_m']),
-                'run_m':          float(proc['run_m']),
-                'required_sqft':  (sqfpm / 1000) * qty,
-                'predicted_mins': total_m,
-                'blank_per_hour': blank_per_hour,
-                'confidence':     float(proc['confidence']),
-                'allocation_map': allocation_map,
+                "docket_id": docket_id,
+                "process_id": pid,
+                "process_name": pname,
+                "seq_order": seq_order,
+                "start": start,
+                "end": end,
+                "total_m": total_m,
+                "setup_m": setup_m,
+                "run_m": run_m,
+                "required_sqft": (sqfpm / 1000.0) * qty,
+                "predicted_mins": total_m,
+                "blank_per_hour": blank_per_hour,
+                "confidence": confidence,
+                "allocation_map": allocation_map,
             })
 
-        sched_logger.info("=== build_schedule COMPLETE  docket=%s  steps=%d ===\n", docket_id, len(process_schedule))
+            if end is not None:
+                prev_end_date = end
+
         return process_schedule
 
-    # ------------------------------------------------------------------ #
-    #  build_schedule_from_df  (batch, empty slate)                       #
-    # ------------------------------------------------------------------ #
+    def build_schedule(self, docket_id, qty, lead_days):
+        sched_logger.info(
+            "Building schedule for docket=%s qty=%s lead_days=%s",
+            docket_id,
+            qty,
+            lead_days,
+        )
 
-    def build_schedule_from_df(
-        self, jobs_df: pd.DataFrame, lead_days: int = 0
-    ) -> list[dict]:
-        """
-        Batch-schedule a DataFrame of jobs against a FRESH capacity slate.
-        All routing fetches and AI predictions are batched upfront.
-        """
+        routing_data = self.db.fetch_docket_routing(
+            docket_id,
+            qty,
+        )
+
+        if routing_data is None or routing_data.empty:
+            sched_logger.warning(
+                "docket=%s — no routing data found",
+                docket_id,
+            )
+            return []
+
+        return self._build_schedule(
+            docket_id=docket_id,
+            qty=qty,
+            lead_days=lead_days,
+            routing_data=routing_data,
+        )
+
+    def build_schedule_with_order_id(self, order_id, qty, lead_days):
+        sched_logger.info(
+            "Building schedule for order=%s qty=%s lead_days=%s",
+            order_id,
+            qty,
+            lead_days,
+        )
+
+        routing_data = self.db.fetch_order_routing(
+            order_id,
+            qty,
+        )
+
+        if routing_data is None or routing_data.empty:
+            sched_logger.warning(
+                "order=%s — no routing data found",
+                order_id,
+            )
+            return []
+
+        if "docket_id" not in routing_data.columns:
+            sched_logger.error(
+                "order=%s — routing data does not contain docket_id. columns=%s",
+                order_id,
+                routing_data.columns.tolist(),
+            )
+            return []
+
+        routing_data = routing_data.dropna(subset=["docket_id"])
+
+        if routing_data.empty:
+            sched_logger.warning(
+                "order=%s — no dockets found",
+                order_id,
+            )
+            return []
+
+        all_schedules = []
+        session_booked = {}
+
+        for docket_id, docket_routing in routing_data.groupby(
+            "docket_id",
+            sort=False,
+        ):
+            docket_id = int(docket_id)
+
+            sched_logger.info(
+                "order=%s docket=%s — scheduling %s routing steps",
+                order_id,
+                docket_id,
+                len(docket_routing),
+            )
+
+            schedule = self._build_schedule(
+                docket_id=docket_id,
+                qty=qty,
+                lead_days=lead_days,
+                routing_data=docket_routing,
+                session_booked=session_booked,
+            )
+
+            all_schedules.extend(schedule)
+
+        return all_schedules
+
+    def build_schedule_from_df(self, jobs_df):
         if jobs_df is None or jobs_df.empty:
             return []
 
-        sched_logger.info(
-            "=== build_schedule_from_df  jobs=%d  lead_days=%d ===",
-            len(jobs_df), lead_days,
-        )
+        h_set = set(self.holidays or [])
 
-        h_set = set(self.holidays)
-
-        if self.process_df.empty or "process_id" not in self.process_df.columns:
-            raise ValueError("process_df is missing required 'process_id' column.")
+        if self.process_df is None or self.process_df.empty:
+            return []
 
         capacity_lookup = _build_capacity_lookup(self.process_df)
 
-        # ── 1. Bulk-fetch all routing ─────────────────────────────────────────
-        distinct_dockets: list = jobs_df["docket_id"].unique().tolist()
-
-        if hasattr(self.db, "fetch_docket_routing_batch"):
-            all_routings: pd.DataFrame = self.db.fetch_docket_routing_batch(distinct_dockets)
-        else:
-            parts = []
-            for d_id in distinct_dockets:
-                r_df = self.db.fetch_docket_routing(d_id, 1)
-                if r_df is not None and not r_df.empty:
-                    r_df = r_df.copy()
-                    r_df["docket_id"] = d_id
-                    parts.append(r_df)
-            all_routings = pd.concat(parts, ignore_index=True) if parts else pd.DataFrame()
-
-        if all_routings.empty:
-            sched_logger.warning("build_schedule_from_df — no routing data found for any docket")
-            return []
-
-        # ── 2. Per-docket metadata map ────────────────────────────────────────
-        job_meta: dict[str, dict] = {
-            row["docket_id"]: {
-                "qty":         float(row.get("qty", 1)),
-                "style_id":    str(row.get("style_id",    "UNKNOWN") or "UNKNOWN"),
-                "printing_id": str(row.get("printing_id", "UNKNOWN") or "UNKNOWN"),
-                "sqfpm":       float(row.get("sqfpm", 1000.0) or 1000.0),
-                "lead_days":   int(row.get("lead_days", lead_days)),
-            }
-            for _, row in jobs_df.iterrows()
-        }
-
-        # ── 3. Unified prediction matrix (single batch call) ──────────────────
-        sort_col = next(
-            (c for c in ("seq_order", "process_id") if c in all_routings.columns), None
+        distinct_dockets = (
+            jobs_df["docket_id"]
+            .dropna()
+            .unique()
+            .tolist()
         )
 
-        records: list[dict] = []
-        for d_id, group in all_routings.groupby("docket_id"):
-            meta = job_meta.get(d_id)
-            if meta is None:
-                continue
-            if sort_col:
-                group = group.sort_values(sort_col)
-            path_str = "->".join(group["process_id"].astype(str))
-            for _, proc_row in group.iterrows():
-                records.append({
-                    "docket_id":    d_id,
-                    "process_id":   int(proc_row["process_id"]),
-                    "process_name": proc_row.get("process_name", f"Process {proc_row['process_id']}"),
-                    "style_id":     meta["style_id"],
-                    "printing_id":  meta["printing_id"],
-                    "full_path":    path_str,
-                    "qty":          meta["qty"],
-                    "sqfpm":        meta["sqfpm"],
-                })
+        routing_frames = []
 
-        if not records:
+        if hasattr(self.db, "fetch_docket_routing_bulk"):
+            bulk_data = self.db.fetch_docket_routing_bulk(
+                distinct_dockets
+            )
+            if bulk_data is not None and not bulk_data.empty:
+                routing_frames.append(bulk_data)
+        else:
+            for docket_id in distinct_dockets:
+                routing = self.db.fetch_docket_routing(
+                    docket_id,
+                    1,
+                )
+                if routing is not None and not routing.empty:
+                    routing = routing.copy()
+                    routing["docket_id"] = docket_id
+                    routing_frames.append(routing)
+
+        if not routing_frames:
             return []
 
-        master_df = pd.DataFrame(records)
-        pred_df   = self.ai_engine.predict_batch(master_df, buffer=True)
+        master_df = pd.concat(
+            routing_frames,
+            ignore_index=True,
+        )
 
-        if len(pred_df) != len(master_df):
+        job_meta = jobs_df.set_index("docket_id").to_dict("index")
+
+        records = []
+
+        for row in master_df.itertuples():
+            meta = job_meta.get(row.docket_id, {})
+            qty = meta.get("qty", 1)
+            style_id = meta.get("style_id", "UNKNOWN")
+            printing_id = meta.get("printing_id", "UNKNOWN")
+            sqfpm = meta.get("sqfpm", 1000.0)
+            lead_days = meta.get("lead_days", 0)
+
+            records.append({
+                "docket_id": row.docket_id,
+                "process_id": row.process_id,
+                "process_name": getattr(
+                    row,
+                    "process_name",
+                    getattr(row, "process_nme", f"Process {row.process_id}"),
+                ),
+                "seq_order": getattr(
+                    row,
+                    "seq_order",
+                    getattr(row, "order_seq", 0),
+                ),
+                "style_id": style_id,
+                "printing_id": printing_id,
+                "full_path": "",
+                "qty": qty,
+                "sqfpm": sqfpm,
+                "lead_days": lead_days,
+            })
+
+        master_df = pd.DataFrame(records)
+
+        if master_df.empty:
+            return []
+
+        predictions = self.ai_engine.predict_batch(
+            master_df[
+                [
+                    "process_id",
+                    "style_id",
+                    "printing_id",
+                    "full_path",
+                    "qty",
+                    "sqfpm",
+                ]
+            ],
+            buffer=True,
+        ).reset_index(drop=True)
+
+        if len(predictions) != len(master_df):
             raise SchedulingError(
-                f"AI prediction row count mismatch: expected {len(master_df)}, "
-                f"got {len(pred_df)}."
+                "Prediction count does not match routing count"
             )
 
-        master_df = master_df.reset_index(drop=True)
-        pred_df   = pred_df.reset_index(drop=True)
+        master_df = pd.concat(
+            [master_df.reset_index(drop=True), predictions],
+            axis=1,
+        )
 
-        for col in ('total_m', 'setup_m', 'run_m', 'confidence'):
-            master_df[col] = pd.to_numeric(pred_df[col], errors='coerce').fillna(0.0)
+        session_booked = {}
+        all_steps = []
 
-        # ── 4. Allocate in job-priority order ─────────────────────────────────
-        session_booked: dict[tuple, float] = {}
-        all_steps:      list[dict]         = []
+        for _, job in jobs_df.iterrows():
+            docket_id = job["docket_id"]
+            qty = job.get("qty", 1)
+            lead_days = job.get("lead_days", 0)
 
-        for _, job_row in jobs_df.iterrows():
-            d_id = job_row["docket_id"]
-            meta = job_meta.get(d_id)
-            if meta is None:
-                continue
+            job_steps = master_df[
+                master_df["docket_id"] == docket_id
+            ].copy()
 
-            job_steps = master_df[master_df["docket_id"] == d_id]
             if job_steps.empty:
                 continue
 
-            first_day = _first_workday_after_lead(meta["lead_days"], h_set)
-            workdays  = _build_workdays(first_day, BATCH_HORIZON, h_set)
-            prev_end: date | None = None
+            sort_col = (
+                "seq_order"
+                if "seq_order" in job_steps.columns
+                else "process_id"
+            )
+            job_steps = job_steps.sort_values(sort_col)
 
-            sched_logger.info(
-                "── Docket %s  qty=%.0f  lead=%d  calendar_start=%s",
-                d_id, meta["qty"], meta["lead_days"], first_day,
+            first_day = _first_workday_after_lead(
+                lead_days,
+                h_set,
+            )
+            workdays = _build_workdays(
+                first_day,
+                BATCH_HORIZON,
+                h_set,
             )
 
-            for step_idx, (_, proc) in enumerate(job_steps.iterrows(), 1):
-                pid     = int(proc["process_id"])
-                pname   = str(proc["process_name"])
-                total_m = float(proc["total_m"])
+            prev_end = None
+
+            for idx, row in job_steps.iterrows():
+                pid = int(row["process_id"])
+                pname = row.get(
+                    "process_name",
+                    f"Process {pid}",
+                )
+                total_m = float(row["total_m"])
+                setup_m = float(row["setup_m"])
+                run_m = float(row["run_m"])
+                confidence = float(row["confidence"])
+                sqfpm = float(row.get("sqfpm", 1000.0) or 1000.0)
+                seq_order = int(row.get("seq_order", idx + 1))
 
                 earliest = (
-                    _add_workdays(prev_end, 1, h_set) if prev_end else workdays[0]
+                    first_day
+                    if prev_end is None
+                    else prev_end + timedelta(days=1)
                 )
 
-                sched_logger.info(
-                    "  Step %d  pid=%s (%s)  need=%.0f min  earliest=%s",
-                    step_idx, pid, pname, total_m, earliest,
-                )
+                while (
+                    earliest.weekday() >= 5
+                    or earliest in h_set
+                ):
+                    earliest += timedelta(days=1)
 
-                start, end, alloc = self._slot_process(
-                    pid, pname, d_id,
-                    total_m, workdays, earliest,
+                start, end, allocation_map = self._slot_process(
+                    pid=pid,
+                    pname=pname,
+                    docket_id=docket_id,
+                    total_m=total_m,
+                    workdays=workdays,
+                    earliest=earliest,
                     farmout=pid in FARMOUT_PROCESS_IDS,
                     capacity_lookup=capacity_lookup,
                     session_booked=session_booked,
@@ -709,48 +818,32 @@ class ScheduleService:
                     holidays=h_set,
                 )
 
-                if start is None:
-                    logger.warning(
-                        "Could not schedule process %s for docket %s within %d-day horizon.",
-                        pid, d_id, BATCH_HORIZON,
-                    )
-                    sched_logger.warning(
-                        "  Step %d UNSCHEDULED  pid=%s (%s)  docket=%s",
-                        step_idx, pid, pname, d_id,
-                    )
-                else:
-                    sched_logger.info(
-                        "  Step %d DONE  pid=%s (%s)  start=%s  end=%s  days_used=%d",
-                        step_idx, pid, pname, start, end, len(alloc),
-                    )
-
                 blank_per_hour = (
-                    int(meta["qty"] / (proc["run_m"] / 60))
-                    if proc["run_m"] > 0 else 0
+                    int(qty / (run_m / 60))
+                    if run_m > 0
+                    else 0
                 )
 
                 all_steps.append({
-                    "docket_id":      d_id,
-                    "process_id":     pid,
-                    "process_name":   pname,
-                    "seq_order":      step_idx,
-                    "start":          start,
-                    "end":            end,
-                    "total_m":        total_m,
-                    "setup_m":        float(proc["setup_m"]),
-                    "run_m":          float(proc["run_m"]),
-                    "required_sqft":  (meta["sqfpm"] / 1000) * meta["qty"],
+                    "docket_id": docket_id,
+                    "process_id": pid,
+                    "process_name": pname,
+                    "seq_order": seq_order,
+                    "start": start,
+                    "end": end,
+                    "total_m": total_m,
+                    "setup_m": setup_m,
+                    "run_m": run_m,
+                    "required_sqft": (sqfpm / 1000.0) * qty,
                     "predicted_mins": total_m,
                     "blank_per_hour": blank_per_hour,
-                    "confidence":     float(proc["confidence"]),
-                    "allocation_map": alloc,
+                    "confidence": confidence,
+                    "allocation_map": allocation_map,
                 })
 
-                prev_end = end
+                if end is not None:
+                    prev_end = end
 
-        sched_logger.info(
-            "=== build_schedule_from_df COMPLETE  total_steps=%d ===\n", len(all_steps)
-        )
         return all_steps
 
     # ------------------------------------------------------------------ #
@@ -800,22 +893,25 @@ class ScheduleService:
             return pd.DataFrame()
         
 
-# ─────────────────────────────────────────────────────────────────────────────
-# USAGE EXAMPLE
-# ─────────────────────────────────────────────────────────────────────────────
-#
-# from mod_production.services.schedule_service import ScheduleService
-# import pandas as pd
-#
-# jobs = pd.DataFrame([
-#     {"docket_id": "188989", "qty": 6000,  "lead_days": 4},
-#     {"docket_id": "172368", "qty": 10000, "lead_days": 4},
-#     {"docket_id": "186655", "qty": 26600, "lead_days": 4},
-# ])
-#
-# svc      = ScheduleService()                       # logs go to logs/schedule_trace.log
-# svc      = ScheduleService(log_dir="/var/log/moyy") # custom path
-# schedule = svc.build_schedule_from_df(jobs, lead_days=4)
-#
-# df = pd.DataFrame(schedule)
-# print(df[["docket_id", "process_name", "start", "end", "total_m", "confidence"]])
+if __name__ == "__main__":
+    service = ScheduleService()
+
+    docket_result = service.build_schedule(
+        docket_id=182882,
+        qty=1000,
+        lead_days=4,
+    )
+
+    order_result = service.build_schedule_with_order_id(
+        order_id=5035563,
+        qty=1000,
+        lead_days=4,
+    )
+
+    print("\n--- DOCKET ---")
+    for step in docket_result:
+        print(step)
+
+    print("\n--- ORDER ---")
+    for step in order_result:
+        print(step)

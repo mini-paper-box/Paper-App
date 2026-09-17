@@ -740,6 +740,7 @@ class SQLManager:
                 dr.sequence AS seq_order, 
                 dr.process_id AS process_id, 
                 dr.routing_dsc AS process_name,
+                d.docket_id,
                 CAST(? AS FLOAT) * (d.sqfpm / 1000.0) AS run_sqft,
                 d.sqfpm,
                 ROW_NUMBER() OVER (PARTITION BY dr.sequence ORDER BY dr.process_id) as route_rank
@@ -754,6 +755,7 @@ class SQLManager:
             seq_order, 
             process_id, 
             process_name,
+            docket_id,
             sqfpm, 
             run_sqft
         FROM RankedRouting
@@ -765,6 +767,59 @@ class SQLManager:
             #     # Parameters: 1st is Qty, 2nd is Docket_ID
             #     # return pd.read_sql(sql, conn, params=(qty, str(docket_id)))
             return self.safe_fetch(query,params=(qty, str(docket_id)))
+        except Exception as e:
+            print(f"Routing Query Error: {e}")
+            return pd.DataFrame(columns=['seq_order', 'process_id', 'process_name', 'run_sqft'])
+        
+    def fetch_order_routing(self, order_id, qty):
+        """Fetches clean routing using CTE to prevent duplicates."""
+        query = """
+            WITH routing AS (
+                SELECT 
+                    oor.order_id,
+                    oor.order_line_nbr,
+                    d.docket_id,
+                    oor.schedule_seq,
+                    CAST(oor.schedule_dte AS DATE) AS schedule_dte,
+                    oor.process_id,
+                    p.process_nme,
+                    oor.order_seq,
+                    CAST(? AS FLOAT) * (d.sqfpm / 1000.0) AS run_sqft,
+                    d.sqfpm,
+                    LAG(oor.process_id) OVER (
+                        PARTITION BY oor.order_id, oor.order_line_nbr
+                        ORDER BY oor.order_seq
+                    ) AS prev_process_id,
+                    LEAD(oor.process_id) OVER (
+                        PARTITION BY oor.order_id, oor.order_line_nbr
+                        ORDER BY oor.order_seq
+                    ) AS next_process_id
+                FROM order_routing oor
+                LEFT JOIN order_details od  
+                    ON oor.order_id = od.order_id AND oor.order_line_nbr = od.order_line_nbr
+                LEFT JOIN process p  
+                    ON oor.process_id = p.process_id
+                LEFT JOIN docket d   
+                    ON od.docket_id = d.docket_id
+            )
+
+            SELECT 
+
+                order_seq, 
+                process_id,
+                process_nme AS process_name,
+                docket_id, 
+                sqfpm, 
+                run_sqft
+            FROM routing
+            where order_id = ?
+            ORDER BY order_seq;
+        """
+        try:
+            # with self._get_connection() as conn:
+            #     # Parameters: 1st is Qty, 2nd is Docket_ID
+            #     # return pd.read_sql(sql, conn, params=(qty, str(docket_id)))
+            return self.safe_fetch(query,params=(qty, str(order_id)))
         except Exception as e:
             print(f"Routing Query Error: {e}")
             return pd.DataFrame(columns=['seq_order', 'process_id', 'process_name', 'run_sqft'])
