@@ -359,6 +359,7 @@ class SchedulerMailer:
                       <li>3 processes and <strong>25,000+ sqft</strong></li>
                       <li>1 process and <strong>50,000+ sqft</strong></li>
                       <li>MOCKUP orders will be printed on <strong>Tuesday and Thursday</strong> and ready to ship the following day.</li>
+                      <li>For orders on <strong>E & EB</strong> require an <strong>additional 3 days</strong> of lead-time.</li>
                     </ul>
                   </td>
                 </tr>
@@ -384,7 +385,7 @@ class SchedulerMailer:
                              text-align:center; font-size:12px;
                              text-transform:uppercase; letter-spacing:0.5px;
                              color:{t['ship_colour']};">
-                    Ship Date
+                    EST Ship Date
                   </th>
                   {tier_th}
                   {tier_ship_th}

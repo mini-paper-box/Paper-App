@@ -1854,7 +1854,10 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19553,,Renaissance Pizza,,Renaissance,,0,15
 19580,,Identity Pet Nutrition,,Identity,,0,15
 19586,,Vanzanten Greenhouse,,Vanzanten,,0,15
+<<<<<<< HEAD
 19594,,Scenic Floral,,Scenic,,0,15
+=======
+>>>>>>> 3d7f0d50c55d01c676d7c4bff56f84cbc3a91754
 10009,,OHM Industrial Designer,,OHM,,0,2
 10012,,Ardent Zehr Farm,,Ardent,,0,2
 10031,,The Hamilton Brewery,,The,,0,2
@@ -1916,6 +1919,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 11865,,Grey Owl Paddles,,Grey,,0,2
 11871,,Craftadian,,Craftadian,,0,2
 11873,,Nu-Edge Tools,,Nu-Edge,,0,2
+11880,,Piccioni Mushrooms,,Piccioni,,0,2
 11901,,Oxford Pallet,,Oxford,,0,2
 11909,,Delft Blue Foods,,Delft,,0,2
 11910,,Box Lunch Brigade,,Box,,0,2
@@ -2196,7 +2200,6 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 11652,,Grove Brew House,,Grove Brewhouse,,0,46
 11663,,The Clean Candle Company,,Clean Candle,,0,9
 11664,,Imperial Captial,,Imperial,,0,9
-11880,,Piccioni Mushrooms,,Piccioni,,0,53
 11925,,Pandora,,Pandora,,0,9
 11969,,Boreal Wildcraft,,Boreal,,0,9
 12023,,Petites Poupees,,Petites,,0,9
@@ -2404,6 +2407,10 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19146,,Something in the Water,,Something,,0,46
 19147,,Cambridge Label,,Cambridge,,0,47
 19148,,Florentina Foods Ltd.,,Florentina,,0,47
+<<<<<<< HEAD
+=======
+19157,,Clifford Brewing,,Clifford,,0,47
+>>>>>>> 3d7f0d50c55d01c676d7c4bff56f84cbc3a91754
 19163,,King David Frozen Pizza,,King,,0,47
 19178,,Boshkung Brewing,,Boshkung,,0,47
 19179,,Ace Beverages,,Ace,,0,47
@@ -2545,6 +2552,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19549,,Winao Canada Inc,,Winao,,0,46
 19554,,Wavemaker Brewing,,Wavemaker,,0,47
 19557,,Stallion,,Stallion,,0,46
+19558,,Pulp Moulded Products,,Pulp,,0,10
 19559,,Jacobs & Thompson,,Jacobs,,0,55
 19560,,Ched Pallet,,Ched,,0,52
 19561,,Ontario Native Plants,,Ontario,,0,56
@@ -2558,16 +2566,17 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19573,,Witomy,,Witomy,,0,47
 19574,,Jamie's Cracked Corn,,Jamie's,,0,55
 19575,,Organika,,Organika,,0,47
+<<<<<<< HEAD
 19577,,Sulco Industries,,Sulco,,0,53
 19578,,Glendale Bakery,,Glendale,,0,53
 19581,,The Freeman Co.,,The,,0,55
 19591,,Wildly Delicious,,Wildly,,0,0
 19592,,Quality Produce,,Quality,,0,47
-19595,,Fastenal,,Fastenal,,0,57
-19597,,Avenue Industrial,,Avenue,,0,10
-19598,,SFS Intec,,SFS,,0,53
-19601,,Good NRG Organics,,Good,,0,47
-19602,,Wratten Holdings,,Wratten,,0,53
+=======
+19577,,Sulco Industries,,Sulco,,0,52
+19578,,Glendale Bakery,,Glendale,,0,53
+19581,,The Freeman Co.,,The,,0,55
+>>>>>>> 3d7f0d50c55d01c676d7c4bff56f84cbc3a91754
 11400,,George quote account,,George,,0,1
 11508,,Catelli,,Catelli,,0,1
 12192,,Cascades Ecommerce,,Cascades,,0,1
@@ -2634,7 +2643,6 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19112,,Mid America Display,,Mid,,0,1
 19326,,Pro Shipper,,Pro,,0,1
 19579,,Interpac cold corrugator,,Interpac,,0,1
-19599,,Prime Carton Ltd,,Prime,,0,1
 12228,,J&J MFG,,J&J,,0,25
 12245,,Jobark Industrial Supplies,,Jobark,,0,25
 12361,,Maas Safety Inc.,,Maas,,0,25
@@ -3118,6 +3126,10 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19524,,Shade FX,,,,0,34
 19532,,Gelato,,,,2,34
 19541,,Leveled Up Consulting,,,,0,34
+<<<<<<< HEAD
+=======
+19551,,White House Graphics Inc.,,,,0,34
+>>>>>>> 3d7f0d50c55d01c676d7c4bff56f84cbc3a91754
 19588,,TwinPro Graphics Inc.,,,,0,34
 19589,,Rocklyn Springs Farm,,,,0,34
 17862,,Ansel Press,,,,2,25
@@ -3249,7 +3261,10 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19461,,West Wind Trading Co,,,,0,47
 19518,,ReadyPine,,,,0,53
 19550,,Winoa Canada & USA,,,,0,46
+<<<<<<< HEAD
 19593,,Goodlot Farm & Farmstead Brew,,,,0,46
+=======
+>>>>>>> 3d7f0d50c55d01c676d7c4bff56f84cbc3a91754
 11222,,The Masters Collection,,,(905)928-0284,0,22
 11510,,B & I International,,,(905)802-8075,0,22
 16476,, Silverthorne Refractories inc,,,(905)774-1269,0,0
@@ -3721,6 +3736,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19543,,BCI Plattsburgh,,BCI,(518)561-6150,2,45
 10058,,Foamcore Mouldings,,Foamcore,(905)358-3626,0,10
 11243,,Professional Packaging Supplies Inc.,,Professional,(905)336-2656,0,25
+11270,,Four Fathers Brewing Company,,Four Fathers,(519)575-3687,0,47
 11295,,Barrelling Tide Distillery,,Barrelling,(902)542-1627,0,15
 11382,,Dominion City Brewing Company,,Dominion,(613)688-6207,0,47
 11408,,Koru Distribution,,Hyung,(877)795-5678,0,5
@@ -3843,9 +3859,6 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19583,,Move Ease Services,,Move,(365)833-1644,0,47
 19584,,EDC Export Development Canada,,EDC,(416)573-5426,0,34
 19590,,#Unlimited - Mental Edge,,#Unlimited,(128)930-8700,0,47
-19596,,ThryveOn Naturals,,ThryveOn,(647)285-2697,0,47
-19600,,Food Dudes Hospitality,,Food,(647)340-3833,0,0
-19603,,NexKemia Petrochemicals Inc.,,NexKemia,(450)292-3333,0,57
 13872,,Planet Displays & Packaging Inc,,Planet,(216)251-9641,2,22
 13895,,Ashtonne Packaging,,Ashtonne,(419)289-7181,2,22
 14099,,Packaging Material Services,,Packaging,(330)745-9722,2,22
@@ -5421,7 +5434,6 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 11159,BGI155,Bgi Graphics Inc * Adi Dassler,,BGI,(519)442-7000,0,10
 11247,JCG001,JC Group,,JC,(705)727-4993,0,27
 11253,WIL030,Willibald Distillery,,Willibald,(519)807-1326,0,47
-11270,FOU018,Four Fathers Brewing Company,,Four Fathers,(519)575-3687,0,47
 11303,RUT003,Rutherford Controls,,Rutherford,(519)621-7651,0,35
 11366,GAL010,Galt Display Rack Company,,Galt,(519)623-0430,0,56
 11393,APO006,Apogee Ceramics,,Apogee,(519)442-3636,0,53
@@ -5659,7 +5671,6 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19530,PER015,PERFORMANCE FINISHING SOL,,Performance,(905)629-7007,0,52
 19546,UNI028,Uni Express,,Uni Express,(604)229-2007,0,52
 19548,RET009,Atlantic Packaging Retail PKG & Display,,Atlantic Retail,(416)298-8101,0,10
-19558,POL019,Pulp Moulded Products,,Pulp Moulded,(905)751-7759,0,10
 19568,LIZ003,Purple Lizard,,Purple,(289)219-3429,0,47
 10034,PAT003,Patera Group Inc.,,Patera,(416)241-8700,0,22
 10124,NEX001,Nexas Networks,,Nexas,(905)581-3717,0,22
@@ -6524,7 +6535,10 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 19383,MEL013,MELE JEWELRY BOX CORPORATION,,MELE,(519)805-4347,0,34
 19485,SIR003,Spence Print Solutions,,Spence Print,(519)756-0755,0,34
 19502,THE189,The Wholesome Pet Company Ltd,,Wholesome Pet,(437)778-8786,0,34
+<<<<<<< HEAD
 19551,WHI044,White House Graphics Inc.,,White House,(905)605-6770,0,34
+=======
+>>>>>>> 3d7f0d50c55d01c676d7c4bff56f84cbc3a91754
 19556,DIR009,DIRECT GLOBAL SOLUTIONS,,Direct,(416)535-1234,0,34
 19570,CRE040,Creative Path Digital,,Creative Path,(905)709-9609,0,34
 10028,SHO021,Shockingly Healthy Inc.,,Shockingly,(647)835-5287,0,41
@@ -7189,7 +7203,7 @@ customer_id,customer_code,legal_name,customer_status,customer_name,phone_no,curr
 18646,,ASL Print FX,AWT Labels & Packaging Company,,,0,44
 18657,,New Democratic Party,NDP,,,0,34
 18664,PEN004,TurnSpout,via Peninsula Plastics,TurnSpout,,0,46
-18699,SPE040,Spectrum Feed Services,Tier 3 (T-3),Spectrum,,0,56
+18699,SPE040,Spectrum Feed Services,Tier 3 (T-3),Spectrum,,0,35
 18722,PRO107,Produce Express,Tier 3 (T-3),Produce Exp,,0,47
 18856,,Brust Beverages,Tier 3 (T-3),Bruust,,0,41
 18869,MIL045,Miller Foods Inc,Oma's Pride,Oma's,,2,41
