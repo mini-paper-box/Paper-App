@@ -45,21 +45,15 @@ THEMES = {
 # ║ EMAIL SETTINGS                                                           ║
 # ╚═══════════════════════════════════════════════════════════════════════════╝
 
-SHIPMENT_TEST_MODE = False
+SHIPMENT_USA_TEST_MODE = False
 
-SHIPMENT_TEST_RECIPIENT = "sang.n@whitebird.ca"
+SHIPMENT_USA_TEST_RECIPIENT = "sang.n@whitebird.ca"
 
-SHIPMENT_PRODUCTION_RECIPIENTS = (
-    "sang.n@whitebird.ca;"
+SHIPMENT_USA_PRODUCTION_RECIPIENTS = (
     "shipping@whitebird.ca;"
-    "craig.a@whitebird.ca;"
-    "william@whitebird.ca;"
-    "hendrik@moyydesign.com;"
     "allen.g@whitebird.ca;"
-    "jason.w@moyydesign.com;"
-    "brandon.h@whitebird.ca;"
-    "erin.l@moyydesign.com;"
     "catherine.s@moyydesign.com;"
+    "anas.k@whitebird.ca;"
 )
 
 
@@ -470,7 +464,7 @@ class ShipmentMailerUSA:
             body_html += f"""
             <tr>
 
-                <td colspan="10"
+                <td colspan="11"
                     style="
                         background:{theme['day_bg']};
                         color:{theme['day_text']};
@@ -515,7 +509,7 @@ class ShipmentMailerUSA:
                 body_html += f"""
                 <tr>
 
-                    <td colspan="10"
+                    <td colspan="11"
                         style="
                             background:{theme['city_bg']};
                             color:{theme['city_text']};
@@ -639,7 +633,7 @@ class ShipmentMailerUSA:
                     body_html += f"""
                     <tr>
 
-                        <td colspan="10"
+                        <td colspan="11"
                             style="
                                 background:{theme['customer_bg']};
                                 color:{theme['customer_text']};
@@ -804,6 +798,17 @@ class ShipmentMailerUSA:
                             color:#666;
                             text-align:right;
                         ">
+                            Est Weight
+                        </td>
+
+                        <td style="
+                            padding:8px;
+                            border-bottom:1px solid {theme['border']};
+                            font-size:10px;
+                            font-weight:700;
+                            color:#666;
+                            text-align:right;
+                        ">
                             Weight
                         </td>
 
@@ -895,6 +900,12 @@ class ShipmentMailerUSA:
                             "total weight",
                             0,
                         )
+
+                        est_weight = row.get(
+                            "est total weight",
+                            0,
+                        )
+                        
 
 
                         body_html += f"""
@@ -997,6 +1008,17 @@ class ShipmentMailerUSA:
                                 text-align:right;
                                 white-space:nowrap;
                             ">
+                                {fmt_num(est_weight)}
+                            </td>
+
+                            <td style="
+                                padding:9px 8px;
+                                border-bottom:1px solid
+                                    {theme['border']};
+                                font-size:12px;
+                                text-align:right;
+                                white-space:nowrap;
+                            ">
                                 {fmt_num(weight)}
                             </td>
 
@@ -1035,7 +1057,7 @@ class ShipmentMailerUSA:
             body_html = """
             <tr>
 
-                <td colspan="10"
+                <td colspan="11"
                     style="
                         padding:35px 20px;
                         text-align:center;
@@ -1115,7 +1137,7 @@ class ShipmentMailerUSA:
 
                         <tr>
 
-                            <td colspan="10"
+                            <td colspan="11"
                                 style="
                                     background:{theme['header_bg']};
                                     color:{theme['header_text']};
@@ -1154,7 +1176,7 @@ class ShipmentMailerUSA:
                             f'''
                             <tr>
 
-                                <td colspan="10"
+                                <td colspan="11"
                                     style="
                                         background:#fff3cd;
                                         color:#856404;
@@ -1168,13 +1190,13 @@ class ShipmentMailerUSA:
                                     &#9888;
                                     TEST MODE —
                                     email sent only to
-                                    {SHIPMENT_TEST_RECIPIENT}
+                                    {SHIPMENT_USA_TEST_RECIPIENT}
 
                                 </td>
 
                             </tr>
                             '''
-                            if SHIPMENT_TEST_MODE
+                            if SHIPMENT_USA_TEST_MODE
                             else ""
                         }
 
@@ -1183,7 +1205,7 @@ class ShipmentMailerUSA:
 
                         <tr>
 
-                            <td colspan="10"
+                            <td colspan="11"
                                 style="
                                     padding:14px 22px;
                                     font-size:13px;
@@ -1214,7 +1236,7 @@ class ShipmentMailerUSA:
 
                         <tr>
 
-                            <td colspan="10"
+                            <td colspan="11"
                                 style="
                                     background:{theme['footer_bg']};
                                     padding:14px 24px;
@@ -1460,9 +1482,9 @@ if __name__ == "__main__":
             # ╚══════════════════════════════════════════════════════════════╝
 
             recipient = (
-                SHIPMENT_TEST_RECIPIENT
-                if SHIPMENT_TEST_MODE
-                else SHIPMENT_TEST_RECIPIENT
+                SHIPMENT_USA_TEST_RECIPIENT
+                if SHIPMENT_USA_TEST_MODE
+                else SHIPMENT_USA_TEST_RECIPIENT
             )
 
 
@@ -1479,7 +1501,7 @@ if __name__ == "__main__":
 
             print(
                 f"Sending → "
-                f"{'TEST' if SHIPMENT_TEST_MODE else 'PRODUCTION'}"
+                f"{'TEST' if SHIPMENT_USA_TEST_MODE else 'PRODUCTION'}"
             )
 
             print(

@@ -51,7 +51,7 @@ THEMES = {
 }
 
 SHOW_TIER_LEADTIME    = False
-TEST_MODE             = True
+TEST_MODE             = False
 TEST_RECIPIENT        = "sang.n@whitebird.ca"
 TIER_START_OFFSET     = 8
 DEFAULT_LEAD_DAYS     = 5

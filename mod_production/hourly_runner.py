@@ -49,6 +49,11 @@ try:
         SHIPMENT_TEST_MODE,
         SHIPMENT_TEST_RECIPIENT,
         SHIPMENT_PRODUCTION_RECIPIENTS)
+    from mod_production.shipment_report_usa import (
+        ShipmentMailerUSA,
+        SHIPMENT_USA_TEST_MODE,
+        SHIPMENT_USA_TEST_RECIPIENT,
+        SHIPMENT_USA_PRODUCTION_RECIPIENTS)
     logger.info("Import successful")
 except Exception as e:
     logger.error(f"Import failed: {e}")
@@ -257,6 +262,105 @@ def run_shipment_report():
         logger.error(
             traceback.format_exc()
         )
+# ── Shipment Report USA Pipeline ────────────────────────────────────────────────        
+def run_shipment_report_usa():
+    """
+    Send the daily shipment report.
+
+    EDIT NOTE:
+    This job is scheduled separately from the Timeline Agreement job.
+    Current schedule: Monday-Friday at 4:30 PM.
+    """
+
+    start = datetime.now()
+
+    logger.info("=" * 70)
+    logger.info("Shipment Report triggered")
+    logger.info("=" * 70)
+
+    try:
+
+        shipment_mailer = ShipmentMailerUSA()
+
+        logger.info("Fetching shipment report...")
+
+        df = shipment_mailer.fetch_report()
+
+        if df is None or df.empty:
+
+            logger.warning(
+                "Shipment Report — no shipments found, email not sent."
+            )
+
+            return
+
+        logger.info(
+            f"Shipment Report — found {len(df):,} shipment order lines."
+        )
+
+        # ─────────────────────────────────────────────────────────────────
+        # Recipient
+        #
+        # EDIT NOTE:
+        # TEST_MODE comes from your shipment_mailer.py.
+        #
+        # True  = TEST_RECIPIENT
+        # False = PRODUCTION_RECIPIENTS
+        # ─────────────────────────────────────────────────────────────────
+
+        recipient = (
+            SHIPMENT_USA_TEST_RECIPIENT
+            if SHIPMENT_USA_TEST_MODE
+            else SHIPMENT_USA_PRODUCTION_RECIPIENTS
+        )
+
+        subject = subject_with_timestamp(
+            "Daily USA Shipment Report"
+        )
+
+        logger.info(
+            f"Shipment Report sending to "
+            f"{'TEST' if SHIPMENT_TEST_MODE else 'PRODUCTION'}"
+        )
+
+        logger.info(
+            f"Recipient: {recipient}"
+        )
+
+        logger.info(
+            f"Subject: {subject}"
+        )
+
+        # ─────────────────────────────────────────────────────────────────
+        # Send email
+        # ─────────────────────────────────────────────────────────────────
+
+        shipment_mailer.send_email(
+            to=recipient,
+            subject=subject,
+            df=df,
+        )
+
+        duration = (
+            datetime.now() - start
+        ).total_seconds()
+
+        logger.info(
+            f"Shipment Report finished successfully "
+            f"({duration:.1f}s)"
+        )
+
+        logger.info("=" * 70)
+
+    except Exception as e:
+
+        logger.error(
+            f"Shipment Report error: {e}"
+        )
+
+        logger.error(
+            traceback.format_exc()
+        )
 
 # ── Entry point ────────────────────────────────────────────────────────────
 if __name__ == "__main__":
@@ -264,7 +368,7 @@ if __name__ == "__main__":
     # Uncomment to fire once immediately on startup for testing
     # logger.info("Running pipeline once immediately...")
     # run_shipment_report()
-    run_my_pipeline()
+    run_shipment_report_usa()
     # logger.info("Done. Starting scheduler...")
 
     scheduler = BackgroundScheduler()
@@ -290,6 +394,19 @@ if __name__ == "__main__":
             day_of_week="mon-fri"
         ),
         id="shipment_report_trigger",
+        max_instances=1,
+        coalesce=True,
+        misfire_grace_time=300,
+    )
+    # ── Shipment Report USA — 8 AM and 4 PM Mon-Fri ───────────────────────────────────────
+    scheduler.add_job(
+        run_shipment_report_usa,
+        CronTrigger(
+            hour="8,16",
+            minute="0",
+            day_of_week="mon-fri"
+        ),
+        id="shipment_usa_report_trigger",
         max_instances=1,
         coalesce=True,
         misfire_grace_time=300,

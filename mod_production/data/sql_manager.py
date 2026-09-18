@@ -905,11 +905,16 @@ class SQLManager:
                 END AS [priority],
 
 
-                CONCAT(
+                CASE
+                    WHEN ISNULL(ust.width_no_overhang, 0) = 0
+                    OR ISNULL(ust.length_no_overhang, 0) = 0
+                    THEN 'No Pallet'
+                    ELSE CONCAT(
                         FORMAT(ust.width_no_overhang, '0.##'),
                         ' x ',
                         FORMAT(ust.length_no_overhang, '0.##')
-                    ) AS [skid],
+                    )
+                END AS [skid],
 
                 CEILING( 
                     CAST(od.order_qty AS DECIMAL(18, 2)) 
@@ -923,7 +928,12 @@ class SQLManager:
                 CEILING(
                     COALESCE(fq.total_qty, 0)
                     * (((d.sqfpm / 1000.0) * md.weight) / 1000.0)
-                ) AS [total weight], 
+                ) AS [total weight],
+
+                CEILING(
+                    COALESCE(od.order_qty, 0)
+                    * (((d.sqfpm / 1000.0) * md.weight) / 1000.0)
+                ) AS [est total weight], 
 
                 od.order_qty,
 
@@ -1119,12 +1129,18 @@ class SQLManager:
                     ELSE 'REGULAR'
                 END AS [priority],
 
+                ust.width_no_overhang,
 
-                CONCAT(
+                CASE 
+                    WHEN ISNULL(ust.width_no_overhang, 0) <= 0
+                    OR ISNULL(ust.length_no_overhang, 0) <= 0
+                    THEN 'No Pallet'
+                    ELSE CONCAT(
                         FORMAT(ust.width_no_overhang, '0.##'),
                         ' x ',
                         FORMAT(ust.length_no_overhang, '0.##')
-                    ) AS [skid],
+                    )
+                END AS [skid],
 
                 CEILING( 
                     CAST(od.order_qty AS DECIMAL(18, 2)) 
@@ -1134,6 +1150,11 @@ class SQLManager:
                 COALESCE(fq.num_units, 0) AS [actual_unit_available], 
 
                 COALESCE(fq.total_qty, 0) AS [actual_qty_available], 
+
+                CEILING(
+                    COALESCE(od.order_qty, 0)
+                    * (((d.sqfpm / 1000.0) * md.weight) / 1000.0)
+                ) AS [est total weight],
 
                 CEILING(
                     COALESCE(fq.total_qty, 0)
