@@ -640,7 +640,7 @@ class ShipmentMailer:
             body_html += f"""
             <tr>
 
-                <td colspan="9"
+                <td colspan="10"
                     style="
                         background:{theme['day_bg']};
                         color:{theme['day_text']};
@@ -689,7 +689,7 @@ class ShipmentMailer:
                 body_html += f"""
                 <tr>
 
-                    <td colspan="9"
+                    <td colspan="10"
                         style="
                             background:{theme['city_bg']};
                             color:{theme['city_text']};
@@ -772,6 +772,33 @@ class ShipmentMailer:
                                 notes.tolist()
                             )
 
+                    delivery_address = ""
+
+                    if "ship_add1" in customer_df.columns:
+                        address = (
+                            customer_df["ship_add1"]
+                            .dropna()
+                            .astype(str)
+                            .str.strip()
+                        )
+
+                        if not address.empty:
+                            delivery_address = address.iloc[0]
+
+                    ship_note = ""
+
+                    ship_note = ""
+
+                    if "ship_note" in customer_df.columns:
+                        note = (
+                            customer_df["ship_note"]
+                            .dropna()
+                            .astype(str)
+                            .str.strip()
+                        )
+
+                        if not note.empty:
+                            ship_note = note.iloc[0].replace("\r\n", "\n").replace("\r", "\n").replace("\n", "<br/>")
 
                     # ═══════════════════════════════════════════════════════
                     # BUILD DELIVERY NOTE HTML
@@ -807,33 +834,57 @@ class ShipmentMailer:
                     # ═══════════════════════════════════════════════════════
 
                     body_html += f"""
-                    <tr>
+                        <tr>
+                            <td colspan="10"
+                                style="
+                                    background:{theme['customer_bg']};
+                                    color:{theme['customer_text']};
+                                    padding:9px 25px;
+                                    border-bottom:1px solid {theme['border']};
+                                ">
 
-                        <td colspan="9"
-                            style="
-                                background:{theme['customer_bg']};
-                                color:{theme['customer_text']};
-                                padding:9px 25px;
-                                border-bottom:1px solid
-                                    {theme['border']};
-                            ">
+                                <div class="customer-title"
+                                    style="
+                                        font-size:13px;
+                                        font-weight:700;
+                                        color:{theme['customer_text']};
+                                    ">
 
-                            <div class="customer-title"
-                                 style="
-                                    font-size:13px;
-                                    font-weight:700;
-                                 ">
+                                    <table style="
+                                        width:100%;
+                                        border-collapse:collapse;
+                                        color:{theme['customer_text']};
+                                        font-size:13px;
+                                        font-weight:700;
+                                    ">
+                                        <tr>
+                                            <td style="
+                                                width:65%;
+                                                padding:0;
+                                                vertical-align:top;
+                                                color:{theme['customer_text']};
+                                            ">
+                                                Customer: {customer}<br/>
+                                                {delivery_address}
+                                            </td>
 
-                                Customer: {customer}
+                                            <td style="
+                                                width:35%;
+                                                padding:0;
+                                                text-align:right;
+                                                vertical-align:top;
+                                                color:{theme['customer_text']};
+                                            ">
+                                                {ship_note}
+                                            </td>
+                                        </tr>
+                                    </table>
 
-                                {delivery_note_html}
+                                </div>
 
-                            </div>
-
-                        </td>
-
-                    </tr>
-                    """
+                            </td>
+                        </tr>
+                        """
 
 
                     # ╔══════════════════════════════════════════════════════╗
@@ -902,6 +953,20 @@ class ShipmentMailer:
                             Order Qty
                         </td>
 
+
+                        <!-- SKID SIZE -->
+
+                        <td style="
+                            padding:8px;
+                            border-bottom:1px solid
+                                {theme['border']};
+                            font-size:10px;
+                            font-weight:700;
+                            color:#666;
+                            text-align:right;
+                        ">
+                            Skid Size
+                        </td>
 
                         <!-- EST SKIDS -->
 
@@ -1045,6 +1110,11 @@ class ShipmentMailer:
                             0,
                         )
 
+                        skid_size = row.get(
+                            "skid",
+                            "No Pallet",
+                        )
+
                         est_skids = row.get(
                             "est num_skid",
                             0,
@@ -1141,6 +1211,21 @@ class ShipmentMailer:
 
                             </td>
 
+
+                            <!-- SKID SIZE -->
+
+                            <td style="
+                                padding:9px 8px;
+                                border-bottom:1px solid
+                                    {theme['border']};
+                                font-size:12px;
+                                text-align:right;
+                                white-space:nowrap;
+                            ">
+
+                                {fmt_num(skid_size)}
+
+                            </td>
 
                             <!-- EST SKIDS -->
 
@@ -1450,7 +1535,7 @@ class ShipmentMailer:
 
                         <tr>
 
-                            <td colspan="9"
+                            <td colspan="10"
                                 style="
                                     background:{theme['footer_bg']};
                                     padding:14px 24px;
@@ -1737,7 +1822,7 @@ if __name__ == "__main__":
             recipient = (
                 SHIPMENT_TEST_RECIPIENT
                 if SHIPMENT_TEST_MODE
-                else SHIPMENT_PRODUCTION_RECIPIENTS
+                else SHIPMENT_TEST_RECIPIENT
             )
 
 

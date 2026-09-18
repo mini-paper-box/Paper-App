@@ -896,21 +896,21 @@ class ScheduleService:
 if __name__ == "__main__":
     service = ScheduleService()
 
-    docket_result = service.build_schedule(
-        docket_id=182882,
-        qty=1000,
-        lead_days=4,
-    )
+    # docket_result = service.build_schedule(
+    #     docket_id=182882,
+    #     qty=1000,
+    #     lead_days=6,
+    # )
 
     order_result = service.build_schedule_with_order_id(
         order_id=5035563,
         qty=1000,
-        lead_days=4,
+        lead_days=6,
     )
 
-    print("\n--- DOCKET ---")
-    for step in docket_result:
-        print(step)
+    # print("\n--- DOCKET ---")
+    # for step in docket_result:
+    #     print(step)
 
     print("\n--- ORDER ---")
     for step in order_result:
